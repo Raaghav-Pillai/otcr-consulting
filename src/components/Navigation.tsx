@@ -7,10 +7,8 @@ const Navigation = () => {
 
   const navItems = [
     { label: 'Home', href: '#home' },
-    { label: 'Services', href: '#services' },
     { label: 'About', href: '#about' },
     { label: 'Join Us', href: '#join' },
-    { label: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -36,7 +34,7 @@ const Navigation = () => {
               </a>
             ))}
             <Button variant="professional" size="sm">
-              Get Started
+              Apply Now
             </Button>
           </div>
 
@@ -67,7 +65,7 @@ const Navigation = () => {
                 </a>
               ))}
               <Button variant="professional" size="sm" className="w-fit">
-                Get Started
+                Apply Now
               </Button>
             </div>
           </div>

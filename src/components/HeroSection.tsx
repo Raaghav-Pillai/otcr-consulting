@@ -20,42 +20,42 @@ const HeroSection = () => {
           {/* Hero Content */}
           <div className="text-white">
             <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-              Strategic Solutions
+              Launch Your
               <span className="block bg-gradient-to-r from-orange-warm to-orange-light bg-clip-text text-transparent">
-                Delivered by Students
+                Consulting Career
               </span>
             </h1>
             
             <p className="text-xl lg:text-2xl mb-8 text-white/90 leading-relaxed max-w-3xl">
-              OTCR Consulting is a student-run firm at the University of Illinois, 
-              delivering scalable business and technology solutions to Fortune 500 companies 
-              and innovative startups since 2000.
+              Join OTCR Consulting, the premier student-run consulting firm at the University of Illinois. 
+              Gain real-world experience working with Fortune 500 companies and innovative startups 
+              while building the skills that will define your career.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-8 mb-10">
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-warm mb-2">300+</div>
-                <div className="text-white/80 font-medium">Clients Served</div>
+                <div className="text-3xl lg:text-4xl font-bold text-orange-warm mb-2">24+</div>
+                <div className="text-white/80 font-medium">Years of Excellence</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-orange-warm mb-2">24+</div>
-                <div className="text-white/80 font-medium">Years Experience</div>
+                <div className="text-3xl lg:text-4xl font-bold text-orange-warm mb-2">300+</div>
+                <div className="text-white/80 font-medium">Alumni Network</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-orange-warm mb-2">100%</div>
-                <div className="text-white/80 font-medium">Student-Led</div>
+                <div className="text-white/80 font-medium">Career Ready</div>
               </div>
             </div>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="accent" size="lg" className="group">
-                Start Your Project
+                Apply Now
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-                Learn More About Us
+                Learn About Our Culture
               </Button>
             </div>
           </div>
@@ -69,8 +69,8 @@ const HeroSection = () => {
                 <Users className="w-6 h-6 text-orange-warm" />
               </div>
               <div className="text-white">
-                <h3 className="font-semibold">Expert Team</h3>
-                <p className="text-sm text-white/80">Top university talent</p>
+                <h3 className="font-semibold">Real Experience</h3>
+                <p className="text-sm text-white/80">Work on actual projects</p>
               </div>
             </div>
             
@@ -79,8 +79,8 @@ const HeroSection = () => {
                 <Target className="w-6 h-6 text-orange-warm" />
               </div>
               <div className="text-white">
-                <h3 className="font-semibold">Proven Results</h3>
-                <p className="text-sm text-white/80">300+ successful projects</p>
+                <h3 className="font-semibold">Career Growth</h3>
+                <p className="text-sm text-white/80">Build your professional portfolio</p>
               </div>
             </div>
             
@@ -89,8 +89,8 @@ const HeroSection = () => {
                 <TrendingUp className="w-6 h-6 text-orange-warm" />
               </div>
               <div className="text-white">
-                <h3 className="font-semibold">Growth Focus</h3>
-                <p className="text-sm text-white/80">Scalable solutions</p>
+                <h3 className="font-semibold">Elite Network</h3>
+                <p className="text-sm text-white/80">Connect with industry leaders</p>
               </div>
             </div>
           </div>
