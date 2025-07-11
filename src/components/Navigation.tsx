@@ -33,7 +33,7 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button variant="professional" size="sm">
+            <Button variant="accent" size="sm">
               Apply Now
             </Button>
           </div>
@@ -64,7 +64,7 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="professional" size="sm" className="w-fit">
+              <Button variant="accent" size="sm" className="w-fit">
                 Apply Now
               </Button>
             </div>

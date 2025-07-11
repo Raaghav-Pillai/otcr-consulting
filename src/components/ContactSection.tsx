@@ -121,7 +121,7 @@ const ContactSection = () => {
                 />
               </div>
 
-              <Button variant="professional" size="lg" className="w-full group">
+              <Button variant="accent" size="lg" className="w-full group">
                 Send Message
                 <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
