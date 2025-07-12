@@ -10,23 +10,6 @@ const JoinSection = () => {
     "Connect with industry professionals and like-minded peers"
   ];
 
-  const positions = [
-    {
-      title: "Business Analyst",
-      description: "Conduct market research, competitive analysis, and data-driven insights for client projects.",
-      commitment: "10-15 hours/week"
-    },
-    {
-      title: "Project Manager", 
-      description: "Lead client engagements, coordinate team activities, and ensure project deliverables meet quality standards.",
-      commitment: "15-20 hours/week"
-    },
-    {
-      title: "Research Specialist",
-      description: "Deep-dive into industry trends, emerging technologies, and market dynamics to support strategic recommendations.",
-      commitment: "8-12 hours/week"
-    }
-  ];
 
   return (
     <section id="join" className="py-20 bg-card">
@@ -54,26 +37,6 @@ const JoinSection = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        {/* Open Positions */}
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-center mb-12 text-foreground">Open Positions</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {positions.map((position, index) => (
-              <Card key={index} className="bg-background border-border hover:bg-secondary transition-colors">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-bold mb-3 text-foreground">{position.title}</h4>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">{position.description}</p>
-                  
-                  <div className="bg-accent/10 rounded-lg p-3 border border-accent/20">
-                    <span className="text-sm font-semibold text-foreground">Time Commitment: </span>
-                    <span className="text-sm text-accent">{position.commitment}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
 

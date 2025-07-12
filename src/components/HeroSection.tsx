@@ -5,8 +5,19 @@ const HeroSection = () => {
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center pt-16">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section id="home" className="min-h-screen flex items-center pt-16 relative overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-40"
+          src="https://www.w3schools.com/html/mov_bbb.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        {/* Optional: dark overlay for better text contrast */}
+        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
+        <div className="container mx-auto px-4 lg:px-8 relative z-20">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-bold leading-tight mb-6 text-foreground">
               The Premier Student-Run Consulting Firm
@@ -14,43 +25,15 @@ const HeroSection = () => {
                 at the University of Illinois
               </span>
             </h1>
-            
-            <p className="text-xl lg:text-2xl mb-12 text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              We create well-informed and scalable business solutions
-            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="lg" className="group">
-                Apply Now
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div>
-              <h2 className="text-3xl font-bold text-accent mb-6">Business Strategy</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We strive to effectively tackle our clients' short and long term business challenges 
-                across areas such as market entry, competitor analysis, acquisitions, product 
-                development, and more.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-accent mb-6">Tech Strategy</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We specialize in assisting our client companies in their technical endeavors 
-                through analysis of emerging technologies, research of potential applications, 
-                writing whitepapers, and more.
-              </p>
+              {/* Scroll to learn more arrow and text */}
+              <div className="flex flex-col items-center w-full animate-bounce-slow mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+                <span className="text-sm text-muted-foreground mt-1">Scroll to learn more</span>
+              </div>
             </div>
           </div>
         </div>

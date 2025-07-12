@@ -1,8 +1,8 @@
 const AboutSection = () => {
   const achievements = [
     {
-      number: "2000",
-      label: "Founded",
+      number: "25+",
+      label: "Years of Excellence",
       description: "Established at the University of Illinois"
     },
     {
