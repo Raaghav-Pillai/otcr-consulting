@@ -1,181 +1,172 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
+import { Linkedin } from 'lucide-react';
+
+const stats = [
+  { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
+  { number: '300+', label: 'Alumni Network', desc: 'Successful careers across industries' },
+  { number: '15+', label: 'Industries', desc: 'Diverse sector expertise' },
+  { number: '100%', label: 'Student-Led', desc: 'Fresh perspectives, proven results' },
+];
+
+const partners = [
+  {
+    name: '',
+    role: 'Internal Operations Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Executive Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Project Excellence Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Alumni Relations Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Social Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Tech Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Professional Development Partner',
+    img: '',
+    linkedin: '#'
+  },
+  {
+    name: '',
+    role: 'Career Placement Partner',
+    img: '',
+    linkedin: '#'
+  },
+];
 
 const About = () => {
   const companyLogos = [
-    "Bloomberg", "MIT", "HRT", "Penn", "PWC", "Citadel", "J.P.Morgan", "Bain & Company", "IMC",
-    "Microsoft", "Facebook", "Robinhood", "NASA", "Harvard", "Rubrik", "Uber", "University of Chicago",
-    "Deloitte", "DRW", "Amazon", "Google", "Jane Street", "Tesla", "BCG", "LinkedIn", "Goldman Sachs",
-    "McKinsey & Company", "Stanford"
-  ];
-
-  const partners = [
-    {
-      name: "Luke Pollack",
-      role: "Internal Operations Partner"
-    },
-    {
-      name: "Jeff Page", 
-      role: "Executive Partner"
-    },
-    {
-      name: "Arda Kokyazici",
-      role: "Project Excellence Partner"
-    },
-    {
-      name: "Ayushe Nagpal",
-      role: "Alumni Relations Partner"
-    },
-    {
-      name: "Steele Kersten",
-      role: "Social Partner"
-    }
-  ];
-
-  const stats = [
-    { number: "25", label: "Years Experience" },
-    { number: "300", label: "Past Clients" },
-    { number: "60", label: "Active Members" },
-    { number: "63%", label: "Honors Students" },
-    { number: "100%", label: "Job/Grad Placement" },
-    { number: "100%", label: "Junior Internship Placement" }
+    // Reds/Pinks
+    'https://upload.wikimedia.org/wikipedia/commons/7/7e/DoorDash_logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/2/2a/Meta-Logo.png',
+    'https://upload.wikimedia.org/wikipedia/commons/2/24/Adobe_Corporate_Logo.png',
+    'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg',
+    // Oranges/Yellows
+    'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/1/1b/PayPal.svg',
+    // Yellows/Golds
+    'https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg',
+    // Greens
+    'https://upload.wikimedia.org/wikipedia/commons/4/44/Googleplex-Logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/2/2f/Logo_Tesla_Motors.svg',
+    // Blues
+    'https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png',
+    'https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/6/6e/Microsoft_Office_Logo_%282013-2019%29.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/2/2e/IBM_logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/2/2d/Expedia_Logo.svg',
+    // Purples
+    // (add purple logos here if you have any)
+    // Blacks/Greys
+    'https://upload.wikimedia.org/wikipedia/commons/1/19/LinkedIn_logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/0/0e/Apple_logo_black.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg',
+    'https://upload.wikimedia.org/wikipedia/commons/2/2c/JP_Morgan_Logo_2008.svg',
   ];
 
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-24 pb-16">
+      {/* About Hero Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl lg:text-7xl font-bold text-foreground mb-6">
-              Who We Are
-            </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
-              We pride ourselves on delivering high quality, impactful work at every 
-              level of our firm. Our partners create robust SoWs that are carried out 
-              by teams of 5 consultants overseen by a PM. OTCR strives to grow 
-              our members personally and professionally to prepare them for their 
-              postgrad goals.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Scrolling Company Logos */}
-      <section className="py-12 overflow-hidden">
-        <div className="relative">
-          <div className="flex animate-scroll space-x-12 whitespace-nowrap">
-            {[...Array(3)].map((_, setIndex) => (
-              <div key={setIndex} className="flex space-x-12 shrink-0">
-                {companyLogos.map((company, index) => (
-                  <div
-                    key={`${setIndex}-${index}`}
-                    className="px-8 py-4 rounded-lg border border-border hover:border-accent/50 transition-colors"
-                  >
-                    <span className="text-lg font-semibold text-foreground">
-                      {company}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Our Partners */}
-      <section className="py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
-            Meet Our Partners
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-            {partners.map((partner, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-56 h-56 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-accent/20 to-accent/5 border border-accent/20 group-hover:border-accent/40 transition-all duration-300 flex items-center justify-center">
-                  <div className="w-48 h-48 rounded-xl bg-card"></div>
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6">About OTCR Consulting</h1>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-16">
+            For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
+          </p>
+          <div className="flex flex-col lg:flex-row gap-12 items-start">
+            {/* Our Story */}
+            <div className="flex-1">
+              <h2 className="text-3xl font-extrabold text-white mb-6">Our Story</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
+              </p>
+              <p className="text-lg text-muted-foreground mb-4">
+                What started as a small student organization has evolved into a premier consulting firm that has served over 300 clients. Our unique position allows us to combine academic rigor with fresh perspectives that drive innovation.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
+              </p>
+            </div>
+            {/* Stats */}
+            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
+              {stats.map((stat, idx) => (
+                <div key={idx} className="bg-[#181c24] rounded-xl p-8 flex flex-col items-center text-center border border-border">
+                  <div className="text-4xl font-extrabold text-accent mb-2">{stat.number}</div>
+                  <div className="text-lg font-bold text-white mb-1">{stat.label}</div>
+                  <div className="text-md text-muted-foreground">{stat.desc}</div>
                 </div>
-                <h3 className="text-xl font-bold text-accent mb-2">{partner.role}</h3>
-                <p className="text-lg text-foreground">{partner.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Firm Statistics */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
-            Firm Statistics
-          </h2>
-          
-          {/* Stats Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center p-8 bg-background rounded-2xl border border-border hover:border-accent/50 transition-all duration-300">
-                <div className="text-5xl lg:text-6xl font-bold text-accent mb-4">{stat.number}</div>
-                <div className="text-lg text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-          
-          {/* Student Breakdown */}
-          <div className="text-center">
-            <h3 className="text-2xl font-bold text-foreground mb-8">Student Breakdown</h3>
-            <div className="max-w-md mx-auto">
-              <div className="w-80 h-80 mx-auto mb-8 rounded-full bg-gradient-to-br from-accent/30 via-accent/20 to-accent/10 border-4 border-accent/20 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-4 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-lg font-semibold text-foreground mb-4">Academic Distribution</div>
-                    <div className="space-y-2 text-sm text-muted-foreground">
-                      <div className="flex items-center justify-between gap-4">
-                        <span>Business</span>
-                        <span className="font-semibold text-accent">41%</span>
-                      </div>
-                      <div className="flex items-center justify-between gap-4">
-                        <span>Engineering</span>
-                        <span className="font-semibold text-accent">47%</span>
-                      </div>
-                      <div className="flex items-center justify-between gap-4">
-                        <span>Other</span>
-                        <span className="font-semibold text-accent">12%</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* After OTCR */}
-      <section className="py-20">
+      {/* Team Grid Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              After OTCR
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our alumni have gone on to work at top companies and pursue advanced degrees 
-              at prestigious institutions around the world.
-            </p>
+          <h2 className="text-4xl font-extrabold text-white text-center mb-2">Lead by Mission-Driven People</h2>
+          <p className="text-md text-muted-foreground text-center mb-12">Whose expertise can be yours during our collaboration.</p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {partners.map((partner, idx) => (
+              <div key={idx} className="bg-[#181c24] rounded-2xl overflow-hidden shadow border border-border flex flex-col">
+                {partner.img ? (
+                  <img src={partner.img} alt={partner.name} className="w-full h-64 object-cover" />
+                ) : (
+                  <div className="w-full h-64 bg-muted-foreground/10 flex items-center justify-center text-4xl text-muted-foreground">?</div>
+                )}
+                <div className="p-6 flex-1 flex flex-col justify-end">
+                  <div className="text-lg font-semibold text-white mb-1">{partner.name}</div>
+                  <div className="text-md text-muted-foreground mb-4">{partner.role}</div>
+                  <div className="flex items-center space-x-3 mt-auto">
+                    {partner.linkedin && (
+                      <a href={partner.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
-          
-          {/* Company Logos Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {companyLogos.slice(0, 16).map((company, index) => (
-              <div
-                key={index}
-                className="p-6 bg-card rounded-xl border border-border hover:border-accent/50 hover:bg-card/80 transition-all duration-300 flex items-center justify-center min-h-[80px]"
-              >
-                <span className="text-sm font-semibold text-foreground text-center">
-                  {company}
-                </span>
+        </div>
+      </section>
+      {/* After OTCR Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-4xl font-extrabold text-white text-center mb-12">After OTCR</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center max-w-6xl mx-auto">
+            {companyLogos.map((logo, idx) => (
+              <div key={idx} className="flex items-center justify-center">
+                <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
               </div>
             ))}
           </div>

@@ -5,11 +5,10 @@ const Footer = () => {
     about: [
       { label: 'Our Story', href: '/about' },
       { label: 'Our Team', href: '/about' },
-      { label: 'Mission & Values', href: '/about' }
+      { label: 'After OTCR', href: '/about' }
     ],
     join: [
       { label: 'Apply Now', href: '/join' },
-      { label: 'Open Positions', href: '/join' },
       { label: 'Application Process', href: '/join' }
     ]
   };
