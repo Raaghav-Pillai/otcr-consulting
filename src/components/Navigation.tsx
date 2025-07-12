@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Join Us', href: '#join' },
+    { label: 'Home', href: '/', isLink: true },
+    { label: 'About', href: '/about', isLink: true },
+    { label: 'Join Us', href: '#join', isLink: false },
   ];
 
   return (
@@ -25,13 +26,23 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-navy-deep transition-colors duration-300 font-medium"
-              >
-                {item.label}
-              </a>
+              item.isLink ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  className="text-foreground hover:text-accent transition-colors duration-300 font-medium"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="text-foreground hover:text-accent transition-colors duration-300 font-medium"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
             <Button variant="accent" size="sm">
               Apply Now
@@ -55,14 +66,25 @@ const Navigation = () => {
           <div className="md:hidden py-4 border-t border-border">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-foreground hover:text-navy-deep transition-colors duration-300 font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
+                item.isLink ? (
+                  <Link
+                    key={item.label}
+                    to={item.href}
+                    className="text-foreground hover:text-accent transition-colors duration-300 font-medium py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="text-foreground hover:text-accent transition-colors duration-300 font-medium py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
               <Button variant="accent" size="sm" className="w-fit">
                 Apply Now

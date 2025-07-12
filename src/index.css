@@ -54,6 +54,9 @@ All colors MUST be HSL.
     
     /* Simple animations */
     --transition-smooth: all 0.2s ease;
+    
+    /* Scrolling animation */
+    --scroll-speed: 30s;
 
     --radius: 0.5rem;
 
@@ -120,5 +123,18 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333333%);
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll var(--scroll-speed) linear infinite;
   }
 }
