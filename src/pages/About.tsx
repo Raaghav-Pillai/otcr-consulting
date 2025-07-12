@@ -73,7 +73,7 @@ const About = () => {
                 {companyLogos.map((company, index) => (
                   <div
                     key={`${setIndex}-${index}`}
-                    className="px-8 py-4 bg-card rounded-lg border border-border hover:border-accent/50 transition-colors"
+                    className="px-8 py-4 rounded-lg border border-border hover:border-accent/50 transition-colors"
                   >
                     <span className="text-lg font-semibold text-foreground">
                       {company}

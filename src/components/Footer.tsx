@@ -3,14 +3,14 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 const Footer = () => {
   const footerLinks = {
     about: [
-      { label: 'Our Story', href: '#about' },
-      { label: 'Our Team', href: '#about' },
-      { label: 'Mission & Values', href: '#about' }
+      { label: 'Our Story', href: '/about' },
+      { label: 'Our Team', href: '/about' },
+      { label: 'Mission & Values', href: '/about' }
     ],
     join: [
-      { label: 'Apply Now', href: '#join' },
-      { label: 'Open Positions', href: '#join' },
-      { label: 'Application Process', href: '#join' }
+      { label: 'Apply Now', href: '/join' },
+      { label: 'Open Positions', href: '/join' },
+      { label: 'Application Process', href: '/join' }
     ]
   };
 
