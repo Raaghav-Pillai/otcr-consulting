@@ -7,8 +7,9 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navItems = [
     { label: 'Home', href: '/', isLink: true },
-    { label: 'About', href: '/about', isLink: true },
-    { label: 'Join Us', href: '/join', isLink: true },
+    { label: 'About OTCR', href: '/about', isLink: true },
+    { label: 'Recruitment', href: '/join', isLink: true },
+    { label: 'Resources', href: '/recruitment-resources', isLink: true },
   ];
 
   return (
@@ -17,7 +18,7 @@ const Navigation = () => {
         top-6
         fixed left-1/2 z-50
         -translate-x-1/2
-        w-[95vw] max-w-2xl
+        w-[50vw] max-w-5xl
         flex flex-row items-center justify-between
         rounded-full shadow-2xl scale-105
         bg-white/80 backdrop-blur-xl border border-border
@@ -33,13 +34,13 @@ const Navigation = () => {
       }}
     >
       {/* Nav Links */}
-      <div className="flex-1 flex flex-row justify-between items-center pl-2 pr-4">
+      <div className="flex flex-row items-center gap-x-12 pl-2 pr-4 flex-1 justify-center">
         {navItems.map((item) => (
           item.isLink ? (
             <Link
               key={item.label}
               to={item.href}
-              className="flex-1 text-center text-grey text-foreground font-semibold hover:text-accent transition-colors duration-300"
+              className="text-center text-grey text-foreground font-semibold hover:text-accent transition-colors duration-300"
             >
               {item.label}
             </Link>
@@ -47,7 +48,7 @@ const Navigation = () => {
             <a
               key={item.label}
               href={item.href}
-              className="flex-1 text-center text-foreground font-semibold hover:text-accent transition-colors duration-300"
+              className="text-center text-foreground font-semibold hover:text-accent transition-colors duration-300"
             >
               {item.label}
             </a>

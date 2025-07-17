@@ -96,37 +96,92 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* About Hero Section */}
-      <section className="py-20 bg-background">
+      <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6">About OTCR Consulting</h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-16">
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-2">About OTCR Consulting</h1>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-10">
             For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
           </p>
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
-            {/* Our Story */}
-            <div className="flex-1">
-              <h2 className="text-3xl font-extrabold text-white mb-6">Our Story</h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
-              </p>
-              <p className="text-lg text-muted-foreground mb-4">
-                What started as a small student organization has evolved into a premier consulting firm that has served over 300 clients. Our unique position allows us to combine academic rigor with fresh perspectives that drive innovation.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
-              </p>
+        </div>
+      </section>
+      {/* Past Clients Section */}
+      <section className="py-10 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white text-center mb-8">Past Clients</h2>
+          <div className="overflow-x-hidden space-y-6">
+            {/* Top row: scrolls left */}
+            <div className="flex items-center gap-12 animate-marquee-l whitespace-nowrap" style={{ minWidth: '200%' }}>
+              {Array.from({ length: 50 }).map((_, idx) => (
+                <img
+                  key={"top-"+idx}
+                  src={`https://logo.clearbit.com/${randomCompanyDomain(idx)}`}
+                  alt="Company Logo"
+                  className="h-16 w-auto object-contain inline-block"
+                  style={{ minWidth: '64px' }}
+                />
+              ))}
+              {Array.from({ length: 50 }).map((_, idx) => (
+                <img
+                  key={"top-dup-"+idx}
+                  src={`https://logo.clearbit.com/${randomCompanyDomain(idx)}`}
+                  alt="Company Logo"
+                  className="h-16 w-auto object-contain inline-block"
+                  style={{ minWidth: '64px' }}
+                />
+              ))}
             </div>
-            {/* Stats */}
-            <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
-              {stats.map((stat, idx) => (
-                <div key={idx} className="bg-[#181c24] rounded-xl p-8 flex flex-col items-center text-center border border-border">
-                  <div className="text-4xl font-extrabold text-accent mb-2">{stat.number}</div>
-                  <div className="text-lg font-bold text-white mb-1">{stat.label}</div>
-                  <div className="text-md text-muted-foreground">{stat.desc}</div>
-                </div>
+            {/* Bottom row: scrolls right */}
+            <div className="flex items-center gap-12 animate-marquee-r whitespace-nowrap" style={{ minWidth: '200%' }}>
+              {Array.from({ length: 50 }).map((_, idx) => (
+                <img
+                  key={"bot-"+idx}
+                  src={`https://logo.clearbit.com/${randomCompanyDomain(49-idx)}`}
+                  alt="Company Logo"
+                  className="h-16 w-auto object-contain inline-block"
+                  style={{ minWidth: '64px' }}
+                />
+              ))}
+              {Array.from({ length: 50 }).map((_, idx) => (
+                <img
+                  key={"bot-dup-"+idx}
+                  src={`https://logo.clearbit.com/${randomCompanyDomain(49-idx)}`}
+                  alt="Company Logo"
+                  className="h-16 w-auto object-contain inline-block"
+                  style={{ minWidth: '64px' }}
+                />
               ))}
             </div>
           </div>
+        </div>
+      </section>
+      {/* Our Story */}
+      <section className="pt-32 pb-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white mb-6">Our Story</h2>
+          <p className="text-lg text-muted-foreground mb-4">
+            Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
+          </p>
+          <p className="text-lg text-muted-foreground mb-4">
+            What started as a small student organization has evolved into a premier consulting firm that has served over 300 clients. Our unique position allows us to combine academic rigor with fresh perspectives that drive innovation.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
+          </p>
+        </div>
+      </section>
+      {/* Stats */}
+      <section className="pt-32 pb-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-3xl font-extrabold text-white mb-6">Our Story</h2>
+          <p className="text-lg text-muted-foreground mb-4">
+            Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
+          </p>
+          <p className="text-lg text-muted-foreground mb-4">
+            What started as a small student organization has evolved into a premier consulting firm that has served over 300 clients. Our unique position allows us to combine academic rigor with fresh perspectives that drive innovation.
+          </p>
+          <p className="text-lg text-muted-foreground">
+            Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
+          </p>
         </div>
       </section>
 
@@ -198,3 +253,29 @@ const About = () => {
 };
 
 export default About;
+
+// Helper to get a random company domain for logo
+function randomCompanyDomain(idx: number) {
+  const domains = [
+    'google.com', 'microsoft.com', 'apple.com', 'amazon.com', 'facebook.com', 'netflix.com', 'adobe.com', 'tesla.com',
+    'ibm.com', 'twitter.com', 'paypal.com', 'linkedin.com', 'slack.com', 'airbnb.com', 'uber.com', 'lyft.com',
+    'dropbox.com', 'spotify.com', 'salesforce.com', 'zoom.us', 'intel.com', 'nvidia.com', 'oracle.com', 'cisco.com',
+    'samsung.com', 'dell.com', 'hp.com', 'lenovo.com', 'huawei.com', 'tencent.com', 'baidu.com', 'alibaba.com',
+    'bytedance.com', 'pinterest.com', 'snapchat.com', 'reddit.com', 'quora.com', 'yahoo.com', 'ebay.com', 'shopify.com',
+    'stripe.com', 'coinbase.com', 'atlassian.com', 'doordash.com', 'instacart.com', 'github.com', 'notion.so', 'asana.com',
+    'canva.com', 'figma.com', 'zendesk.com', 'cloudflare.com', 'heroku.com', 'digitalocean.com', 'mailchimp.com', 'wework.com'
+  ];
+  return domains[idx % domains.length];
+}
+
+// Add this CSS to your global styles (e.g., index.css or App.css):
+/*
+@keyframes marquee-l {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-r {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+*/
