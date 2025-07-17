@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import PastClients from '@/components/PastClients';
 import { Button } from '@/components/ui/button';
 import { Linkedin } from 'lucide-react';
 
@@ -98,62 +99,14 @@ const About = () => {
       {/* About Hero Section */}
       <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-2">About OTCR Consulting</h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-10">
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-2 animate-fade-in-up">About OTCR</h1>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-10 animate-fade-in-up">
             For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
           </p>
         </div>
       </section>
       {/* Past Clients Section */}
-      <section className="py-10 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-white text-center mb-8">Past Clients</h2>
-          <div className="overflow-x-hidden space-y-6">
-            {/* Top row: scrolls left */}
-            <div className="flex items-center gap-12 animate-marquee-l whitespace-nowrap" style={{ minWidth: '200%' }}>
-              {Array.from({ length: 50 }).map((_, idx) => (
-                <img
-                  key={"top-"+idx}
-                  src={`https://logo.clearbit.com/${randomCompanyDomain(idx)}`}
-                  alt="Company Logo"
-                  className="h-16 w-auto object-contain inline-block"
-                  style={{ minWidth: '64px' }}
-                />
-              ))}
-              {Array.from({ length: 50 }).map((_, idx) => (
-                <img
-                  key={"top-dup-"+idx}
-                  src={`https://logo.clearbit.com/${randomCompanyDomain(idx)}`}
-                  alt="Company Logo"
-                  className="h-16 w-auto object-contain inline-block"
-                  style={{ minWidth: '64px' }}
-                />
-              ))}
-            </div>
-            {/* Bottom row: scrolls right */}
-            <div className="flex items-center gap-12 animate-marquee-r whitespace-nowrap" style={{ minWidth: '200%' }}>
-              {Array.from({ length: 50 }).map((_, idx) => (
-                <img
-                  key={"bot-"+idx}
-                  src={`https://logo.clearbit.com/${randomCompanyDomain(49-idx)}`}
-                  alt="Company Logo"
-                  className="h-16 w-auto object-contain inline-block"
-                  style={{ minWidth: '64px' }}
-                />
-              ))}
-              {Array.from({ length: 50 }).map((_, idx) => (
-                <img
-                  key={"bot-dup-"+idx}
-                  src={`https://logo.clearbit.com/${randomCompanyDomain(49-idx)}`}
-                  alt="Company Logo"
-                  className="h-16 w-auto object-contain inline-block"
-                  style={{ minWidth: '64px' }}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      <PastClients />
       {/* Our Story */}
       <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
@@ -169,19 +122,24 @@ const About = () => {
           </p>
         </div>
       </section>
-      {/* Stats */}
-      <section className="pt-32 pb-20 bg-background">
+      {/* What We Do Section */}
+      <section className="py-24 bg-gradient-to-br from-navy-deep to-navy-medium">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-3xl font-extrabold text-white mb-6">Our Story</h2>
-          <p className="text-lg text-muted-foreground mb-4">
-            Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
-          </p>
-          <p className="text-lg text-muted-foreground mb-4">
-            What started as a small student organization has evolved into a premier consulting firm that has served over 300 clients. Our unique position allows us to combine academic rigor with fresh perspectives that drive innovation.
-          </p>
-          <p className="text-lg text-muted-foreground">
-            Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
-          </p>
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-white animate-fade-in-up">What We Do</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up">
+              <h3 className="text-xl font-bold text-accent mb-4">Strategy Consulting</h3>
+              <p className="text-muted-foreground">Comprehensive strategic planning and analysis to drive business growth and competitive advantage.</p>
+            </div>
+            <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <h3 className="text-xl font-bold text-accent mb-4">Market Research</h3>
+              <p className="text-muted-foreground">In-depth market analysis and consumer insights to inform strategic decision-making.</p>
+            </div>
+            <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <h3 className="text-xl font-bold text-accent mb-4">Operations Optimization</h3>
+              <p className="text-muted-foreground">Process improvement and operational efficiency enhancements to maximize performance.</p>
+            </div>
+          </div>
         </div>
       </section>
 

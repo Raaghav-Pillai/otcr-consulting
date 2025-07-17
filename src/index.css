@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 210 20% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 25 90% 55%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
@@ -34,19 +34,22 @@ All colors MUST be HSL.
 
     --border: 210 20% 20%;
     --input: 210 20% 20%;
-    --ring: 25 90% 55%;
+    --ring: 210 85% 45%;
 
-    /* Custom design tokens for OTCR - Dark Theme */
-    --navy-deep: 210 20% 8%;
-    --navy-light: 210 20% 15%;
+    /* Custom design tokens for OTCR - Dark Theme with Blue Accents */
+    --navy-deep: 210 30% 6%;
+    --navy-medium: 210 25% 12%;
+    --navy-light: 210 20% 18%;
+    --blue-accent: 210 85% 45%;
+    --blue-light: 210 75% 55%;
     --orange-warm: 25 90% 55%;
-    --orange-light: 25 90% 65%;
     --gray-light: 210 20% 12%;
     --gray-medium: 0 0% 65%;
     
-    /* Simple gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(210 20% 8%), hsl(210 20% 15%));
-    --gradient-accent: linear-gradient(135deg, hsl(25 90% 55%), hsl(25 90% 65%));
+    /* Updated gradients with blue accents */
+    --gradient-primary: linear-gradient(135deg, hsl(210 30% 6%), hsl(210 25% 12%));
+    --gradient-accent: linear-gradient(135deg, hsl(210 85% 45%), hsl(210 75% 55%));
+    --gradient-blue: linear-gradient(135deg, hsl(210 85% 45%), hsl(210 75% 65%));
     
     /* Simple shadows */
     --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
@@ -96,7 +99,7 @@ All colors MUST be HSL.
     --muted: 210 20% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 25 90% 55%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
@@ -104,15 +107,15 @@ All colors MUST be HSL.
 
     --border: 210 20% 20%;
     --input: 210 20% 20%;
-    --ring: 25 90% 55%;
+    --ring: 210 85% 45%;
     --sidebar-background: 210 20% 10%;
     --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 25 90% 55%;
+    --sidebar-primary: 210 85% 45%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 210 20% 15%;
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 210 20% 20%;
-    --sidebar-ring: 25 90% 55%;
+    --sidebar-ring: 210 85% 45%;
   }
 }
 
@@ -136,5 +139,43 @@ All colors MUST be HSL.
   
   .animate-scroll {
     animation: scroll var(--scroll-speed) linear infinite;
+  }
+  
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scale-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out;
+  }
+  
+  .animate-scale-in {
+    animation: scale-in 0.5s ease-out;
+  }
+  
+  .hover-scale {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
   }
 }
