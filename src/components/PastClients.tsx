@@ -29,7 +29,7 @@ const PastClients = () => {
           <div className="flex animate-scroll-left">
             {/* First set */}
             {clients.slice(0, 3).map((client, index) => (
-              <div key={`top-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`top-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -39,7 +39,7 @@ const PastClients = () => {
             ))}
             {/* Second set for seamless scrolling */}
             {clients.slice(0, 3).map((client, index) => (
-              <div key={`top-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`top-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -49,7 +49,7 @@ const PastClients = () => {
             ))}
             {/* Third set for seamless scrolling */}
             {clients.slice(0, 3).map((client, index) => (
-              <div key={`top-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`top-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -59,7 +59,7 @@ const PastClients = () => {
             ))}
             {/* Fourth set for extra seamless scrolling */}
             {clients.slice(0, 3).map((client, index) => (
-              <div key={`top-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`top-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -73,7 +73,7 @@ const PastClients = () => {
           <div className="flex animate-scroll-right">
             {/* First set */}
             {clients.slice(3, 6).map((client, index) => (
-              <div key={`middle-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`middle-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -83,7 +83,7 @@ const PastClients = () => {
             ))}
             {/* Second set for seamless scrolling */}
             {clients.slice(3, 6).map((client, index) => (
-              <div key={`middle-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`middle-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -93,7 +93,7 @@ const PastClients = () => {
             ))}
             {/* Third set for seamless scrolling */}
             {clients.slice(3, 6).map((client, index) => (
-              <div key={`middle-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`middle-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -103,7 +103,7 @@ const PastClients = () => {
             ))}
             {/* Fourth set for extra seamless scrolling */}
             {clients.slice(3, 6).map((client, index) => (
-              <div key={`middle-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`middle-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -117,7 +117,7 @@ const PastClients = () => {
           <div className="flex animate-scroll-left-staggered">
             {/* First set */}
             {clients.slice(6, 9).map((client, index) => (
-              <div key={`bottom-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`bottom-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -127,7 +127,7 @@ const PastClients = () => {
             ))}
             {/* Second set for seamless scrolling */}
             {clients.slice(6, 9).map((client, index) => (
-              <div key={`bottom-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`bottom-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -137,7 +137,7 @@ const PastClients = () => {
             ))}
             {/* Third set for seamless scrolling */}
             {clients.slice(6, 9).map((client, index) => (
-              <div key={`bottom-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`bottom-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -147,7 +147,7 @@ const PastClients = () => {
             ))}
             {/* Fourth set for extra seamless scrolling */}
             {clients.slice(6, 9).map((client, index) => (
-              <div key={`bottom-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+              <div key={`bottom-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
