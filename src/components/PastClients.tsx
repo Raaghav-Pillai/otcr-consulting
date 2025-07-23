@@ -23,7 +23,7 @@ const PastClients = () => {
           OTCR graduates have gone on to work at some of the world's most prestigious companies
         </p>
         
-        {/* Scrolling logos - 3 rows */}
+        {/* Scrolling logos - 3 rows with staggered positioning */}
         <div className="relative space-y-8">
           {/* Top row - scrolling left */}
           <div className="flex animate-scroll-left">
@@ -50,6 +50,16 @@ const PastClients = () => {
             {/* Third set for seamless scrolling */}
             {clients.slice(0, 3).map((client, index) => (
               <div key={`top-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Fourth set for extra seamless scrolling */}
+            {clients.slice(0, 3).map((client, index) => (
+              <div key={`top-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -91,10 +101,20 @@ const PastClients = () => {
                 />
               </div>
             ))}
+            {/* Fourth set for extra seamless scrolling */}
+            {clients.slice(3, 6).map((client, index) => (
+              <div key={`middle-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
           </div>
 
-          {/* Bottom row - scrolling left */}
-          <div className="flex animate-scroll-left">
+          {/* Bottom row - scrolling left with stagger offset */}
+          <div className="flex animate-scroll-left-staggered">
             {/* First set */}
             {clients.slice(6, 9).map((client, index) => (
               <div key={`bottom-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
@@ -118,6 +138,16 @@ const PastClients = () => {
             {/* Third set for seamless scrolling */}
             {clients.slice(6, 9).map((client, index) => (
               <div key={`bottom-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Fourth set for extra seamless scrolling */}
+            {clients.slice(6, 9).map((client, index) => (
+              <div key={`bottom-fourth-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}

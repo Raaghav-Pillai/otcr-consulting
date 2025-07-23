@@ -167,6 +167,11 @@ All colors MUST be HSL.
     animation: scroll-right 40s linear infinite;
   }
   
+  .animate-scroll-left-staggered {
+    animation: scroll-left 40s linear infinite;
+    animation-delay: -20s; /* Start halfway through the animation for stagger effect */
+  }
+  
   @keyframes fade-in-up {
     0% {
       opacity: 0;
