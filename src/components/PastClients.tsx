@@ -23,12 +23,13 @@ const PastClients = () => {
           OTCR graduates have gone on to work at some of the world's most prestigious companies
         </p>
         
-        {/* Scrolling logos */}
-        <div className="relative">
-          <div className="flex animate-scroll">
+        {/* Scrolling logos - 3 rows */}
+        <div className="relative space-y-8">
+          {/* Top row - scrolling left */}
+          <div className="flex animate-scroll-left">
             {/* First set */}
-            {clients.map((client, index) => (
-              <div key={`first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+            {clients.slice(0, 3).map((client, index) => (
+              <div key={`top-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -37,8 +38,8 @@ const PastClients = () => {
               </div>
             ))}
             {/* Second set for seamless scrolling */}
-            {clients.map((client, index) => (
-              <div key={`second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+            {clients.slice(0, 3).map((client, index) => (
+              <div key={`top-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}
@@ -47,8 +48,76 @@ const PastClients = () => {
               </div>
             ))}
             {/* Third set for seamless scrolling */}
-            {clients.map((client, index) => (
-              <div key={`third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+            {clients.slice(0, 3).map((client, index) => (
+              <div key={`top-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Middle row - scrolling right */}
+          <div className="flex animate-scroll-right">
+            {/* First set */}
+            {clients.slice(3, 6).map((client, index) => (
+              <div key={`middle-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Second set for seamless scrolling */}
+            {clients.slice(3, 6).map((client, index) => (
+              <div key={`middle-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Third set for seamless scrolling */}
+            {clients.slice(3, 6).map((client, index) => (
+              <div key={`middle-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Bottom row - scrolling left */}
+          <div className="flex animate-scroll-left">
+            {/* First set */}
+            {clients.slice(6, 9).map((client, index) => (
+              <div key={`bottom-first-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Second set for seamless scrolling */}
+            {clients.slice(6, 9).map((client, index) => (
+              <div key={`bottom-second-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
+                <img 
+                  src={client.logo} 
+                  alt={`${client.name} logo`}
+                  className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+                />
+              </div>
+            ))}
+            {/* Third set for seamless scrolling */}
+            {clients.slice(6, 9).map((client, index) => (
+              <div key={`bottom-third-${index}`} className="flex-shrink-0 w-48 h-24 mx-8 flex items-center justify-center bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover-scale">
                 <img 
                   src={client.logo} 
                   alt={`${client.name} logo`}

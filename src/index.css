@@ -137,8 +137,34 @@ All colors MUST be HSL.
     }
   }
   
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333333%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-33.333333%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
   .animate-scroll {
     animation: scroll var(--scroll-speed) linear infinite;
+  }
+  
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+  
+  .animate-scroll-right {
+    animation: scroll-right 40s linear infinite;
   }
   
   @keyframes fade-in-up {
