@@ -81,15 +81,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-border py-6">
-          <div className="text-center">
-            <div className="text-muted-foreground text-sm">
-              © 2024 OTCR Consulting. All rights reserved.
-            </div>
-          </div>
-        </div>
       </div>
     </footer>
   );
