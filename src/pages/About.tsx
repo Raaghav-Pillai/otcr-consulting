@@ -97,10 +97,10 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* About Hero Section */}
-      <section className="pt-32 pb-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-2 animate-fade-in-up">About OTCR</h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-10 animate-fade-in-up">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
+        <div className="max-w-5xl mx-auto flex flex-col items-center">
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">About OTCR</h1>
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
             For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
           </p>
         </div>
