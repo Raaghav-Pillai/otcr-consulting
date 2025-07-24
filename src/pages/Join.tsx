@@ -22,7 +22,7 @@ const Join = () => {
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-white">
-            Join Our Team
+            Recruitment Process
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Are you a University of Illinois student passionate about business strategy and consulting? 
@@ -220,21 +220,6 @@ const Join = () => {
             </div>
           </section>
 
-          <div className="bg-background border border-border rounded-lg p-8 max-w-2xl mx-auto mt-24">
-            <h3 className="text-2xl font-bold mb-4 text-white">Ready to Make an Impact?</h3>
-            <p className="text-muted-foreground mb-6">
-              Applications are reviewed on a rolling basis. Join our team and start building your consulting career today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="accent" size="lg" className="group">
-                Apply Now
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="lg">
-                Learn More
-              </Button>
-            </div>
-          </div>
         </div>
       </section>
       <Footer />
