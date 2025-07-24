@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import PastClients from '@/components/PastClients';
 import { Button } from '@/components/ui/button';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, ArrowDown } from 'lucide-react';
 
 const stats = [
   { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
@@ -103,6 +103,11 @@ const About = () => {
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
             For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
           </p>
+        </div>
+        {/* Scroll arrow */}
+        <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
+          <ArrowDown className="w-8 h-8 text-accent" />
+          <span className="text-sm text-muted-foreground mt-2">Scroll to know more</span>
         </div>
       </section>
       {/* Past Clients Section */}

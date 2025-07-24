@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { ArrowRight, CheckCircle, FileText, Phone, Briefcase, PartyPopper } from 'lucide-react';
+import { ArrowRight, CheckCircle, FileText, Phone, Briefcase, PartyPopper, ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
@@ -17,18 +17,27 @@ const Join = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <section className="pt-24 pb-16 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl font-extrabold mb-6 text-white">
-              Join Our Team
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Are you a University of Illinois student passionate about business strategy and consulting? 
-              Join OTCR and gain invaluable experience while making a real impact.
-            </p>
-          </div>
+      
+      {/* Hero Section */}
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
+        <div className="max-w-5xl mx-auto flex flex-col items-center">
+          <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-white">
+            Join Our Team
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Are you a University of Illinois student passionate about business strategy and consulting? 
+            Join OTCR and gain invaluable experience while making a real impact.
+          </p>
+        </div>
+        {/* Scroll arrow */}
+        <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
+          <ArrowDown className="w-8 h-8 text-accent" />
+          <span className="text-sm text-muted-foreground mt-2">Scroll to know more</span>
+        </div>
+      </section>
 
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
           <div className="mb-24">
             <h3 className="text-3xl font-bold text-center mb-12 text-accent">Why Join OTCR?</h3>
             <div className="max-w-3xl mx-auto">
@@ -159,7 +168,7 @@ const Join = () => {
                   },
                   {
                     q: "I have some individualized questions on my application?",
-                    a: "Please contact us at the link below and/or reach out to us during our info night and meet and greet sessions! We’d love to have a thorough in-person chat with you there."
+                    a: "Please contact us at the link below and/or reach out to us during our info night and meet and greet sessions! We'd love to have a thorough in-person chat with you there."
                   },
                   {
                     q: "What kind of leadership opportunities does OTCR offer?",
@@ -173,7 +182,7 @@ const Join = () => {
                   },
                   {
                     q: "What does a semester in OTCR look like?",
-                    a: "In addition to project work, our consultants have the chance to attend client visits, enjoy frequent social events, help shape the firm’s future through internal initiatives, and much more!"
+                    a: "In addition to project work, our consultants have the chance to attend client visits, enjoy frequent social events, help shape the firm's future through internal initiatives, and much more!"
                   },
                   {
                     q: "How can I prepare more for interviews?",
@@ -190,8 +199,8 @@ const Join = () => {
                     a: "None! We welcome all majors and minors regardless of where you hail from."
                   },
                   {
-                    q: "What if I don’t know if I want to go into consulting?",
-                    a: "That’s okay! Even if you haven’t decided on your career path yet, OTCR will help you develop skills necessary across all professions. Our members gain real-world experience in a variety of industries and roles that they carry with them into countless fields."
+                    q: "What if I don't know if I want to go into consulting?",
+                    a: "That's okay! Even if you haven't decided on your career path yet, OTCR will help you develop skills necessary across all professions. Our members gain real-world experience in a variety of industries and roles that they carry with them into countless fields."
                   }
                 ]
               ].map((column, colIdx) => (
@@ -233,4 +242,4 @@ const Join = () => {
   );
 };
 
-export default Join; 
+export default Join;

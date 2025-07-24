@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { ArrowDown } from 'lucide-react';
 import React from 'react';
 
 const RecruitmentResources = () => {
@@ -13,6 +14,11 @@ const RecruitmentResources = () => {
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
             Prepare for your OTCR recruitment journey with our curated interview tips, practice cases, and essential resources. Everything you need to succeed in the recruitment process is right here.
           </p>
+        </div>
+        {/* Scroll arrow */}
+        <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
+          <ArrowDown className="w-8 h-8 text-accent" />
+          <span className="text-sm text-muted-foreground mt-2">Scroll to know more</span>
         </div>
       </section>
 
