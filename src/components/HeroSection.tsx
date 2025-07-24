@@ -5,13 +5,17 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
       <div className="flex-1 flex flex-col justify-center items-center w-full">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
-            OTCR
-          </h1>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-accent mb-10">
-            Consulting
-          </h2>
+        <div className="max-w-5xl mx-auto flex flex-col items-center">
+          <SplitText
+            text="OTCR"
+            className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"
+            splitType="chars"
+          />
+          <SplitText
+            text="Consulting"
+            className="text-7xl md:text-8xl font-extrabold text-accent mb-10"
+            splitType="chars"
+          />
         </div>
       </div>
       {/* Scroll to know more arrow and text at the bottom */}

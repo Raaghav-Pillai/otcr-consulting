@@ -27,8 +27,8 @@ const SplitText: React.FC<SplitTextProps> = ({
   duration = 0.6,
   ease = "power3.out",
   splitType = "chars",
-  from = { opacity: 0, y: 40 },
-  to = { opacity: 1, y: 0 },
+  from = { opacity: 0, yPercent: 100 },
+  to = { opacity: 1, yPercent: 0 },
   threshold = 0.1,
   rootMargin = "-100px",
   textAlign = "center",
@@ -160,6 +160,8 @@ const SplitText: React.FC<SplitTextProps> = ({
         display: "inline-block",
         whiteSpace: "normal",
         wordWrap: "break-word",
+        // Add padding to prevent clipping of characters with descenders (g, p, y, etc.)
+        paddingBottom: "0.2em",
       }}
     >
       {text}

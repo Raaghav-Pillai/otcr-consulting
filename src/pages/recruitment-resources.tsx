@@ -1,6 +1,5 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { ScrollStack, ScrollStackItem } from '@/components/ScrollStack';
 import React from 'react';
 
 const RecruitmentResources = () => {
@@ -57,28 +56,20 @@ const RecruitmentResources = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-white animate-fade-in-up">Market Sizing Practice Questions</h2>
-          <ScrollStack className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <ScrollStackItem>
                 <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up">
                   <h3 className="text-xl font-bold text-accent mb-4">Question 1</h3>
                   <p className="text-muted-foreground">How many coffee shops are there in Chicago?</p>
                 </div>
-              </ScrollStackItem>
-              <ScrollStackItem>
                 <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   <h3 className="text-xl font-bold text-accent mb-4">Question 2</h3>
                   <p className="text-muted-foreground">What is the market size for smartphones in the United States?</p>
                 </div>
-              </ScrollStackItem>
-              <ScrollStackItem>
                 <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                   <h3 className="text-xl font-bold text-accent mb-4">Question 3</h3>
                   <p className="text-muted-foreground">How many pizza slices are consumed daily in New York City?</p>
                 </div>
-              </ScrollStackItem>
             </div>
-          </ScrollStack>
         </div>
       </section>
 
@@ -86,32 +77,26 @@ const RecruitmentResources = () => {
       <section className="py-24 bg-navy-medium">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-white animate-fade-in-up">Second Round Case Examples</h2>
-          <ScrollStack className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <ScrollStackItem>
-                <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up">
-                  <h3 className="text-xl font-bold text-accent mb-4">Profitability Case</h3>
-                  <p className="text-muted-foreground mb-4">A retail chain has seen declining profits over the past two years. Identify the root causes and recommend solutions.</p>
-                  <div className="text-sm text-gray-400">
-                    <p>• Focus on revenue and cost analysis</p>
-                    <p>• Consider market dynamics</p>
-                    <p>• Propose actionable recommendations</p>
-                  </div>
-                </div>
-              </ScrollStackItem>
-              <ScrollStackItem>
-                <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                  <h3 className="text-xl font-bold text-accent mb-4">Market Entry Case</h3>
-                  <p className="text-muted-foreground mb-4">A technology company wants to enter the European market. Should they proceed and how?</p>
-                  <div className="text-sm text-gray-400">
-                    <p>• Assess market attractiveness</p>
-                    <p>• Evaluate competitive landscape</p>
-                    <p>• Develop entry strategy</p>
-                  </div>
-                </div>
-              </ScrollStackItem>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up">
+              <h3 className="text-xl font-bold text-accent mb-4">Profitability Case</h3>
+              <p className="text-muted-foreground mb-4">A retail chain has seen declining profits over the past two years. Identify the root causes and recommend solutions.</p>
+              <ul className="text-sm text-gray-400 list-disc list-inside space-y-1">
+                <li>Focus on revenue and cost analysis</li>
+                <li>Consider market dynamics</li>
+                <li>Propose actionable recommendations</li>
+              </ul>
             </div>
-          </ScrollStack>
+            <div className="bg-card p-8 rounded-xl border border-border hover-scale animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+              <h3 className="text-xl font-bold text-accent mb-4">Market Entry Case</h3>
+              <p className="text-muted-foreground mb-4">A technology company wants to enter the European market. Should they proceed and how?</p>
+              <ul className="text-sm text-gray-400 list-disc list-inside space-y-1">
+                <li>Assess market attractiveness</li>
+                <li>Evaluate competitive landscape</li>
+                <li>Develop entry strategy</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -119,9 +104,7 @@ const RecruitmentResources = () => {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-white animate-fade-in-up">Learning Resources</h2>
-          <ScrollStack className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <ScrollStackItem>
                 <div className="bg-card p-6 rounded-xl border border-border hover-scale animate-fade-in-up">
                   <div className="flex items-center mb-4">
                     <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center mr-3">
@@ -134,9 +117,7 @@ const RecruitmentResources = () => {
                   <p className="text-muted-foreground text-sm mb-4">Learn the basics of structuring and solving case interviews with this comprehensive guide.</p>
                   <a href="#" className="text-accent hover:text-accent/80 text-sm font-medium">Watch Video →</a>
                 </div>
-              </ScrollStackItem>
             </div>
-          </ScrollStack>
         </div>
       </section>
 
