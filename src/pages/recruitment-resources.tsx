@@ -7,10 +7,10 @@ const RecruitmentResources = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Intro Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
+        <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">Recruitment Resources</h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-16 animate-fade-in-up">
+          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
             Prepare for your OTCR recruitment journey with our curated interview tips, practice cases, and essential resources. Everything you need to succeed in the recruitment process is right here.
           </p>
         </div>
