@@ -148,35 +148,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Grid Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl font-extrabold text-white text-center mb-2">Lead by Mission-Driven People</h2>
-          <p className="text-md text-muted-foreground text-center mb-12">Whose expertise can be yours during our collaboration.</p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {partners.map((partner, idx) => (
-              <div key={idx} className="bg-[#181c24] rounded-2xl overflow-hidden shadow border border-border flex flex-col">
-                {partner.img ? (
-                  <img src={partner.img} alt={partner.name} className="w-full h-64 object-cover" />
-                ) : (
-                  <div className="w-full h-64 bg-muted-foreground/10 flex items-center justify-center text-4xl text-muted-foreground">?</div>
-                )}
-                <div className="p-6 flex-1 flex flex-col justify-end">
-                  <div className="text-lg font-semibold text-white mb-1">{partner.name}</div>
-                  <div className="text-md text-muted-foreground mb-4">{partner.role}</div>
-                  <div className="flex items-center space-x-3 mt-auto">
-                    {partner.linkedin && (
-                      <a href={partner.linkedin} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-                        <Linkedin className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* After OTCR Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">

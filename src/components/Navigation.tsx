@@ -8,6 +8,7 @@ const Navigation = () => {
   const navItems = [
     { label: 'Home', href: '/', isLink: true },
     { label: 'About OTCR', href: '/about', isLink: true },
+    { label: 'Leadership', href: '/leadership', isLink: true },
     { label: 'Recruitment Process', href: '/join', isLink: true },
     { label: 'Resources', href: '/recruitment-resources', isLink: true },
     { label: 'Apply Now', href: '/apply', isLink: true },
