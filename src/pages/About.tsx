@@ -11,57 +11,6 @@ const stats = [
   { number: '100%', label: 'Student-Led', desc: 'Fresh perspectives, proven results' },
 ];
 
-const partners = [
-  {
-    name: '',
-    role: 'Internal Operations Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Executive Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Project Excellence Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Alumni Relations Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Social Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Tech Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Professional Development Partner',
-    img: '',
-    linkedin: '#'
-  },
-  {
-    name: '',
-    role: 'Career Placement Partner',
-    img: '',
-    linkedin: '#'
-  },
-];
-
 const About = () => {
   const companyLogos = [
     // Reds/Pinks
@@ -149,15 +98,30 @@ const About = () => {
       </section>
 
       {/* After OTCR Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-background overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl font-extrabold text-white text-center mb-12">After OTCR</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-center max-w-6xl mx-auto">
-            {companyLogos.map((logo, idx) => (
-              <div key={idx} className="flex items-center justify-center">
-                <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
-              </div>
-            ))}
+          <div className="relative">
+            <div className="flex animate-scroll-left">
+              {/* First set of logos */}
+              {companyLogos.map((logo, idx) => (
+                <div key={`first-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center">
+                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {companyLogos.map((logo, idx) => (
+                <div key={`second-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center">
+                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
+                </div>
+              ))}
+              {/* Third set for seamless loop */}
+              {companyLogos.map((logo, idx) => (
+                <div key={`third-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center">
+                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
