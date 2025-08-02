@@ -75,24 +75,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      {/* Testimonial Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <AnimatedContent className="scale-in">
-              <blockquote className="text-2xl md:text-3xl font-light text-white text-center mb-8 leading-relaxed">
-                "OTCR Consultants are passionate, knowledgeable, and have a keen intuition for the business world"
-              </blockquote>
-            </AnimatedContent>
-            <FadeContent delay={0.3}>
-              <div className="text-center">
-                <p className="text-lg font-semibold text-accent">Luke Pollack</p>
-                <p className="text-md text-muted-foreground">Internal Operations Partner</p>
-              </div>
-            </FadeContent>
-          </div>
-        </div>
-      </section>
+
       {/* What we offer Section */}
       <section className="py-20 bg-[#181c24]">
         <div className="container mx-auto px-4 lg:px-8">
