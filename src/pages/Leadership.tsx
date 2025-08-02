@@ -74,7 +74,7 @@ const Leadership = () => {
         <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
           <SplitText
             text="Lead by Mission-Driven People"
-            className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
+            className="text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-6"
             splitType="words"
           />
           <FadeContent delay={1}>
