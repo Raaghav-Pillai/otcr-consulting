@@ -96,7 +96,7 @@ const Leadership = () => {
       {/* Team Grid Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl font-extrabold text-center mb-16 text-white">Our Leadership Team</h2>
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-foreground">Our Leadership Team</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {partners.map((partner, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
