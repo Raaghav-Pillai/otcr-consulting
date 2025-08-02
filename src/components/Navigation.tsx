@@ -18,6 +18,17 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border px-6 py-4 transition-all duration-300">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
+        {/* Logo */}
+        <div className="flex items-center">
+          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Fa46e089f3caf43dab4a95e9cb35165cb?format=webp&width=800"
+              alt="OTCR Consulting Logo"
+              className="h-10 w-auto"
+            />
+          </Link>
+        </div>
+
         {/* Nav Links */}
         <div className="hidden md:flex items-center gap-x-8">
           {navItems.map((item) => (
