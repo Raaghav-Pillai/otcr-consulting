@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState('');
   const navItems = [
     { label: 'Home', href: '/', isLink: true },
     { label: 'About OTCR', href: '/about', isLink: true },
@@ -15,7 +16,7 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background border-b border-border px-6 py-4">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border px-6 py-4 transition-all duration-300">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Nav Links */}
         <div className="hidden md:flex items-center gap-x-8">
@@ -24,17 +25,25 @@ const Navigation = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className="text-foreground font-medium hover:text-accent transition-colors duration-300"
+                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                onMouseEnter={() => setActiveItem(item.label)}
+                onMouseLeave={() => setActiveItem('')}
               >
                 {item.label}
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </Link>
             ) : (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-foreground font-medium hover:text-accent transition-colors duration-300"
+                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                onMouseEnter={() => setActiveItem(item.label)}
+                onMouseLeave={() => setActiveItem('')}
               >
                 {item.label}
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </a>
             )
           ))}
@@ -42,11 +51,23 @@ const Navigation = () => {
         
         {/* Social Icons */}
         <div className="hidden md:flex items-center space-x-2">
-          <a href="https://www.linkedin.com/company/otcr-consulting/about/" target="_blank" rel="noopener noreferrer" className="rounded-full p-2 hover:bg-accent transition-colors">
-            <Linkedin className="w-5 h-5 text-foreground hover:text-accent-foreground transition-colors" />
+          <a 
+            href="https://www.linkedin.com/company/otcr-consulting/about/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          >
+            <Linkedin className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
+            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
           </a>
-          <a href="https://www.instagram.com/otcr_consulting/?hl=en" target="_blank" rel="noopener noreferrer" className="rounded-full p-2 hover:bg-accent transition-colors">
-            <Instagram className="w-5 h-5 text-foreground hover:text-accent-foreground transition-colors" />
+          <a 
+            href="https://www.instagram.com/otcr_consulting/?hl=en" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          >
+            <Instagram className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
+            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
           </a>
         </div>
         
@@ -56,48 +77,66 @@ const Navigation = () => {
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="relative group"
           >
-            {isMenuOpen ? <X /> : <Menu />}
+            <div className="relative z-10">
+              {isMenuOpen ? 
+                <X className="transition-transform duration-300 rotate-90" /> : 
+                <Menu className="transition-transform duration-300 hover:rotate-12" />
+              }
+            </div>
+            <div className="absolute inset-0 rounded-md bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
           </Button>
         </div>
       </div>
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute left-0 top-full w-full bg-background border-b border-border shadow-lg">
-          <div className="flex flex-col space-y-2 p-4">
-            {navItems.map((item) => (
-              item.isLink ? (
-                <Link
-                  key={item.label}
-                  to={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-300 font-medium py-3 px-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-300 font-medium py-3 px-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.label}
-                </a>
-              )
-            ))}
-            {/* Social Icons in mobile menu */}
-            <div className="flex items-center space-x-2 mt-4 px-2">
-              <a href="https://www.linkedin.com/company/otcr-consulting/about/" target="_blank" rel="noopener noreferrer" className="rounded-full p-2 hover:bg-accent transition-colors">
-                <Linkedin className="w-5 h-5 text-foreground hover:text-accent-foreground transition-colors" />
+      
+      {/* Enhanced Mobile Navigation */}
+      <div className={`md:hidden absolute left-0 top-full w-full bg-background/95 backdrop-blur-md border-b border-border shadow-lg transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+        <div className="flex flex-col space-y-2 p-4">
+          {navItems.map((item, index) => (
+            item.isLink ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
+                onClick={() => setIsMenuOpen(false)}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
+                onClick={() => setIsMenuOpen(false)}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {item.label}
               </a>
-              <a href="https://www.instagram.com/otcr_consulting/?hl=en" target="_blank" rel="noopener noreferrer" className="rounded-full p-2 hover:bg-accent transition-colors">
-                <Instagram className="w-5 h-5 text-foreground hover:text-accent-foreground transition-colors" />
-              </a>
-            </div>
+            )
+          ))}
+          {/* Social Icons in mobile menu */}
+          <div className="flex items-center space-x-2 mt-4 px-2">
+            <a 
+              href="https://www.linkedin.com/company/otcr-consulting/about/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="rounded-full p-2 hover:bg-accent/10 transition-all duration-300 group"
+            >
+              <Linkedin className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300" />
+            </a>
+            <a 
+              href="https://www.instagram.com/otcr_consulting/?hl=en" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="rounded-full p-2 hover:bg-accent/10 transition-all duration-300 group"
+            >
+              <Instagram className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300" />
+            </a>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 };
