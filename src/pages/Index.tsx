@@ -52,7 +52,7 @@ const Index = () => {
       {/* Business & Tech Strategy Section */}
       <section className="py-20 bg-gradient-sections">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-16 max-w-4xl">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white-accent mb-16 max-w-4xl">
             We create well-informed and scalable business solutions
           </h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
