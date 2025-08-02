@@ -132,7 +132,7 @@ const About = () => {
       <section className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-extrabold text-foreground mb-6">Our Story</h2>
+            <h2 className="text-3xl font-extrabold text-white-accent mb-6">Our Story</h2>
             <FadeContent delay={0.3}>
               <p className="text-lg text-muted-foreground mb-4">
                 Founded in 2000 at the University of Illinois, OTCR Consulting began with a simple yet powerful vision: to provide exceptional learning opportunities for students while delivering real value to businesses.
