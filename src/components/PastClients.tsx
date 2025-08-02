@@ -85,7 +85,7 @@ const PastClients = () => {
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 space-y-12 relative z-10">
-          <h2 className="text-4xl font-extrabold text-center text-white">
+          <h2 className="text-4xl font-extrabold text-center text-foreground">
             Our Alumni Work At
           </h2>
           <FadeContent delay={0.3}>
