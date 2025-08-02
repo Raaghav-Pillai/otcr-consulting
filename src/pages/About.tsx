@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import PastClients from '@/components/PastClients';
 import { Button } from '@/components/ui/button';
-import { Linkedin, ArrowDown } from 'lucide-react';
+import { Linkedin, ArrowDown, Instagram } from 'lucide-react';
 import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedContent';
