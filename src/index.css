@@ -8,56 +8,64 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 210 15% 18%;
-    --foreground: 0 0% 98%;
+    /* OTCR Dark Theme - Navy Primary, White Accents */
+    --background: 210 100% 15%;
+    --foreground: 0 0% 95%;
 
-    --card: 210 15% 25%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 80% 18%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 210 15% 25%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 80% 18%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 210 15% 18%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 210 100% 15%;
 
-    --secondary: 210 15% 30%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 60% 25%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 210 15% 30%;
+    --muted: 210 60% 25%;
     --muted-foreground: 0 0% 75%;
 
-    --accent: 210 80% 55%;
+    --accent: 185 85% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 15% 35%;
-    --input: 210 15% 35%;
-    --ring: 210 80% 55%;
+    --border: 210 60% 30%;
+    --input: 210 60% 30%;
+    --ring: 185 85% 45%;
 
-    /* Custom design tokens for OTCR - Lighter Theme with Blue Accents */
-    --navy-deep: 210 25% 16%;
-    --navy-medium: 210 20% 25%;
-    --navy-light: 210 15% 35%;
-    --blue-accent: 210 80% 55%;
-    --blue-light: 210 70% 65%;
-    --orange-warm: 25 90% 55%;
-    --gray-light: 210 15% 25%;
-    --gray-medium: 0 0% 75%;
-    
-    /* Updated gradients with blue accents */
-    --gradient-primary: linear-gradient(135deg, hsl(210 25% 16%), hsl(210 20% 25%));
-    --gradient-accent: linear-gradient(135deg, hsl(210 80% 55%), hsl(210 70% 65%));
-    --gradient-blue: linear-gradient(135deg, hsl(210 80% 55%), hsl(210 70% 75%));
-    
-    /* Simple shadows */
-    --shadow-card: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
-    --shadow-button: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
-    
-    /* Simple animations */
-    --transition-smooth: all 0.2s ease;
-    
+    /* Official OTCR Brand Colors - Dark Theme */
+    --navy-deep: 210 100% 12%;
+    --navy-medium: 210 100% 15%;
+    --navy-light: 210 80% 25%;
+    --teal-primary: 185 85% 45%;
+    --teal-light: 185 75% 55%;
+    --teal-lighter: 185 65% 65%;
+    --orange-warm: 25 95% 60%;
+    --orange-light: 25 85% 70%;
+    --white-pure: 0 0% 100%;
+    --white-accent: 0 0% 95%;
+    --gray-dark: 210 50% 20%;
+    --gray-medium: 210 30% 35%;
+
+    /* OTCR Dark Theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 12%), hsl(210 100% 15%));
+    --gradient-teal: linear-gradient(135deg, hsl(185 85% 45%), hsl(185 75% 55%));
+    --gradient-navy-teal: linear-gradient(135deg, hsl(210 100% 15%), hsl(185 85% 45%));
+    --gradient-sections: linear-gradient(135deg, hsl(210 80% 18%), hsl(210 60% 25%));
+
+    /* Dark theme shadows */
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-button: 0 2px 10px -2px hsl(0 0% 0% / 0.25);
+    --shadow-hover: 0 8px 30px -8px hsl(0 0% 0% / 0.4);
+
+    /* Smooth animations */
+    --transition-smooth: all 0.3s ease;
+    --transition-fast: all 0.15s ease;
+
     /* Scrolling animation */
     --scroll-speed: 30s;
 
@@ -81,41 +89,50 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 15% 18%;
-    --foreground: 0 0% 98%;
+    /* OTCR Dark Theme - Official Navy Base */
+    --background: 210 100% 12%;
+    --foreground: 0 0% 95%;
 
-    --card: 210 15% 25%;
-    --card-foreground: 0 0% 98%;
+    --card: 210 80% 18%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 210 15% 25%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 210 80% 18%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 210 15% 18%;
+    --primary: 0 0% 95%;
+    --primary-foreground: 210 100% 12%;
 
-    --secondary: 210 15% 30%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 210 60% 25%;
+    --secondary-foreground: 0 0% 95%;
 
-    --muted: 210 15% 30%;
-    --muted-foreground: 0 0% 75%;
+    --muted: 210 60% 25%;
+    --muted-foreground: 185 25% 75%;
 
-    --accent: 210 80% 55%;
+    --accent: 185 85% 55%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 210 15% 35%;
-    --input: 210 15% 35%;
-    --ring: 210 80% 55%;
-    --sidebar-background: 210 15% 20%;
-    --sidebar-foreground: 0 0% 98%;
-    --sidebar-primary: 210 80% 55%;
+    --border: 210 60% 30%;
+    --input: 210 60% 30%;
+    --ring: 185 85% 55%;
+
+    /* OTCR Dark theme brand colors */
+    --navy-deep: 210 100% 10%;
+    --navy-medium: 210 80% 18%;
+    --navy-light: 210 60% 30%;
+    --teal-primary: 185 85% 55%;
+    --teal-light: 185 65% 65%;
+
+    --sidebar-background: 210 80% 18%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 185 85% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 210 15% 30%;
-    --sidebar-accent-foreground: 0 0% 98%;
-    --sidebar-border: 210 15% 35%;
-    --sidebar-ring: 210 80% 55%;
+    --sidebar-accent: 210 60% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 210 60% 30%;
+    --sidebar-ring: 185 85% 55%;
   }
 }
 
@@ -208,5 +225,46 @@ All colors MUST be HSL.
   
   .hover-scale:hover {
     transform: scale(1.05);
+  }
+
+  /* Additional custom animations */
+  .animate-bounce-slow {
+    animation: bounce 3s infinite;
+  }
+
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px hsl(var(--accent) / 0.3);
+    }
+    100% {
+      box-shadow: 0 0 20px hsl(var(--accent) / 0.6), 0 0 30px hsl(var(--accent) / 0.4);
+    }
+  }
+
+  /* Enhanced scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Gradient backgrounds */
+  .gradient-bg {
+    background: linear-gradient(135deg, hsl(var(--navy-deep)), hsl(var(--navy-medium)));
   }
 }
