@@ -165,7 +165,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FadeContent delay={0.2}>
               <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl border border-border hover:border-accent/50 transition-all duration-300 hover:transform hover:scale-105 group">
-                <h3 className="text-xl font-bold text-accent mb-4 group-hover:text-orange-warm transition-colors duration-300">Strategy Consulting</h3>
+                <h3 className="text-xl font-bold text-teal-primary mb-4 group-hover:text-navy-deep transition-colors duration-300">Strategy Consulting</h3>
                 <p className="text-muted-foreground">Comprehensive strategic planning and analysis to drive business growth and competitive advantage.</p>
               </div>
             </FadeContent>
