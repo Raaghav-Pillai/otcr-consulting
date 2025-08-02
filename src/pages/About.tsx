@@ -16,6 +16,25 @@ const stats = [
 ];
 
 const About = () => {
+  // Latest Instagram posts (replace with actual API data)
+  const instagramPosts = [
+    {
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop&crop=center',
+      caption: 'OTCR team collaborating on client projects',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=center',
+      caption: 'Leadership development workshop session',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop&crop=center',
+      caption: 'Celebrating successful project completion',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+    }
+  ];
+
   const companyLogos = [
     // Reds/Pinks
     'https://upload.wikimedia.org/wikipedia/commons/7/7e/DoorDash_logo.svg',
