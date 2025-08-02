@@ -183,9 +183,15 @@ const About = () => {
           </div>
           <FadeContent delay={0.8}>
             <div className="text-center">
-              <Button variant="accent" size="lg" className="text-lg px-8 hover:transform hover:scale-105 transition-all duration-300">
-                @otcrconsulting
-              </Button>
+              <a
+                href="https://www.instagram.com/otcr_consulting/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="accent" size="lg" className="text-lg px-8 hover:transform hover:scale-105 transition-all duration-300">
+                  @otcr_consulting
+                </Button>
+              </a>
             </div>
           </FadeContent>
         </div>
