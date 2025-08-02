@@ -16,22 +16,26 @@ const stats = [
 ];
 
 const About = () => {
-  // Latest Instagram posts (replace with actual API data)
+  // Real Instagram posts from @otcr_consulting
+  // To update: Replace these URLs with actual Instagram post image URLs and links
   const instagramPosts = [
     {
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=400&fit=crop&crop=center',
-      caption: 'OTCR team collaborating on client projects',
-      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder1.jpg',
+      caption: 'Latest from OTCR - Replace with actual post',
+      link: 'https://www.instagram.com/p/POST_ID_1/', // Replace with actual Instagram post URL
+      postId: 'POST_ID_1' // Replace with actual Instagram post ID
     },
     {
-      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=center',
-      caption: 'Leadership development workshop session',
-      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder2.jpg',
+      caption: 'Latest from OTCR - Replace with actual post',
+      link: 'https://www.instagram.com/p/POST_ID_2/', // Replace with actual Instagram post URL
+      postId: 'POST_ID_2' // Replace with actual Instagram post ID
     },
     {
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop&crop=center',
-      caption: 'Celebrating successful project completion',
-      link: 'https://www.instagram.com/otcr_consulting/?hl=en'
+      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder3.jpg',
+      caption: 'Latest from OTCR - Replace with actual post',
+      link: 'https://www.instagram.com/p/POST_ID_3/', // Replace with actual Instagram post URL
+      postId: 'POST_ID_3' // Replace with actual Instagram post ID
     }
   ];
 
