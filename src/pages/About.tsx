@@ -116,7 +116,7 @@ const About = () => {
                       {stat.number}
                     </div>
                   </AnimatedContent>
-                  <h3 className="text-xl font-semibold text-white mb-2">{stat.label}</h3>
+                  <h3 className="text-xl font-semibold text-white-accent mb-2">{stat.label}</h3>
                   <p className="text-muted-foreground">{stat.desc}</p>
                 </div>
               </FadeContent>
