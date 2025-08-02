@@ -66,7 +66,7 @@ const Index = () => {
             </FadeContent>
             <FadeContent delay={0.4}>
               <div className="group">
-                <h3 className="text-2xl font-bold text-accent mb-6 group-hover:text-orange-warm transition-colors duration-300">Tech Strategy</h3>
+                <h3 className="text-2xl font-bold text-teal-primary mb-6 group-hover:text-teal-light transition-colors duration-300">Tech Strategy</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   We specialize in assisting our client companies in their technical endeavors through analysis of emerging technologies, research of potential applications, writing whitepapers, and more.
                 </p>
