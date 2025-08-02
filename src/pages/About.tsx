@@ -165,9 +165,7 @@ const About = () => {
       {/* After OTCR Section */}
       <section className="py-20 bg-background overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8">
-          <ScrollReveal>
-            <h2 className="text-4xl font-extrabold text-white text-center mb-12">After OTCR</h2>
-          </ScrollReveal>
+          <h2 className="text-4xl font-extrabold text-white text-center mb-12">After OTCR</h2>
           <div className="relative">
             <div className="flex animate-scroll-left">
               {/* First set of logos */}
