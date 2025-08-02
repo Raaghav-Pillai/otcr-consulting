@@ -112,11 +112,11 @@ const About = () => {
               <FadeContent key={idx} delay={idx * 0.2}>
                 <div className="text-center group">
                   <AnimatedContent className="scale-in">
-                    <div className="text-4xl lg:text-5xl font-bold text-accent mb-2 group-hover:text-orange-warm transition-colors duration-300">
+                    <div className="text-4xl lg:text-5xl font-bold text-teal-primary mb-2 group-hover:text-teal-light transition-colors duration-300">
                       {stat.number}
                     </div>
                   </AnimatedContent>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">{stat.label}</h3>
+                  <h3 className="text-xl font-semibold text-white mb-2">{stat.label}</h3>
                   <p className="text-muted-foreground">{stat.desc}</p>
                 </div>
               </FadeContent>
