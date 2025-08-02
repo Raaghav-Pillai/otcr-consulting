@@ -1,4 +1,6 @@
 import React from 'react';
+import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
+import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 
 // Reusable LogoRow component
 const LogoRow = ({ logos, direction = 'left', speed = 20, delay = 0 }) => {
@@ -23,12 +25,12 @@ const LogoRow = ({ logos, direction = 'left', speed = 20, delay = 0 }) => {
         {duplicated.map((client, idx) => (
           <div
             key={idx}
-            className="flex-shrink-0 w-48 h-24 flex items-center justify-center"
+            className="flex-shrink-0 w-48 h-24 flex items-center justify-center group"
           >
             <img
               src={client.logo}
               alt={`${client.name} logo`}
-              className="max-w-32 max-h-16 object-contain filter brightness-0 invert"
+              className="max-w-32 max-h-16 object-contain filter brightness-0 invert group-hover:brightness-75 group-hover:scale-110 transition-all duration-300"
             />
           </div>
         ))}
@@ -68,19 +70,33 @@ const PastClients = () => {
         }
       `}</style>
 
-      <section className="py-24 bg-gradient-to-br from-navy-deep to-navy-medium">
-        <div className="container mx-auto px-4 lg:px-8 space-y-8">
-          <h2 className="text-4xl font-extrabold text-center text-white">
-            Our Alumni Work At
-          </h2>
-          <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto">
-            OTCR graduates have gone on to work at some of the world's most prestigious companies
-          </p>
+      <section className="py-24 bg-gradient-to-br from-navy-deep to-navy-medium relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-accent rounded-full animate-float"></div>
+          <div className="absolute bottom-20 right-20 w-48 h-48 bg-orange-warm rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 lg:px-8 space-y-8 relative z-10">
+          <ScrollReveal>
+            <h2 className="text-4xl font-extrabold text-center text-white">
+              Our Alumni Work At
+            </h2>
+          </ScrollReveal>
+          <FadeContent delay={0.3}>
+            <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto">
+              OTCR graduates have gone on to work at some of the world's most prestigious companies
+            </p>
+          </FadeContent>
 
           {/* Logo rows */}
-          <LogoRow logos={top} direction="left" speed={20} delay={0} />
-          <LogoRow logos={mid} direction="right" speed={20} delay={0} />
-          <LogoRow logos={bot} direction="left" speed={20} delay={10} />
+          <FadeContent delay={0.5}>
+            <div className="space-y-8">
+              <LogoRow logos={top} direction="left" speed={20} delay={0} />
+              <LogoRow logos={mid} direction="right" speed={20} delay={0} />
+              <LogoRow logos={bot} direction="left" speed={20} delay={10} />
+            </div>
+          </FadeContent>
         </div>
       </section>
     </>
