@@ -1,7 +1,6 @@
 import { ArrowDown } from 'lucide-react';
 import SplitText from '../reactbits/textanimations/SplitText/SplitText';
 import FadeContent from '../reactbits/animations/FadeContent/FadeContent';
-import Particles from '../reactbits/backgrounds/Particles/Particles';
 
 const HeroSection = () => {
   return (
