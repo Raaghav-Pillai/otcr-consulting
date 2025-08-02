@@ -137,7 +137,7 @@ const Leadership = () => {
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-extrabold text-white mb-8">Our Leadership Philosophy</h2>
+            <h2 className="text-4xl font-extrabold text-foreground mb-8">Our Leadership Philosophy</h2>
             <FadeContent delay={0.3}>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 At OTCR, we believe that great leadership comes from a combination of expertise, empathy, and innovation. Our leadership team is carefully selected not just for their academic achievements, but for their passion for mentoring and their commitment to excellence.
