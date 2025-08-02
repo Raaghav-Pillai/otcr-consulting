@@ -77,9 +77,9 @@ const Index = () => {
       </section>
 
       {/* What we offer Section */}
-      <section className="py-20 bg-gray-light">
+      <section className="py-20 bg-navy-deep">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-navy-deep mb-16">What we offer...</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">What we offer...</h2>
           <div className="grid md:grid-cols-3 gap-12">
             {services.map((service, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
