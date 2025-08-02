@@ -83,8 +83,8 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-12">
             {services.map((service, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
-                <div className="mb-8 p-6 rounded-xl bg-gradient-to-br from-card/50 to-transparent border border-border/30 hover:border-accent/30 transition-all duration-300 hover:transform hover:scale-105 group">
-                  <h3 className="text-xl font-bold text-accent mb-2 group-hover:text-orange-warm transition-colors duration-300">{service.title}</h3>
+                <div className="mb-8 p-6 rounded-xl bg-white border border-border/30 hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm hover:shadow-lg">
+                  <h3 className="text-xl font-bold text-teal-primary mb-2 group-hover:text-navy-deep transition-colors duration-300">{service.title}</h3>
                   <p className="text-md text-muted-foreground leading-relaxed">{service.desc}</p>
                 </div>
               </FadeContent>
