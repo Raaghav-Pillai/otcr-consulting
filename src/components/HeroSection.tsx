@@ -23,7 +23,7 @@ const HeroSection = () => {
           />
           <SplitText
             text="Consulting"
-            className="text-7xl md:text-8xl font-extrabold text-accent mb-10"
+            className="text-7xl md:text-8xl font-extrabold text-teal-primary mb-10"
             splitType="chars"
           />
           <FadeContent delay={1}>
