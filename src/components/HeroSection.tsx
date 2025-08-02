@@ -38,10 +38,10 @@ const HeroSection = () => {
       <FadeContent delay={1.5}>
         <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow group cursor-pointer">
           <div className="relative">
-            <ArrowDown className="w-8 h-8 text-accent group-hover:text-orange-warm transition-colors duration-300" />
-            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-150 transition-transform duration-300"></div>
+            <ArrowDown className="w-8 h-8 text-teal-primary group-hover:text-orange-warm transition-colors duration-300" />
+            <div className="absolute inset-0 rounded-full bg-teal-primary/20 scale-0 group-hover:scale-150 transition-transform duration-300"></div>
           </div>
-          <span className="text-sm text-muted-foreground mt-2 group-hover:text-accent transition-colors duration-300">Scroll to know more</span>
+          <span className="text-sm text-muted-foreground mt-2 group-hover:text-teal-primary transition-colors duration-300">Scroll to know more</span>
         </div>
       </FadeContent>
     </section>
