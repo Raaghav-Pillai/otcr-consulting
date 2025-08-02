@@ -134,7 +134,7 @@ const Leadership = () => {
       </section>
 
       {/* Leadership Philosophy Section */}
-      <section className="py-20 bg-[#181c24]">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-extrabold text-white mb-8">Our Leadership Philosophy</h2>
