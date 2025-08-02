@@ -111,7 +111,7 @@ const Leadership = () => {
                     </div>
                   )}
                   <div className="p-6 flex-1 flex flex-col justify-end">
-                    <div className="text-lg font-semibold text-white mb-1 group-hover:text-accent transition-colors duration-300">{partner.name}</div>
+                    <div className="text-lg font-semibold text-foreground mb-1 group-hover:text-accent transition-colors duration-300">{partner.name}</div>
                     <div className="text-md text-muted-foreground mb-4">{partner.role}</div>
                     <div className="flex items-center space-x-3 mt-auto">
                       {partner.linkedin && (
