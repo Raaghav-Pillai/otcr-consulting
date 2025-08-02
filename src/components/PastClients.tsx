@@ -77,7 +77,7 @@ const PastClients = () => {
         }
       `}</style>
 
-      <section className="py-24 bg-gradient-to-br from-navy-deep to-navy-medium relative overflow-hidden">
+      <section className="py-24 bg-gradient-to-br from-card to-muted/50 relative overflow-hidden">
         {/* Background decoration */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-20 w-64 h-64 bg-accent rounded-full animate-float"></div>
