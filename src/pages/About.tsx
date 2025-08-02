@@ -177,7 +177,7 @@ const About = () => {
             </FadeContent>
             <FadeContent delay={0.6}>
               <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl border border-border hover:border-accent/50 transition-all duration-300 hover:transform hover:scale-105 group">
-                <h3 className="text-xl font-bold text-accent mb-4 group-hover:text-orange-warm transition-colors duration-300">Operations Optimization</h3>
+                <h3 className="text-xl font-bold text-teal-primary mb-4 group-hover:text-navy-deep transition-colors duration-300">Operations Optimization</h3>
                 <p className="text-muted-foreground">Process improvement and operational efficiency enhancements to maximize performance.</p>
               </div>
             </FadeContent>
