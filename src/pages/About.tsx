@@ -153,15 +153,15 @@ const About = () => {
       </section>
       
       {/* What We Do Section */}
-      <section className="py-24 bg-gradient-to-br from-muted/50 to-card relative overflow-hidden">
+      <section className="py-24 bg-navy-deep relative overflow-hidden">
         {/* Background decoration */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 left-0 w-96 h-96 bg-accent rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-teal-primary rounded-full -translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 right-0 w-80 h-80 bg-orange-warm rounded-full translate-x-1/2 translate-y-1/2"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <h2 className="text-4xl font-extrabold text-center mb-16 text-foreground">What We Do</h2>
+          <h2 className="text-4xl font-extrabold text-center mb-16 text-white-accent">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FadeContent delay={0.2}>
               <div className="bg-card/80 backdrop-blur-sm p-8 rounded-xl border border-border hover:border-accent/50 transition-all duration-300 hover:transform hover:scale-105 group">
