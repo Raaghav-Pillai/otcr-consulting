@@ -171,13 +171,23 @@ const About = () => {
             Follow OTCR on Instagram
           </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-            {[1, 2, 3].map((item) => (
-              <FadeContent key={item} delay={item * 0.2}>
-                <div className="aspect-square bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:transform hover:scale-105 group cursor-pointer">
-                  <div className="w-full h-full flex items-center justify-center text-accent/40 group-hover:text-accent/60 transition-colors duration-300">
-                    <Instagram className="w-16 h-16" />
+            {instagramPosts.map((post, idx) => (
+              <FadeContent key={idx} delay={idx * 0.2}>
+                <a
+                  href={post.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block aspect-square bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl border border-accent/20 hover:border-accent/40 transition-all duration-300 hover:transform hover:scale-105 group cursor-pointer overflow-hidden"
+                >
+                  <img
+                    src={post.image}
+                    alt={post.caption}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <p className="text-white text-sm font-medium">{post.caption}</p>
                   </div>
-                </div>
+                </a>
               </FadeContent>
             ))}
           </div>
