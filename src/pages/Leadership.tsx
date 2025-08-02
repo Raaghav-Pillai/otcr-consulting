@@ -100,7 +100,7 @@ const Leadership = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {partners.map((partner, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
-                <div className="bg-[#181c24] rounded-2xl overflow-hidden shadow border border-border flex flex-col group hover:border-accent/30 transition-all duration-300 hover:transform hover:scale-105">
+                <div className="bg-card rounded-2xl overflow-hidden shadow border border-border flex flex-col group hover:border-accent/30 transition-all duration-300 hover:transform hover:scale-105">
                   {partner.img ? (
                     <img src={partner.img} alt={partner.name} className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300" />
                   ) : (
