@@ -104,7 +104,7 @@ const About = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#181c24]">
+      <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl font-extrabold text-center mb-16 text-white">By the Numbers</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
