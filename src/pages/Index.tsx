@@ -50,7 +50,7 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       {/* Business & Tech Strategy Section */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-gradient-to-br from-navy-deep to-navy-medium text-white">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-16 max-w-4xl">
             We create well-informed and scalable business solutions
