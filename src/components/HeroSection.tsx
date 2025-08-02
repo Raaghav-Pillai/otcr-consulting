@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="max-w-5xl mx-auto flex flex-col items-center">
           <SplitText
             text="OTCR"
-            className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"
+            className="text-7xl md:text-9xl font-extrabold text-foreground leading-tight mb-4"
             splitType="chars"
           />
           <SplitText
