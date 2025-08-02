@@ -77,7 +77,7 @@ const Index = () => {
       </section>
 
       {/* What we offer Section */}
-      <section className="py-20 bg-[#181c24]">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-16">What we offer...</h2>
           <div className="grid md:grid-cols-3 gap-12">
