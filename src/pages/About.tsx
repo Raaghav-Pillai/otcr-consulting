@@ -194,11 +194,9 @@ const About = () => {
       {/* Follow OTCR */}
       <section className="py-20 bg-card">
         <div className="container mx-auto px-4 lg:px-8">
-          <ScrollReveal>
-            <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
-              Follow OTCR on Instagram
-            </h2>
-          </ScrollReveal>
+          <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
+            Follow OTCR on Instagram
+          </h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
             {[1, 2, 3].map((item) => (
               <FadeContent key={item} delay={item * 0.2}>
