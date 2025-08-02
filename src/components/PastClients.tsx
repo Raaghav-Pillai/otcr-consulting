@@ -78,11 +78,9 @@ const PastClients = () => {
         </div>
         
         <div className="container mx-auto px-4 lg:px-8 space-y-8 relative z-10">
-          <ScrollReveal>
-            <h2 className="text-4xl font-extrabold text-center text-white">
-              Our Alumni Work At
-            </h2>
-          </ScrollReveal>
+          <h2 className="text-4xl font-extrabold text-center text-white">
+            Our Alumni Work At
+          </h2>
           <FadeContent delay={0.3}>
             <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto">
               OTCR graduates have gone on to work at some of the world's most prestigious companies
