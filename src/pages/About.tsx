@@ -162,34 +162,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* After OTCR Section */}
-      <section className="py-20 bg-background overflow-hidden">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl font-extrabold text-white text-center mb-12">After OTCR</h2>
-          <div className="relative">
-            <div className="flex animate-scroll-left">
-              {/* First set of logos */}
-              {companyLogos.map((logo, idx) => (
-                <div key={`first-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {companyLogos.map((logo, idx) => (
-                <div key={`second-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
-                </div>
-              ))}
-              {/* Third set for seamless loop */}
-              {companyLogos.map((logo, idx) => (
-                <div key={`third-${idx}`} className="flex-shrink-0 mx-8 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <img src={logo} alt="Company Logo" className="max-h-16 w-auto object-contain" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Follow OTCR */}
       <section className="py-20 bg-card">
