@@ -73,13 +73,7 @@ const About = () => {
       
       {/* About Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
-        {/* Animated background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-32 h-32 bg-accent rounded-full animate-bounce-slow"></div>
-          <div className="absolute top-1/3 right-20 w-16 h-16 bg-orange-warm rounded-full animate-pulse"></div>
-          <div className="absolute bottom-1/4 left-1/4 w-24 h-24 bg-accent rounded-full animate-bounce-slow" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-10 right-10 w-20 h-20 bg-orange-warm rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-        </div>
+
         
         <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
           <SplitText
