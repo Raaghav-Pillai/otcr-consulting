@@ -35,11 +35,11 @@ const Footer = () => {
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
                     <Mail className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-muted-foreground group-hover:text-accent transition-colors duration-300">info@otcrconsulting.com</span>
+                    <span className="text-muted-foreground group-hover:text-accent transition-colors duration-300">recruitment@otcrconsulting.com</span>
                   </div>
                   <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
                     <Phone className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-muted-foreground group-hover:text-accent transition-colors duration-300">(217) 555-0123</span>
+                    <span className="text-muted-foreground group-hover:text-accent transition-colors duration-300">(###) ###-####</span>
                   </div>
                   <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
                     <MapPin className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
@@ -93,7 +93,7 @@ const Footer = () => {
         <FadeContent delay={0.4}>
           <div className="border-t border-border py-6 text-center">
             <p className="text-muted-foreground">
-              © 2024 OTCR Consulting. All rights reserved.
+              © 2025 OTCR Consulting. All rights reserved.
             </p>
           </div>
         </FadeContent>
