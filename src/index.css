@@ -115,18 +115,12 @@ All colors MUST be HSL.
     --muted: 220 20% 18%;
     --muted-foreground: 220 8% 80%;
 
-<<<<<<< HEAD
-    --accent: 195 90% 60%;
-    --accent-foreground: 220 35% 6%;
-=======
     --accent: 185 95% 65%;
     --accent-foreground: 0 0% 100%;
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-<<<<<<< HEAD
     --border: 220 25% 20%;
     --input: 220 25% 20%;
     --ring: 195 90% 60%;
@@ -137,18 +131,6 @@ All colors MUST be HSL.
     --navy-light: 220 25% 15%;
     --teal-primary: 195 90% 60%;
     --teal-light: 195 80% 70%;
-=======
-    --border: 210 60% 30%;
-    --input: 210 60% 30%;
-    --ring: 185 95% 65%;
-
-    /* OTCR Dark theme brand colors */
-    --navy-deep: 210 100% 10%;
-    --navy-medium: 210 80% 18%;
-    --navy-light: 210 60% 30%;
-    --teal-primary: 185 95% 65%;
-    --teal-light: 185 85% 75%;
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
 
     --sidebar-background: 220 30% 10%;
     --sidebar-foreground: 0 0% 95%;
@@ -168,92 +150,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-<<<<<<< HEAD
-    font-family: 'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
-    line-height: 1.6;
-    letter-spacing: -0.01em;
-  }
-
-  /* Professional heading styles */
-  h1, h2, h3, h4, h5, h6 {
-    letter-spacing: -0.025em;
-    font-weight: 700;
-  }
-
-  /* Container styles for consistent centering */
-  .page-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-
-  .section-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-  }
-
-  /* Professional card styles */
-  .professional-card {
-    background: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-card);
-    transition: var(--transition-smooth);
-  }
-
-  .professional-card:hover {
-    box-shadow: var(--shadow-hover);
-    transform: translateY(-2px);
-    border-color: hsl(var(--accent) / 0.3);
-  }
-
-  /* Sophisticated visual elements */
-  .elegant-border {
-    position: relative;
-  }
-
-  .elegant-border::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    padding: 1px;
-    background: linear-gradient(135deg, hsl(var(--teal-primary)), hsl(var(--blue-accent)));
-    border-radius: inherit;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-  }
-
-  .glass-effect {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .text-shimmer {
-    background: linear-gradient(90deg,
-      hsl(var(--teal-primary)),
-      hsl(var(--blue-accent)),
-      hsl(var(--cyan-accent)),
-      hsl(var(--teal-primary))
-    );
-    background-size: 200% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shimmer 3s ease-in-out infinite;
-  }
-
-  @keyframes shimmer {
-    0%, 100% {
-      background-position: 200% 0;
-    }
-    50% {
-      background-position: -200% 0;
-    }
-=======
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
   }
   
   @keyframes scroll {
