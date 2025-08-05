@@ -26,7 +26,7 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
             <img
               src={client.logo}
               alt={`${client.name} logo`}
-              className="max-w-32 max-h-14 object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+              className="max-w-32 max-h-14 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
             />
           </div>
         ))}
