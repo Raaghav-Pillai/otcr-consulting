@@ -115,15 +115,21 @@ const Leadership = () => {
                     <div className="text-md text-muted-foreground mb-4">{partner.role}</div>
                     <div className="flex items-center space-x-3 mt-auto">
                       {partner.linkedin && (
-                        <a 
-                          href={partner.linkedin} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={partner.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
                         >
                           <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         </a>
                       )}
+                      <a
+                        href={`mailto:contact@otcr.com?subject=Contact ${partner.name}`}
+                        className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
+                      >
+                        <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                      </a>
                     </div>
                   </div>
                 </div>
