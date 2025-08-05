@@ -69,9 +69,9 @@ const PastClients = () => {
   ];
 
   // Split into three rows for variety
-  const row1 = clients.slice(0, 4);
-  const row2 = clients.slice(4, 8);
-  const row3 = clients.slice(8, 12);
+  const row1 = clients.slice(0, Math.ceil(clients.length / 3));
+  const row2 = clients.slice(Math.ceil(clients.length / 3), Math.ceil(clients.length * 2 / 3));
+  const row3 = clients.slice(Math.ceil(clients.length * 2 / 3));
 
   return (
     <>
