@@ -1,24 +1,31 @@
 name: Deploy to GitHub Pages
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 on:
   push:
     branches:
-      - main    # or whichever branch you deploy from
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Check out code
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # allow the gh-pages action to use the GITHUB_TOKEN
+          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'     # match your local
+          node-version: '18'
 
-      - name: Install dependencies
+      - name: Install deps
         run: npm ci
 
       - name: Build
