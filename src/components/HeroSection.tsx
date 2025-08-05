@@ -5,14 +5,7 @@ import FadeContent from '../reactbits/animations/FadeContent/FadeContent';
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 z-0 opacity-20">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-teal-primary rounded-full animate-float"></div>
-        <div className="absolute top-1/4 right-20 w-16 h-16 bg-orange-warm rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/3 left-1/4 w-24 h-24 bg-teal-light rounded-full animate-float" style={{animationDelay: '1s'}}></div>
-        <div className="absolute bottom-20 right-10 w-20 h-20 bg-orange-warm rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-        <div className="absolute top-1/2 left-1/2 w-12 h-12 bg-teal-primary rounded-full animate-bounce-slow" style={{animationDelay: '3s'}}></div>
-      </div>
+
       
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
         <div className="max-w-5xl mx-auto flex flex-col items-center">
