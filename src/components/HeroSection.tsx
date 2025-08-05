@@ -5,6 +5,15 @@ import FadeContent from '../reactbits/animations/FadeContent/FadeContent';
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 overflow-hidden">
+      {/* UIUC Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1567168539593-59673ababaae?auto=format&fit=crop&w=1920&q=80"
+          alt="University of Illinois campus"
+          className="w-full h-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
+      </div>
 
       
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
