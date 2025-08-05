@@ -147,7 +147,7 @@ const About = () => {
       </section>
       
       {/* What We Do Section */}
-      <section className="py-24 bg-navy-deep relative overflow-hidden">
+      <section className="py-20 bg-navy-deep relative overflow-hidden">
 
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
