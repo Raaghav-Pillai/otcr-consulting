@@ -37,15 +37,15 @@ All colors MUST be HSL.
     --input: 210 60% 30%;
     --ring: 185 85% 45%;
 
-    /* Official OTCR Brand Colors - Dark Theme */
+    /* Official OTCR Brand Colors - Dark Theme - Enhanced Vibrancy */
     --navy-deep: 210 100% 12%;
     --navy-medium: 210 100% 15%;
     --navy-light: 210 80% 25%;
-    --teal-primary: 185 85% 45%;
-    --teal-light: 185 75% 55%;
-    --teal-lighter: 185 65% 65%;
-    --orange-warm: 25 95% 60%;
-    --orange-light: 25 85% 70%;
+    --teal-primary: 185 95% 55%;
+    --teal-light: 185 85% 65%;
+    --teal-lighter: 185 75% 75%;
+    --orange-warm: 25 100% 65%;
+    --orange-light: 25 95% 75%;
     --white-pure: 0 0% 100%;
     --white-accent: 0 0% 95%;
     --gray-dark: 210 50% 20%;
