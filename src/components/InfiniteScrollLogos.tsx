@@ -74,20 +74,6 @@ const InfiniteScrollLogos: React.FC<InfiniteScrollLogosProps> = ({
         }
       `}</style>
 
-<<<<<<< HEAD
-      <section className={`py-24 bg-navy-deep relative overflow-hidden ${className}`}>
-        <div className="section-container space-y-12 relative z-10">
-          <div className="text-center">
-            <h2 className="text-4xl font-extrabold text-foreground mb-6">
-              {title}
-            </h2>
-            <FadeContent delay={0.3}>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                {subtitle}
-              </p>
-            </FadeContent>
-          </div>
-=======
       <section className={`py-20 bg-background relative overflow-hidden ${className}`}>
         <div className="container mx-auto px-4 lg:px-8 space-y-12 relative z-10">
           <h2 className="text-4xl font-extrabold text-center text-foreground">
@@ -98,7 +84,6 @@ const InfiniteScrollLogos: React.FC<InfiniteScrollLogosProps> = ({
               {subtitle}
             </p>
           </FadeContent>
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
 
           {/* Infinite scrolling logo rows */}
           <FadeContent delay={0.5}>
