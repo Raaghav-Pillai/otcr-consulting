@@ -112,7 +112,10 @@ const Navigation = () => {
                 key={item.label}
                 to={item.href}
                 className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.label}
