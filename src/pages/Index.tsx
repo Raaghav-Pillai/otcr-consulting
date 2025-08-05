@@ -45,6 +45,35 @@ const services = [
   },
 ];
 
+// Enhanced client list with tech companies and consulting firms
+const clients = [
+  // Tech Giants
+  { name: 'Microsoft', logo: 'https://cdn.worldvectorlogo.com/logos/microsoft-5.svg' },
+  { name: 'Google', logo: 'https://cdn.worldvectorlogo.com/logos/google-2015.svg' },
+  { name: 'Apple', logo: 'https://cdn.worldvectorlogo.com/logos/apple-14.svg' },
+  { name: 'Amazon', logo: 'https://cdn.worldvectorlogo.com/logos/amazon-icon-1.svg' },
+  { name: 'Meta', logo: 'https://cdn.worldvectorlogo.com/logos/meta-1.svg' },
+  { name: 'Netflix', logo: 'https://cdn.worldvectorlogo.com/logos/netflix-4.svg' },
+  { name: 'Tesla', logo: 'https://cdn.worldvectorlogo.com/logos/tesla-9.svg' },
+  { name: 'Spotify', logo: 'https://cdn.worldvectorlogo.com/logos/spotify-2.svg' },
+  { name: 'Uber', logo: 'https://cdn.worldvectorlogo.com/logos/uber-11.svg' },
+  { name: 'LinkedIn', logo: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg' },
+  { name: 'Airbnb', logo: 'https://cdn.worldvectorlogo.com/logos/airbnb-2.svg' },
+  { name: 'Adobe', logo: 'https://cdn.worldvectorlogo.com/logos/adobe-1.svg' },
+  // Consulting Firms
+  { name: 'McKinsey & Company', logo: 'https://cdn.worldvectorlogo.com/logos/mckinsey-company.svg' },
+  { name: 'BCG', logo: 'https://cdn.worldvectorlogo.com/logos/bcg-1.svg' },
+  { name: 'Bain & Company', logo: 'https://cdn.worldvectorlogo.com/logos/bain-company.svg' },
+  { name: 'Deloitte', logo: 'https://cdn.worldvectorlogo.com/logos/deloitte-2.svg' },
+  { name: 'PwC', logo: 'https://cdn.worldvectorlogo.com/logos/pwc-2.svg' },
+  { name: 'EY', logo: 'https://cdn.worldvectorlogo.com/logos/ey-2.svg' },
+  { name: 'KPMG', logo: 'https://cdn.worldvectorlogo.com/logos/kpmg-1.svg' },
+  // Financial Services
+  { name: 'Goldman Sachs', logo: 'https://cdn.worldvectorlogo.com/logos/goldman-sachs.svg' },
+  { name: 'JPMorgan Chase', logo: 'https://cdn.worldvectorlogo.com/logos/jp-morgan.svg' },
+  { name: 'Morgan Stanley', logo: 'https://cdn.worldvectorlogo.com/logos/morgan-stanley.svg' },
+];
+
 const Index = () => {
   return (
     <div className="min-h-screen">
