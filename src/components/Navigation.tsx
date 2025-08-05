@@ -40,6 +40,7 @@ const Navigation = () => {
                 className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {item.label}
                 <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
