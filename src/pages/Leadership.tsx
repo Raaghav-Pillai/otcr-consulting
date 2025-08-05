@@ -138,22 +138,14 @@ const Leadership = () => {
                           href={partner.linkedin}
                           target="_blank"
                           rel="noopener noreferrer"
-<<<<<<< HEAD
-                          className="text-white/70 hover:text-teal-primary transition-all duration-300 p-2 rounded-full hover:bg-teal-primary/10 group"
-=======
                           className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
                         >
                           <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         </a>
                       )}
                       <a
                         href={`mailto:contact@otcr.com?subject=Contact ${partner.name}`}
-<<<<<<< HEAD
-                        className="text-white/70 hover:text-teal-primary transition-all duration-300 p-2 rounded-full hover:bg-teal-primary/10 group"
-=======
                         className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
                       >
                         <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                       </a>
