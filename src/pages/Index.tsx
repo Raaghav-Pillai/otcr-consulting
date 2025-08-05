@@ -76,6 +76,51 @@ const Index = () => {
         </div>
       </section>
 
+      {/* We have worked with Section */}
+      <section className="py-20 bg-gradient-to-br from-card to-muted/50 relative overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-8 space-y-12 relative z-10">
+          <h2 className="text-4xl font-extrabold text-center text-foreground">
+            We have worked with
+          </h2>
+          <FadeContent delay={0.3}>
+            <p className="text-xl text-muted-foreground text-center max-w-2xl mx-auto">
+              Trusted by leading organizations across various industries
+            </p>
+          </FadeContent>
+
+          {/* Client logos grid */}
+          <FadeContent delay={0.5}>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-6xl mx-auto items-center">
+              {[
+                { name: 'Microsoft', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png' },
+                { name: 'Google', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png' },
+                { name: 'Amazon', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png' },
+                { name: 'Apple', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png' },
+                { name: 'Meta', logo: 'https://logos-world.net/wp-content/uploads/2021/10/Meta-Logo.png' },
+                { name: 'Netflix', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png' },
+                { name: 'Tesla', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Tesla-Logo.png' },
+                { name: 'Spotify', logo: 'https://logos-world.net/wp-content/uploads/2020/06/Spotify-Logo.png' },
+                { name: 'Uber', logo: 'https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo.png' },
+                { name: 'LinkedIn', logo: 'https://logos-world.net/wp-content/uploads/2020/06/LinkedIn-Logo.png' },
+                { name: 'Airbnb', logo: 'https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png' },
+                { name: 'Adobe', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Adobe-Logo.png' }
+              ].map((client, idx) => (
+                <div
+                  key={client.name}
+                  className="flex items-center justify-center group"
+                >
+                  <img
+                    src={client.logo}
+                    alt={`${client.name} logo`}
+                    className="max-w-24 max-h-12 object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </FadeContent>
+        </div>
+      </section>
+
       {/* What we offer Section */}
       <section className="py-20 bg-navy-deep">
         <div className="container mx-auto px-4 lg:px-8">
