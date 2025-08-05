@@ -26,7 +26,7 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
             <img
               src={client.logo}
               alt={`${client.name} logo`}
-              className="max-w-32 max-h-14 object-contain filter brightness-0 invert opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+              className="max-w-32 max-h-14 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
             />
           </div>
         ))}
@@ -36,25 +36,43 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
 };
 
 const PastClients = () => {
+  // Enhanced alumni companies list with working colored logos including consulting firms
   const clients = [
-    { name: 'Microsoft', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png' },
-    { name: 'Google', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png' },
-    { name: 'Amazon', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png' },
-    { name: 'Apple', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png' },
-    { name: 'Meta', logo: 'https://logos-world.net/wp-content/uploads/2021/10/Meta-Logo.png' },
-    { name: 'Netflix', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png' },
-    { name: 'Tesla', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Tesla-Logo.png' },
-    { name: 'Spotify', logo: 'https://logos-world.net/wp-content/uploads/2020/06/Spotify-Logo.png' },
-    { name: 'Uber', logo: 'https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo.png' },
-    { name: 'LinkedIn', logo: 'https://logos-world.net/wp-content/uploads/2020/06/LinkedIn-Logo.png' },
-    { name: 'Airbnb', logo: 'https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png' },
-    { name: 'Adobe', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Adobe-Logo.png' }
+    // Tech Giants - Using brand-official colors
+    { name: 'Microsoft', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg' },
+    { name: 'Google', logo: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg' },
+    { name: 'Apple', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg' },
+    { name: 'Amazon', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg' },
+    { name: 'Meta', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg' },
+    { name: 'Netflix', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg' },
+    { name: 'Tesla', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/Tesla_T_symbol.svg' },
+    { name: 'Spotify', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg' },
+    { name: 'Uber', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/cc/Uber_logo_2018.png' },
+    { name: 'LinkedIn', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png' },
+    { name: 'Airbnb', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Bélo.svg' },
+    { name: 'Adobe', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Adobe_Systems_logo_and_wordmark.svg' },
+    // Consulting Firms
+    { name: 'McKinsey & Company', logo: 'https://logos-world.net/wp-content/uploads/2021/02/McKinsey-Company-Logo.png' },
+    { name: 'BCG', logo: 'https://logos-world.net/wp-content/uploads/2021/02/BCG-Logo.png' },
+    { name: 'Bain & Company', logo: 'https://logos-world.net/wp-content/uploads/2021/02/Bain-Company-Logo.png' },
+    { name: 'Deloitte', logo: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Deloitte_Logo.svg' },
+    { name: 'PwC', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/05/PricewaterhouseCoopers_Logo.svg' },
+    { name: 'EY', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/EY_logo_2019.svg' },
+    { name: 'KPMG', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/KPMG_logo.svg' },
+    // Financial Services
+    { name: 'Goldman Sachs', logo: 'https://logos-world.net/wp-content/uploads/2021/02/Goldman-Sachs-Logo.png' },
+    { name: 'JPMorgan Chase', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/44/JPMorgan_Chase_logo.svg' },
+    { name: 'Morgan Stanley', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Morgan_Stanley_Logo_1.svg' },
+    // Additional Companies
+    { name: 'Salesforce', logo: 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg' },
+    { name: 'Oracle', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg' },
+    { name: 'IBM', logo: 'https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg' },
   ];
 
   // Split into three rows for variety
-  const row1 = clients.slice(0, 4);
-  const row2 = clients.slice(4, 8);
-  const row3 = clients.slice(8, 12);
+  const row1 = clients.slice(0, Math.ceil(clients.length / 3));
+  const row2 = clients.slice(Math.ceil(clients.length / 3), Math.ceil(clients.length * 2 / 3));
+  const row3 = clients.slice(Math.ceil(clients.length * 2 / 3));
 
   return (
     <>
@@ -78,11 +96,7 @@ const PastClients = () => {
       `}</style>
 
       <section className="py-24 bg-gradient-to-br from-card to-muted/50 relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-accent rounded-full animate-float"></div>
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-orange-warm rounded-full animate-float" style={{animationDelay: '2s'}}></div>
-        </div>
+
         
         <div className="container mx-auto px-4 lg:px-8 space-y-12 relative z-10">
           <h2 className="text-4xl font-extrabold text-center text-foreground">

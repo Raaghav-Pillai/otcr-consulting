@@ -13,6 +13,7 @@ const Navigation = () => {
     { label: 'Recruitment Process', href: '/join', isLink: true },
     { label: 'Resources', href: '/recruitment-resources', isLink: true },
     { label: 'Apply Now', href: '/apply', isLink: true },
+    { label: 'Nexus', href: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about', isLink: false },
   ];
 
   return (
@@ -39,6 +40,7 @@ const Navigation = () => {
                 className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
+                onClick={() => window.scrollTo(0, 0)}
               >
                 {item.label}
                 <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
@@ -110,7 +112,10 @@ const Navigation = () => {
                 key={item.label}
                 to={item.href}
                 className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  window.scrollTo(0, 0);
+                }}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.label}

@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { Linkedin, ArrowDown } from 'lucide-react';
+import { Linkedin, ArrowDown, Mail } from 'lucide-react';
 import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
@@ -63,13 +63,7 @@ const Leadership = () => {
       
       {/* Leadership Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-1/4 left-1/4 w-40 h-40 bg-accent rounded-full animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-orange-warm rounded-full animate-bounce-slow"></div>
-          <div className="absolute bottom-1/3 left-1/5 w-32 h-32 bg-accent rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/4 right-1/4 w-28 h-28 bg-orange-warm rounded-full animate-bounce-slow" style={{animationDelay: '2s'}}></div>
-        </div>
+
         
         <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
           <SplitText
@@ -115,15 +109,21 @@ const Leadership = () => {
                     <div className="text-md text-muted-foreground mb-4">{partner.role}</div>
                     <div className="flex items-center space-x-3 mt-auto">
                       {partner.linkedin && (
-                        <a 
-                          href={partner.linkedin} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={partner.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
                         >
                           <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         </a>
                       )}
+                      <a
+                        href={`mailto:contact@otcr.com?subject=Contact ${partner.name}`}
+                        className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
+                      >
+                        <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                      </a>
                     </div>
                   </div>
                 </div>

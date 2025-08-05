@@ -56,42 +56,7 @@ const Apply = () => {
         </div>
       </section>
 
-      {/* Process Timeline */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl font-extrabold text-center mb-16 text-white animate-fade-in-up">
-            Recruitment Timeline
-          </h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center animate-fade-in-up hover-scale">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-accent-foreground">1</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">First Round Interview</h3>
-                <p className="text-muted-foreground">Behavioral questions and case interview to assess problem-solving skills</p>
-              </div>
-              
-              <div className="text-center animate-fade-in-up hover-scale" style={{ animationDelay: '0.2s' }}>
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-accent-foreground">2</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Coffee Chat</h3>
-                <p className="text-muted-foreground">Informal conversation to learn more about OTCR culture and fit</p>
-              </div>
-              
-              <div className="text-center animate-fade-in-up hover-scale" style={{ animationDelay: '0.4s' }}>
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-accent-foreground">3</span>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-2">Second Round Interview</h3>
-                <p className="text-muted-foreground">Traditional case interview focusing on strategic problem-solving</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       <Footer />
     </div>
