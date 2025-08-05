@@ -151,6 +151,7 @@ const About = () => {
       
       {/* What We Do Section */}
       <section className="py-20 bg-navy-deep relative overflow-hidden">
+<<<<<<< HEAD
 
 
         <div className="section-container relative z-10">
@@ -158,6 +159,12 @@ const About = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">What We Do</h2>
             <p className="text-xl text-white/85 max-w-3xl mx-auto">Comprehensive consulting services tailored to your business needs</p>
           </div>
+=======
+
+
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">What We Do</h2>
+>>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FadeContent delay={0.2}>
               <div className="professional-card p-8 text-center group">

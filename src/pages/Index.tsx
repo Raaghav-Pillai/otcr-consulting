@@ -125,6 +125,7 @@ const Index = () => {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* Team Photo Section */}
       <section className="py-24 bg-card">
         <div className="section-container">
@@ -170,6 +171,8 @@ const Index = () => {
         </div>
       </section>
 
+=======
+>>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
       {/* We have worked with Section */}
       <InfiniteScrollLogos
         title="We have worked with"
@@ -178,6 +181,7 @@ const Index = () => {
       />
 
       {/* Why Join OTCR Section */}
+<<<<<<< HEAD
       <section className="py-24 bg-navy-deep">
         <div className="section-container">
           <div className="text-center mb-16">
@@ -187,6 +191,12 @@ const Index = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+=======
+      <section className="py-20 bg-navy-deep">
+        <div className="container mx-auto px-4 lg:px-8">
+          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">Why Join OTCR?</h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+>>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
             {[
               "Work directly with Fortune 500 companies and innovative startups",
               "Develop critical business analysis and strategic thinking skills",
@@ -194,6 +204,7 @@ const Index = () => {
               "Connect with industry professionals and like-minded peers"
             ].map((benefit, index) => (
               <FadeContent key={index} delay={index * 0.1}>
+<<<<<<< HEAD
                 <div className="professional-card p-6 group text-center">
                   <div className="w-12 h-12 bg-teal-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-primary/30 transition-colors duration-300">
                     <svg className="w-6 h-6 text-teal-primary" fill="currentColor" viewBox="0 0 20 20">
@@ -201,6 +212,15 @@ const Index = () => {
                     </svg>
                   </div>
                   <span className="text-lg text-white group-hover:text-white transition-colors duration-300">{benefit}</span>
+=======
+                <div className="flex items-start space-x-3 bg-card rounded-xl p-6 border border-border/30 hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm hover:shadow-lg">
+                  <div className="w-6 h-6 bg-teal-primary rounded-full flex items-center justify-center mt-1 flex-shrink-0 group-hover:bg-white-accent transition-colors duration-300">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-lg text-foreground group-hover:text-white-accent transition-colors duration-300">{benefit}</span>
+>>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
                 </div>
               </FadeContent>
             ))}
