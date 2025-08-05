@@ -117,16 +117,25 @@ const Index = () => {
         clients={clients}
       />
 
-      {/* What we offer Section */}
+      {/* Why Join OTCR Section */}
       <section className="py-20 bg-navy-deep">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">What we offer...</h2>
-          <div className="grid md:grid-cols-3 gap-12">
-            {services.map((service, idx) => (
-              <FadeContent key={idx} delay={idx * 0.1}>
-                <div className="mb-8 p-6 rounded-xl bg-card border border-border/30 hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm hover:shadow-lg">
-                  <h3 className="text-xl font-bold text-teal-primary mb-2 group-hover:text-white-accent transition-colors duration-300">{service.title}</h3>
-                  <p className="text-md text-muted-foreground leading-relaxed">{service.desc}</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">Why Join OTCR?</h2>
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            {[
+              "Work directly with Fortune 500 companies and innovative startups",
+              "Develop critical business analysis and strategic thinking skills",
+              "Build your professional portfolio with meaningful accomplishments",
+              "Connect with industry professionals and like-minded peers"
+            ].map((benefit, index) => (
+              <FadeContent key={index} delay={index * 0.1}>
+                <div className="flex items-start space-x-3 bg-card rounded-xl p-6 border border-border/30 hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm hover:shadow-lg">
+                  <div className="w-6 h-6 bg-teal-primary rounded-full flex items-center justify-center mt-1 flex-shrink-0 group-hover:bg-white-accent transition-colors duration-300">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-lg text-foreground group-hover:text-white-accent transition-colors duration-300">{benefit}</span>
                 </div>
               </FadeContent>
             ))}
