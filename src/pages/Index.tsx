@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import Footer from '@/components/Footer';
+import InfiniteScrollLogos from '@/components/InfiniteScrollLogos';
 import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedContent';
