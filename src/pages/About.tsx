@@ -151,7 +151,7 @@ const About = () => {
 
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <h2 className="text-4xl font-extrabold text-center mb-16 text-white-accent">What We Do</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FadeContent delay={0.2}>
               <div className="bg-card backdrop-blur-sm p-8 rounded-xl border border-border hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group">
