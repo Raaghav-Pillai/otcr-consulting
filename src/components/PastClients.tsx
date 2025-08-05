@@ -36,19 +36,36 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
 };
 
 const PastClients = () => {
+  // Enhanced alumni companies list with better logos including consulting firms
   const clients = [
-    { name: 'Microsoft', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png' },
-    { name: 'Google', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Google-Logo.png' },
-    { name: 'Amazon', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Amazon-Logo.png' },
-    { name: 'Apple', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Apple-Logo.png' },
-    { name: 'Meta', logo: 'https://logos-world.net/wp-content/uploads/2021/10/Meta-Logo.png' },
-    { name: 'Netflix', logo: 'https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo.png' },
-    { name: 'Tesla', logo: 'https://logos-world.net/wp-content/uploads/2020/09/Tesla-Logo.png' },
-    { name: 'Spotify', logo: 'https://logos-world.net/wp-content/uploads/2020/06/Spotify-Logo.png' },
-    { name: 'Uber', logo: 'https://logos-world.net/wp-content/uploads/2020/05/Uber-Logo.png' },
-    { name: 'LinkedIn', logo: 'https://logos-world.net/wp-content/uploads/2020/06/LinkedIn-Logo.png' },
-    { name: 'Airbnb', logo: 'https://logos-world.net/wp-content/uploads/2020/10/Airbnb-Logo.png' },
-    { name: 'Adobe', logo: 'https://logos-world.net/wp-content/uploads/2020/11/Adobe-Logo.png' }
+    // Tech Giants
+    { name: 'Microsoft', logo: 'https://cdn.worldvectorlogo.com/logos/microsoft-5.svg' },
+    { name: 'Google', logo: 'https://cdn.worldvectorlogo.com/logos/google-2015.svg' },
+    { name: 'Apple', logo: 'https://cdn.worldvectorlogo.com/logos/apple-14.svg' },
+    { name: 'Amazon', logo: 'https://cdn.worldvectorlogo.com/logos/amazon-icon-1.svg' },
+    { name: 'Meta', logo: 'https://cdn.worldvectorlogo.com/logos/meta-1.svg' },
+    { name: 'Netflix', logo: 'https://cdn.worldvectorlogo.com/logos/netflix-4.svg' },
+    { name: 'Tesla', logo: 'https://cdn.worldvectorlogo.com/logos/tesla-9.svg' },
+    { name: 'Spotify', logo: 'https://cdn.worldvectorlogo.com/logos/spotify-2.svg' },
+    { name: 'Uber', logo: 'https://cdn.worldvectorlogo.com/logos/uber-11.svg' },
+    { name: 'LinkedIn', logo: 'https://cdn.worldvectorlogo.com/logos/linkedin-icon-2.svg' },
+    { name: 'Airbnb', logo: 'https://cdn.worldvectorlogo.com/logos/airbnb-2.svg' },
+    { name: 'Adobe', logo: 'https://cdn.worldvectorlogo.com/logos/adobe-1.svg' },
+    // Consulting Firms
+    { name: 'McKinsey & Company', logo: 'https://cdn.worldvectorlogo.com/logos/mckinsey-company.svg' },
+    { name: 'BCG', logo: 'https://cdn.worldvectorlogo.com/logos/bcg-1.svg' },
+    { name: 'Bain & Company', logo: 'https://cdn.worldvectorlogo.com/logos/bain-company.svg' },
+    { name: 'Deloitte', logo: 'https://cdn.worldvectorlogo.com/logos/deloitte-2.svg' },
+    { name: 'PwC', logo: 'https://cdn.worldvectorlogo.com/logos/pwc-2.svg' },
+    { name: 'EY', logo: 'https://cdn.worldvectorlogo.com/logos/ey-2.svg' },
+    { name: 'KPMG', logo: 'https://cdn.worldvectorlogo.com/logos/kpmg-1.svg' },
+    // Financial Services
+    { name: 'Goldman Sachs', logo: 'https://cdn.worldvectorlogo.com/logos/goldman-sachs.svg' },
+    { name: 'JPMorgan Chase', logo: 'https://cdn.worldvectorlogo.com/logos/jp-morgan.svg' },
+    { name: 'Morgan Stanley', logo: 'https://cdn.worldvectorlogo.com/logos/morgan-stanley.svg' },
+    // Additional Tech Companies
+    { name: 'Salesforce', logo: 'https://cdn.worldvectorlogo.com/logos/salesforce-2.svg' },
+    { name: 'Oracle', logo: 'https://cdn.worldvectorlogo.com/logos/oracle-6.svg' },
   ];
 
   // Split into three rows for variety
