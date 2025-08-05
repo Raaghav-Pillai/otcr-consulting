@@ -74,7 +74,7 @@ const InfiniteScrollLogos: React.FC<InfiniteScrollLogosProps> = ({
         }
       `}</style>
 
-      <section className={`py-24 bg-gradient-to-br from-card to-muted/50 relative overflow-hidden ${className}`}>
+      <section className={`py-20 bg-background relative overflow-hidden ${className}`}>
         <div className="container mx-auto px-4 lg:px-8 space-y-12 relative z-10">
           <h2 className="text-4xl font-extrabold text-center text-foreground">
             {title}
