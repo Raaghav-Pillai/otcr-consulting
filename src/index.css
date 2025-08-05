@@ -27,13 +27,8 @@ All colors MUST be HSL.
     --muted: 220 15% 20%;
     --muted-foreground: 220 8% 75%;
 
-<<<<<<< HEAD
-    --accent: 195 85% 55%;
-    --accent-foreground: 220 30% 8%;
-=======
     --accent: 185 95% 55%;
     --accent-foreground: 0 0% 100%;
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -42,7 +37,6 @@ All colors MUST be HSL.
     --input: 220 20% 25%;
     --ring: 195 85% 55%;
 
-<<<<<<< HEAD
     /* Refined Professional Theme Colors */
     --navy-deep: 220 35% 6%;
     --navy-medium: 220 30% 10%;
@@ -59,17 +53,6 @@ All colors MUST be HSL.
     --cyan-light: 195 65% 65%;
     --slate-accent: 220 15% 35%;
     --slate-light: 220 10% 45%;
-=======
-    /* Official OTCR Brand Colors - Dark Theme - Enhanced Vibrancy */
-    --navy-deep: 210 100% 12%;
-    --navy-medium: 210 100% 15%;
-    --navy-light: 210 80% 25%;
-    --teal-primary: 185 95% 55%;
-    --teal-light: 185 85% 65%;
-    --teal-lighter: 185 75% 75%;
-    --orange-warm: 25 100% 65%;
-    --orange-light: 25 95% 75%;
->>>>>>> b32fe7cbbec2bb3823fd13add1ea640133ef5bdc
     --white-pure: 0 0% 100%;
     --white-accent: 0 0% 95%;
     --white-soft: 220 20% 95%;
