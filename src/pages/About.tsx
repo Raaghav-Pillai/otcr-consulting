@@ -152,29 +152,23 @@ const About = () => {
               </p>
             </FadeContent>
             <FadeContent delay={0.7}>
-              <p className="text-lg text-white/80 leading-relaxed">
+              <p className="text-lg text-white/80 mb-8 leading-relaxed">
                 Today, we continue to uphold our founding principles while adapting to the evolving business landscape, always maintaining our commitment to student development and professional excellence.
               </p>
             </FadeContent>
+            <FadeContent delay={0.9}>
+              <div className="mb-8">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Ffb8bbd4b24e348d38f610eff3b03c4b0?format=webp&width=800"
+                  alt="OTCR team photo at University of Illinois"
+                  className="w-full h-auto rounded-2xl shadow-2xl mb-6"
+                />
+                <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
+                  Based out of the University of Illinois Urbana-Champaign, we bring together top talent from across disciplines to deliver bold, data-driven solutions to clients. Whether we're helping a startup scale or a Fortune 500 rethink its strategy, we build with purpose and deliver with polish.
+                </p>
+              </div>
+            </FadeContent>
           </div>
-        </div>
-      </section>
-
-      {/* Team Photo Section */}
-      <section className="py-20 bg-navy-deep">
-        <div className="section-container">
-          <FadeContent delay={0.3}>
-            <div className="max-w-4xl mx-auto text-center">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Ffb8bbd4b24e348d38f610eff3b03c4b0?format=webp&width=800"
-                alt="OTCR team photo at University of Illinois"
-                className="w-full h-auto rounded-2xl shadow-2xl mb-8"
-              />
-              <p className="text-lg text-white/80 leading-relaxed max-w-2xl mx-auto">
-                Based out of the University of Illinois Urbana-Champaign, we bring together top talent from across disciplines to deliver bold, data-driven solutions to clients. Whether we're helping a startup scale or a Fortune 500 rethink its strategy, we build with purpose and deliver with polish.
-              </p>
-            </div>
-          </FadeContent>
         </div>
       </section>
 
