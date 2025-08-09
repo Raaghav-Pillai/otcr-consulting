@@ -102,7 +102,7 @@ const Leadership = () => {
         </FadeContent>
       </section>
 
-      {/* Leadership Team Photo */}
+      {/*
       <section className="py-24 bg-card">
         <div className="section-container">
           <div className="text-center mb-16">
@@ -123,6 +123,7 @@ const Leadership = () => {
           </FadeContent>
         </div>
       </section>
+      */}
 
       {/* Team Grid Section */}
       <section className="py-24 bg-background">
