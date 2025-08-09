@@ -10,11 +10,13 @@ const Apply = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
-        <div className="section-container">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">
             Apply to OTCR
           </h1>
+        </div>
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <p className="text-xl text-white/85 text-center max-w-3xl mx-auto animate-fade-in-up">
             Take the first step towards joining our elite consulting team. Fill out our interest form to stay informed about upcoming events and opportunities.
           </p>
