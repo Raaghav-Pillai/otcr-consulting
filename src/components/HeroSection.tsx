@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* UIUC Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src= "../assets/chicago_skyline.png"
+          src={chicagoSkyline}
           alt="University of Illinois campus"
           className="w-full h-full object-cover opacity-15"
         />
