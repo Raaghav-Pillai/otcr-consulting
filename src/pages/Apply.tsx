@@ -9,14 +9,16 @@ const Apply = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">
             Apply to OTCR
           </h1>
           <p className="text-xl text-white/85 text-center max-w-3xl mx-auto animate-fade-in-up">
             Take the first step towards joining our elite consulting team. Fill out our interest form to stay informed about upcoming events and opportunities.
           </p>
+          </div>
         </div>
         {/* Scroll arrow */}
         <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
