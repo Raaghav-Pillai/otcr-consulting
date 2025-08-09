@@ -30,9 +30,6 @@ const HeroSection = () => {
             className="text-7xl md:text-8xl font-extrabold text-teal-primary mb-6"
             splitType="chars"
           />
-        </div>
-        <div className="section-container">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <FadeContent delay={1.2}>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
               Empowering businesses through strategic consulting and innovative solutions. Led by top student talent, delivering real-world impact.
@@ -57,7 +54,6 @@ const HeroSection = () => {
               </Button>
             </div>
           </FadeContent>
-          </div>
         </div>
       </div>
       
