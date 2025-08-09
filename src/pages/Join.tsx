@@ -69,9 +69,18 @@ const Join = () => {
               {/* Timeline events */}
               {[
                 {
-                  title: 'Info Night #1',
-                  date: 'January 30, 2025 • 6:00 PM – 7:00 PM',
-                  location: 'Location TBA',
+                  title: 'Quad Day',
+                  date: 'Aug 24',
+                  description: (
+                    <>
+                      Meet us at Quad Day to learn about OTCR and our upcoming events.<br />
+                      Stop by our booth on the Main Quad!
+                    </>
+                  ),
+                },
+                {
+                  title: 'Info Night',
+                  date: 'Aug 28',
                   description: (
                     <>
                       Learn more about us and our recruitment process.<br />
@@ -80,27 +89,35 @@ const Join = () => {
                   ),
                 },
                 {
-                  title: 'Cycle 1 Application Due',
-                  date: 'January 31, 2025 • 11:59 PM',
+                  title: 'First Application Deadline',
+                  date: 'Aug 29',
                   description: (
-                    <>All applications will be evaluated equally regardless of cycle.</>
+                    <>Submit your application by this deadline. All applications will be evaluated equally regardless of cycle.</>
                   ),
                 },
                 {
-                  title: 'Info Night #2',
-                  date: 'February 4, 2025 • 7:00 PM – 8:00 PM',
-                  location: 'Location TBA',
+                  title: 'OTCR Q&A',
+                  date: 'Sept 2',
                   description: (
                     <>
-                      Discover more about the firm and our recruitment process.<br />
+                      Ask questions about OTCR, our culture, and the application process.<br />
+                      Perfect opportunity to get all your questions answered!
+                    </>
+                  ),
+                },
+                {
+                  title: 'Info Night 2',
+                  date: 'Sept 3',
+                  description: (
+                    <>
+                      Second info night for those who missed the first one.<br />
                       Dress Code: Business Casual
                     </>
                   ),
                 },
                 {
                   title: 'Case Training + Meet and Greet',
-                  date: 'February 5, 2025 • 7:00 PM – 9:00 PM',
-                  location: 'Location TBA',
+                  date: 'Sept 4',
                   description: (
                     <>
                       Learn about our case interviews and get to know members of the firm afterwards.<br />
@@ -109,8 +126,8 @@ const Join = () => {
                   ),
                 },
                 {
-                  title: 'Application Deadline 2',
-                  date: 'February 7, 2025 • 11:59 PM',
+                  title: 'Second Deadline',
+                  date: 'Sept 5',
                   description: (
                     <>Final deadline to submit your membership application. All applications will be evaluated equally regardless of cycle.</>
                   ),
