@@ -18,9 +18,9 @@ const stats = [
 ];
 
 const galleryItems = [
-  { image: "../assets/team_events.JPG", title: "Team Events", desc: "Building friendships beyond work" },
+  { image: teamEventsImg, title: "Team Events", desc: "Building friendships beyond work" },
   { image: "", title: "Client Presentations", desc: "Showcasing our project deliverables" },
-  { image: "../assets/awards.png", title: "Awards & Recognition", desc: "Celebrating our achievements" },
+  { image: awardsImg, title: "Awards & Recognition", desc: "Celebrating our achievements" },
   { image: "", title: "Networking Events", desc: "Building industry connections" },
   { image: "", title: "Training Sessions", desc: "Skill development workshops" },
   { image: "", title: "Social Gatherings", desc: "Building friendships beyond work" }
