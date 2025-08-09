@@ -134,7 +134,7 @@ const Index = () => {
 
       {/* Why Join OTCR Section */}
       <section className="py-20 bg-navy-deep">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="section-container">
           <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">Why Join OTCR?</h2>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
             {[
