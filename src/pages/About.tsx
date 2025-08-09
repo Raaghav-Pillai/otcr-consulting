@@ -90,15 +90,11 @@ const About = () => {
             className="text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-6"
             splitType="words"
           />
-        </div>
-        <div className="section-container relative z-10">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <FadeContent delay={0.8}>
             <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto">
               For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
             </p>
           </FadeContent>
-          </div>
         </div>
 
         {/* Scroll arrow */}
