@@ -20,8 +20,9 @@ const Join = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-white">
             Recruitment Process
           </h2>
@@ -29,6 +30,7 @@ const Join = () => {
             Are you a University of Illinois student passionate about business strategy and consulting?
             Join OTCR and gain invaluable experience while making a real impact.
           </p>
+          </div>
         </div>
         {/* Scroll arrow */}
         <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">
