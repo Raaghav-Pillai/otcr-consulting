@@ -10,6 +10,9 @@ import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
 import teamEventsImg from '/src/assets/team_events.JPG';
 import awardsImg from '/src/assets/awards.png';
 import chicagoSkyline from '/src/assets/chicago_skyline.png';
+import teamEvents from '/src/assets/team_events.JPG';
+import awards from '/src/assets/awards.png';
+import team from '/src/assets/team.png';
 
 const stats = [
   { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
@@ -32,19 +35,19 @@ const About = () => {
   // To update: Replace these URLs with actual Instagram post image URLs and links
   const instagramPosts = [
     {
-      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=focalpoint',
+      image: teamEvents,
       link: 'https://www.instagram.com/otcr_consulting/?hl=en',
       caption: 'Team collaboration and consulting excellence',
       postId: 'otcr-post-1'
     },
     {
-      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=400&fit=crop&crop=focalpoint',
+      image: awards,
       link: 'https://www.instagram.com/otcr_consulting/?hl=en',
       caption: 'Professional development and networking',
       postId: 'otcr-post-2'
     },
     {
-      image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=focalpoint',
+      image: team,
       link: 'https://www.instagram.com/otcr_consulting/?hl=en',
       caption: 'Strategic planning and client success',
       postId: 'otcr-post-3'
