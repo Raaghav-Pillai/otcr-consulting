@@ -21,11 +21,13 @@ const Join = () => {
       
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
-        <div className="section-container">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-white">
             Recruitment Process
           </h2>
+        </div>
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Are you a University of Illinois student passionate about business strategy and consulting?
             Join OTCR and gain invaluable experience while making a real impact.
