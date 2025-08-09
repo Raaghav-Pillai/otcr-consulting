@@ -7,6 +7,8 @@ import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedContent';
 import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
+import teamEventsImg from '/src/assets/team_events.JPG';
+import awardsImg from '/src/assets/awards.png';
 
 const stats = [
   { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
