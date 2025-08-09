@@ -170,7 +170,7 @@ const RecruitmentResources = () => {
             <h2 className="text-4xl font-extrabold text-white mb-6 animate-fade-in-up">Learning Resources</h2>
             <p className="text-xl text-white/85 max-w-3xl mx-auto">Additional materials to help you prepare for success</p>
           </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
                 <div className="professional-card p-6 hover-scale animate-fade-in-up">
                   <div className="mb-4">
                     <img
