@@ -19,7 +19,8 @@ const HeroSection = () => {
 
       
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <SplitText
             text="OTCR"
             className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"
@@ -54,6 +55,7 @@ const HeroSection = () => {
               </Button>
             </div>
           </FadeContent>
+          </div>
         </div>
       </div>
       
