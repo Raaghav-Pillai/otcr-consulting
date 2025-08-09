@@ -7,52 +7,67 @@ import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
 
 const partners = [
   {
-    name: 'Coming Soon',
+    name: 'Atharva Awasthi',
     role: 'Internal Operations Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/atharva.png',
+    linkedin: 'https://linkedin.com/in/atharvaawasthi',
+    mail: 'awasthi8@illinois.edu'
   },
   {
-    name: 'Coming Soon',
-    role: 'Executive Partner',
-    img: '',
-    linkedin: '#'
+    name: 'Sidhaartha Venkatesh',
+    role: 'Sourcing Partner',
+    img: '/src/assets/leadership/sidhaartha.png',
+    linkedin: 'https://linkedin.com/in/siddhaartav',
+    mail: 'sv39@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Sam Birdsley',
     role: 'Project Excellence Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/sam.png',
+    linkedin: 'https://linkedin.com/in/sam-birdsley-189655248',
+    mail: 'samuel36@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Stuti Bhatia',
     role: 'Alumni Relations Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/stuti.png',
+    linkedin: 'https://linkedin.com/in/stuti-bhatia',
+    mail: 'stutib3@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Adam El Bahey',
     role: 'Social Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/adam.png',
+    linkedin: 'https://linkedin.com/in/adam-el-bahey-64a791209',
+    mail: 'elbahey2@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Laksh Sharma',
     role: 'Tech Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/laksh.png',
+    linkedin: 'https://linkedin.com/in/laksh-sharma-690b6a298',
+    mail: 'lsharma2@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Jon Han',
     role: 'Professional Development Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/jon.png',
+    linkedin: 'https://linkedin.com/in/hanjon',
+    mail: 'jonhan2@illinois.edu'
   },
   {
-    name: 'Coming Soon',
+    name: 'Drew Duckler',
     role: 'Career Placement Partner',
-    img: '',
-    linkedin: '#'
+    img: '/src/assets/leadership/drew.png',
+    linkedin: 'https://linkedin.com/in/drew-duckler-34176a250',
+    mail: 'drewmd3@illinois.edu'
+  },
+  {
+    name: 'Ava Shi',
+    role: 'New Hire Development Partner',
+    img: '/src/assets/leadership/ava.png',
+    linkedin: 'https://linkedin.com/in/ava-shi-b45b1b277',
+    mail: 'avas5@illinois.edu'
   },
 ];
 
@@ -116,7 +131,7 @@ const Leadership = () => {
             <h2 className="text-4xl font-extrabold text-white mb-6">Meet Our Leaders</h2>
             <p className="text-xl text-white/85 max-w-3xl mx-auto">Get to know the individuals shaping our future</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto align-items-middle">
             {partners.map((partner, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
                 <div className="professional-card rounded-2xl overflow-hidden flex flex-col group">
@@ -143,10 +158,7 @@ const Leadership = () => {
                           <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         </a>
                       )}
-                      <a
-                        href={`mailto:contact@otcr.com?subject=Contact ${partner.name}`}
-                        className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group"
-                      >
+                      <a href={mailto:${partner.mail}} className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group" >
                         <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                       </a>
                     </div>
@@ -157,6 +169,7 @@ const Leadership = () => {
           </div>
         </div>
       </section>
+
 
       {/* Leadership Philosophy Section */}
       <section className="py-24 bg-navy-deep">

@@ -11,7 +11,7 @@ const HeroSection = () => {
         <img
           src={chicagoSkyline}
           alt="University of Illinois campus"
-          className="w-full h-full object-cover opacity-15"
+          className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
       </div>
