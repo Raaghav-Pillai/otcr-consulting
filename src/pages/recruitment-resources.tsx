@@ -25,7 +25,7 @@ const RecruitmentResources = () => {
       </section>
 
       {/* --- INTERVIEWS SECTION --- */}
-      <section className="bg-card text-white py-24 px-4 rounded-2xl border border-border mb-24 mt-24 animate-scale-in">
+      <section className="bg-card text-white py-24 px-6 lg:px-8 rounded-2xl border border-border mb-24 mt-24 animate-scale-in">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-extrabold mb-12 animate-fade-in-up">Interviews</h2>
           
