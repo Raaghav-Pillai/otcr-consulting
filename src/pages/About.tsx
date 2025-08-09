@@ -83,10 +83,9 @@ const About = () => {
       <Navigation />
       
       {/* About Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
-
-        
-        <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+        <div className="section-container relative z-10">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <SplitText
             text="About OTCR"
             className="text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-6"
@@ -97,8 +96,9 @@ const About = () => {
               For over two decades, we've been the premier student-run consulting firm at the University of Illinois, developing the next generation of business leaders.
             </p>
           </FadeContent>
+          </div>
         </div>
-        
+
         {/* Scroll arrow */}
         <FadeContent delay={1.2}>
           <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow group cursor-pointer">
