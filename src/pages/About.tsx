@@ -7,6 +7,8 @@ import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedContent';
 import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
+import teamEventsImg from '/src/assets/team_events.JPG';
+import awardsImg from '/src/assets/awards.png';
 
 const stats = [
   { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
@@ -16,9 +18,9 @@ const stats = [
 ];
 
 const galleryItems = [
-  { image: "../assets/team_events.JPG", title: "Team Events", desc: "Building friendships beyond work" },
+  { image: teamEventsImg, title: "Team Events", desc: "Building friendships beyond work" },
   { image: "", title: "Client Presentations", desc: "Showcasing our project deliverables" },
-  { image: "../assets/awards.png", title: "Awards & Recognition", desc: "Celebrating our achievements" },
+  { image: awardsImg, title: "Awards & Recognition", desc: "Celebrating our achievements" },
   { image: "", title: "Networking Events", desc: "Building industry connections" },
   { image: "", title: "Training Sessions", desc: "Skill development workshops" },
   { image: "", title: "Social Gatherings", desc: "Building friendships beyond work" }
@@ -29,19 +31,22 @@ const About = () => {
   // To update: Replace these URLs with actual Instagram post image URLs and links
   const instagramPosts = [
     {
-      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder1.jpg',
-      link: 'https://www.instagram.com/p/DKH9dhqAhsZ/', // Replace with actual Instagram post URL
-      postId: 'DKH9dhqAhsZ' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Team collaboration and consulting excellence',
+      postId: 'otcr-post-1'
     },
     {
-      image: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1',
-      link: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1', // Replace with actual Instagram post URL
-      postId: 'DJQjtfng-Ed' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Professional development and networking',
+      postId: 'otcr-post-2'
     },
     {
-      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder3.jpg',
-      link: 'https://www.instagram.com/p/C_1N_lsvv6S/?img_index=1', // Replace with actual Instagram post URL
-      postId: 'C_1N_lsvv6S' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Strategic planning and client success',
+      postId: 'otcr-post-3'
     }
   ];
 

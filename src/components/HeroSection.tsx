@@ -1,6 +1,7 @@
 import { ArrowDown } from 'lucide-react';
 import SplitText from '../reactbits/textanimations/SplitText/SplitText';
 import FadeContent from '../reactbits/animations/FadeContent/FadeContent';
+import chicagoSkyline from '/src/assets/chicago_skyline.png';
 
 const HeroSection = () => {
   return (
@@ -8,7 +9,7 @@ const HeroSection = () => {
       {/* UIUC Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src= "../assets/chicago_skyline.png"
+          src={chicagoSkyline}
           alt="University of Illinois campus"
           className="w-full h-full object-cover opacity-15"
         />
