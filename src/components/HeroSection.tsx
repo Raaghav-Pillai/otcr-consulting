@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* UIUC Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1567168539593-59673ababaae?auto=format&fit=crop&w=1920&q=80"
+          src= "../assets/chicago_skyline.png"
           alt="University of Illinois campus"
           className="w-full h-full object-cover opacity-15"
         />
@@ -28,11 +28,6 @@ const HeroSection = () => {
             className="text-7xl md:text-8xl font-extrabold text-teal-primary mb-10"
             splitType="chars"
           />
-          <FadeContent delay={1}>
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Empowering businesses with strategic insights and innovative solutions
-            </p>
-          </FadeContent>
         </div>
       </div>
       

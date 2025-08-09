@@ -15,27 +15,33 @@ const stats = [
   { number: '100%', label: 'Student-Led', desc: 'Fresh perspectives, proven results' },
 ];
 
+const galleryItems = [
+  { image: "../assets/team_events.JPG", title: "Team Events", desc: "Building friendships beyond work" },
+  { image: "", title: "Client Presentations", desc: "Showcasing our project deliverables" },
+  { image: "../assets/awards.png", title: "Awards & Recognition", desc: "Celebrating our achievements" },
+  { image: "", title: "Networking Events", desc: "Building industry connections" },
+  { image: "", title: "Training Sessions", desc: "Skill development workshops" },
+  { image: "", title: "Social Gatherings", desc: "Building friendships beyond work" }
+];
+
 const About = () => {
   // Real Instagram posts from @otcr_consulting
   // To update: Replace these URLs with actual Instagram post image URLs and links
   const instagramPosts = [
     {
       image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder1.jpg',
-      caption: 'Latest from OTCR - Replace with actual post',
-      link: 'https://www.instagram.com/p/POST_ID_1/', // Replace with actual Instagram post URL
-      postId: 'POST_ID_1' // Replace with actual Instagram post ID
+      link: 'https://www.instagram.com/p/DKH9dhqAhsZ/', // Replace with actual Instagram post URL
+      postId: 'DKH9dhqAhsZ' // Replace with actual Instagram post ID
     },
     {
-      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder2.jpg',
-      caption: 'Latest from OTCR - Replace with actual post',
-      link: 'https://www.instagram.com/p/POST_ID_2/', // Replace with actual Instagram post URL
-      postId: 'POST_ID_2' // Replace with actual Instagram post ID
+      image: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1',
+      link: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1', // Replace with actual Instagram post URL
+      postId: 'DJQjtfng-Ed' // Replace with actual Instagram post ID
     },
     {
       image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder3.jpg',
-      caption: 'Latest from OTCR - Replace with actual post',
-      link: 'https://www.instagram.com/p/POST_ID_3/', // Replace with actual Instagram post URL
-      postId: 'POST_ID_3' // Replace with actual Instagram post ID
+      link: 'https://www.instagram.com/p/C_1N_lsvv6S/?img_index=1', // Replace with actual Instagram post URL
+      postId: 'C_1N_lsvv6S' // Replace with actual Instagram post ID
     }
   ];
 
@@ -193,9 +199,9 @@ const About = () => {
         </div>
       </section>
 
-
-
-      {/* Club Photo Gallery */}
+      
+    
+    {/*}
       <section className="py-24 bg-card">
         <div className="section-container">
           <div className="text-center mb-16">
@@ -206,22 +212,21 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            {[
-              { title: "Team Events", desc: "Annual retreats and team building activities" },
-              { title: "Client Presentations", desc: "Showcasing our project deliverables" },
-              { title: "Awards & Recognition", desc: "Celebrating our achievements" },
-              { title: "Networking Events", desc: "Building industry connections" },
-              { title: "Training Sessions", desc: "Skill development workshops" },
-              { title: "Social Gatherings", desc: "Building friendships beyond work" }
-            ].map((item, idx) => (
+            {galleryItems.map((item, idx) => (
               <FadeContent key={idx} delay={idx * 0.1}>
-                <div className="image-placeholder aspect-square rounded-2xl group">
-                  <div className="text-center text-teal-primary">
-                    <svg className="w-12 h-12 mb-4 mx-auto group-hover:scale-110 transition-transform duration-300 opacity-80" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                    </svg>
-                    <p className="text-lg font-semibold">{item.title}</p>
-                    <p className="text-sm opacity-75">{item.desc}</p>
+                <div className="aspect-square rounded-2xl group relative overflow-hidden bg-card border border-border/20 hover:border-accent/30 transition-all duration-300">
+                  {item.image ? (
+                    <img src={item.image} alt={item.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                  ) : (
+                    <div className="w-full h-full flex flex-col items-center justify-center text-center p-4 bg-navy-light">
+                      <svg className="w-12 h-12 mb-4 text-teal-primary opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
+                      </svg>
+                    </div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+                    <p className="text-lg font-semibold text-white">{item.title}</p>
+                    <p className="text-sm text-white/80">{item.desc}</p>
                   </div>
                 </div>
               </FadeContent>
@@ -229,6 +234,7 @@ const About = () => {
           </div>
         </div>
       </section>
+    */}
 
       {/* Follow OTCR */}
       <section className="py-20 bg-navy-deep">

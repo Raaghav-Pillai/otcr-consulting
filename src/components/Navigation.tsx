@@ -13,7 +13,7 @@ const Navigation = () => {
     { label: 'Recruitment Process', href: '/join', isLink: true },
     { label: 'Resources', href: '/recruitment-resources', isLink: true },
     { label: 'Apply Now', href: '/apply', isLink: true },
-    { label: 'Nexus', href: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about', isLink: false },
+    { label: 'Clients', href: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about', isLink: false },
   ];
 
   return (
