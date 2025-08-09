@@ -201,7 +201,7 @@ const Join = () => {
 
           {/* --- INTEREST FORM & APPLICATION CTA --- */}
           <section className="mt-32 mb-24">
-            <div className="relative bg-card rounded-2xl flex flex-col items-center justify-center py-16 px-4 text-center border border-border">
+            <div className="relative bg-card rounded-2xl flex flex-col items-center justify-center py-16 px-6 lg:px-8 text-center border border-border">
               <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-10 max-w-3xl">
                 Fill out our interest form to stay informed about upcoming events, or start working on your application!
               </h2>
