@@ -11,6 +11,9 @@ import stutiImg from '/src/assets/stuti.png';
 import adamImg from '/src/assets/adam.png';
 import drewImg from '/src/assets/drew.png';
 import avaImg from '/src/assets/ava.png';
+import lakshImg from '/src/assets/laksh.png';
+import jonImg from '/src/assets/jon.png';
+import samImg from '/src/assets/sam.png';
 
 const partners = [
   {
@@ -30,7 +33,7 @@ const partners = [
   {
     name: 'Sam Birdsley',
     role: 'Project Excellence Partner',
-    img: '',
+    img: samImg,
     linkedin: 'https://linkedin.com/in/sam-birdsley-189655248',
     mail: 'samuel36@illinois.edu'
   },
@@ -51,14 +54,14 @@ const partners = [
   {
     name: 'Laksh Sharma',
     role: 'Tech Partner',
-    img: '',
+    img: lakshImg,
     linkedin: 'https://linkedin.com/in/laksh-sharma-690b6a298',
     mail: 'lsharma2@illinois.edu'
   },
   {
     name: 'Jon Han',
     role: 'Professional Development Partner',
-    img: '',
+    img: jonImg,
     linkedin: 'https://linkedin.com/in/hanjon',
     mail: 'jonhan2@illinois.edu'
   },
