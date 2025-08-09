@@ -6,7 +6,7 @@ import chicagoSkyline from '/src/assets/chicago_skyline.png';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center overflow-hidden">
       {/* UIUC Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -19,7 +19,7 @@ const HeroSection = () => {
 
       
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <SplitText
             text="OTCR"
             className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"

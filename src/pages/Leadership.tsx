@@ -84,10 +84,8 @@ const Leadership = () => {
       <Navigation />
       
       {/* Leadership Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
-
-        
-        <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+        <div className="w-full flex flex-col items-center relative z-10">
           <SplitText
             text="Lead by Mission-Driven People"
             className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
@@ -99,7 +97,7 @@ const Leadership = () => {
             </p>
           </FadeContent>
         </div>
-        
+
         {/* Scroll arrow */}
         <FadeContent delay={1.5}>
           <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow group cursor-pointer">

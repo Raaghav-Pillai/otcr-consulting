@@ -9,8 +9,8 @@ const Apply = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
+        <div className="w-full flex flex-col items-center">
           <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">
             Apply to OTCR
           </h1>

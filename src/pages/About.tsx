@@ -83,10 +83,8 @@ const About = () => {
       <Navigation />
       
       {/* About Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
-
-        
-        <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+        <div className="w-full flex flex-col items-center relative z-10">
           <SplitText
             text="About OTCR"
             className="text-5xl lg:text-6xl font-extrabold text-foreground text-center mb-6"
@@ -98,7 +96,7 @@ const About = () => {
             </p>
           </FadeContent>
         </div>
-        
+
         {/* Scroll arrow */}
         <FadeContent delay={1.2}>
           <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow group cursor-pointer">
@@ -182,7 +180,7 @@ const About = () => {
       <section className="py-20 bg-navy-deep relative overflow-hidden">
 
 
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+        <div className="section-container relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">What We Do</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <FadeContent delay={0.2}>
@@ -261,7 +259,7 @@ const About = () => {
 
       {/* Follow OTCR */}
       <section className="py-20 bg-navy-deep">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="section-container">
           <h2 className="text-4xl lg:text-5xl font-bold text-center text-foreground mb-16">
             Follow OTCR on Instagram
           </h2>

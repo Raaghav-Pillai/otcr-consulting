@@ -20,8 +20,8 @@ const Join = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4">
-        <div className="max-w-5xl mx-auto flex flex-col items-center">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
+        <div className="w-full flex flex-col items-center">
           <h2 className="text-5xl lg:text-6xl font-extrabold mb-6 text-white">
             Recruitment Process
           </h2>
@@ -199,7 +199,7 @@ const Join = () => {
 
           {/* --- INTEREST FORM & APPLICATION CTA --- */}
           <section className="mt-32 mb-24">
-            <div className="relative bg-card rounded-2xl flex flex-col items-center justify-center py-16 px-4 text-center border border-border">
+            <div className="relative bg-card rounded-2xl flex flex-col items-center justify-center py-16 px-6 lg:px-8 text-center border border-border">
               <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-10 max-w-3xl">
                 Fill out our interest form to stay informed about upcoming events, or start working on your application!
               </h2>
