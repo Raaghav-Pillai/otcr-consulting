@@ -19,8 +19,7 @@ const HeroSection = () => {
 
       
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
-        <div className="section-container">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center">
           <SplitText
             text="OTCR"
             className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"
@@ -31,6 +30,9 @@ const HeroSection = () => {
             className="text-7xl md:text-8xl font-extrabold text-teal-primary mb-6"
             splitType="chars"
           />
+        </div>
+        <div className="section-container">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <FadeContent delay={1.2}>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-12 leading-relaxed">
               Empowering businesses through strategic consulting and innovative solutions. Led by top student talent, delivering real-world impact.
