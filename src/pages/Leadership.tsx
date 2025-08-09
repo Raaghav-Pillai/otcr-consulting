@@ -5,67 +5,74 @@ import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
 
+import atharvaImg from '/src/assets/atharva.png';
+import sidhaarthaImg from '/src/assets/sidhaartha.png';
+import stutiImg from '/src/assets/stuti.png';
+import adamImg from '/src/assets/adam.png';
+import drewImg from '/src/assets/drew.png';
+import avaImg from '/src/assets/ava.png';
+
 const partners = [
   {
     name: 'Atharva Awasthi',
     role: 'Internal Operations Partner',
-    img: '/src/assets/leadership/atharva.png',
+    img: atharvaImg,
     linkedin: 'https://linkedin.com/in/atharvaawasthi',
     mail: 'awasthi8@illinois.edu'
   },
   {
     name: 'Sidhaartha Venkatesh',
     role: 'Sourcing Partner',
-    img: '/src/assets/leadership/sidhaartha.png',
+    img: sidhaarthaImg,
     linkedin: 'https://linkedin.com/in/siddhaartav',
     mail: 'sv39@illinois.edu'
   },
   {
     name: 'Sam Birdsley',
     role: 'Project Excellence Partner',
-    img: '/src/assets/leadership/sam.png',
+    img: '',
     linkedin: 'https://linkedin.com/in/sam-birdsley-189655248',
     mail: 'samuel36@illinois.edu'
   },
   {
     name: 'Stuti Bhatia',
     role: 'Alumni Relations Partner',
-    img: '/src/assets/leadership/stuti.png',
+    img: stutiImg,
     linkedin: 'https://linkedin.com/in/stuti-bhatia',
     mail: 'stutib3@illinois.edu'
   },
   {
     name: 'Adam El Bahey',
     role: 'Social Partner',
-    img: '/src/assets/leadership/adam.png',
+    img: adamImg,
     linkedin: 'https://linkedin.com/in/adam-el-bahey-64a791209',
     mail: 'elbahey2@illinois.edu'
   },
   {
     name: 'Laksh Sharma',
     role: 'Tech Partner',
-    img: '/src/assets/leadership/laksh.png',
+    img: '',
     linkedin: 'https://linkedin.com/in/laksh-sharma-690b6a298',
     mail: 'lsharma2@illinois.edu'
   },
   {
     name: 'Jon Han',
     role: 'Professional Development Partner',
-    img: '/src/assets/leadership/jon.png',
+    img: '',
     linkedin: 'https://linkedin.com/in/hanjon',
     mail: 'jonhan2@illinois.edu'
   },
   {
     name: 'Drew Duckler',
     role: 'Career Placement Partner',
-    img: '/src/assets/leadership/drew.png',
+    img: drewImg,
     linkedin: 'https://linkedin.com/in/drew-duckler-34176a250',
     mail: 'drewmd3@illinois.edu'
   },
   {
     name: 'Ava Shi',
     role: 'New Hire Development Partner',
-    img: '/src/assets/leadership/ava.png',
+    img: avaImg,
     linkedin: 'https://linkedin.com/in/ava-shi-b45b1b277',
     mail: 'avas5@illinois.edu'
   },
@@ -159,7 +166,7 @@ const Leadership = () => {
                           <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                         </a>
                       )}
-                      <a href={mailto:${partner.mail}} className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group" >
+                      <a href={`mailto:${partner.mail}`} className="text-muted-foreground hover:text-accent transition-all duration-300 p-2 rounded-full hover:bg-accent/10 group" >
                         <Mail className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
                       </a>
                     </div>
