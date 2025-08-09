@@ -91,15 +91,11 @@ const Leadership = () => {
             className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
             splitType="words"
           />
-        </div>
-        <div className="section-container relative z-10">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <FadeContent delay={1}>
             <p className="text-xl text-white/90 text-center max-w-3xl mx-auto">
               Whose expertise can be yours during our collaboration.
             </p>
           </FadeContent>
-          </div>
         </div>
 
         {/* Scroll arrow */}
