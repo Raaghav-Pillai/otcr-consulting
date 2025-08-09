@@ -84,7 +84,7 @@ const Leadership = () => {
       <Navigation />
       
       {/* Leadership Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
 
         
         <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
