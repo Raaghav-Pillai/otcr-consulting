@@ -85,15 +85,15 @@ const Leadership = () => {
       
       {/* Leadership Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
-
-        
-        <div className="section-container relative z-10">
-          <div className="max-w-5xl mx-auto flex flex-col items-center">
+        <div className="w-full flex flex-col items-center relative z-10">
           <SplitText
             text="Lead by Mission-Driven People"
             className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
             splitType="words"
           />
+        </div>
+        <div className="section-container relative z-10">
+          <div className="max-w-5xl mx-auto flex flex-col items-center">
           <FadeContent delay={1}>
             <p className="text-xl text-white/90 text-center max-w-3xl mx-auto">
               Whose expertise can be yours during our collaboration.
