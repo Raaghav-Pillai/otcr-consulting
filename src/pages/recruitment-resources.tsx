@@ -9,9 +9,11 @@ const RecruitmentResources = () => {
       <Navigation />
       {/* Intro Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
+        <div className="w-full flex flex-col items-center">
+          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">Recruitment Resources</h1>
+        </div>
         <div className="section-container">
           <div className="max-w-5xl mx-auto flex flex-col items-center">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">Recruitment Resources</h1>
           <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
             Prepare for your OTCR recruitment journey with our curated interview tips, practice cases, and essential resources. Everything you need to succeed in the recruitment process is right here.
           </p>
