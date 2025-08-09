@@ -29,19 +29,22 @@ const About = () => {
   // To update: Replace these URLs with actual Instagram post image URLs and links
   const instagramPosts = [
     {
-      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder1.jpg',
-      link: 'https://www.instagram.com/p/DKH9dhqAhsZ/', // Replace with actual Instagram post URL
-      postId: 'DKH9dhqAhsZ' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Team collaboration and consulting excellence',
+      postId: 'otcr-post-1'
     },
     {
-      image: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1',
-      link: 'https://www.instagram.com/p/DJQjtfng-Ed/?img_index=1', // Replace with actual Instagram post URL
-      postId: 'DJQjtfng-Ed' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Professional development and networking',
+      postId: 'otcr-post-2'
     },
     {
-      image: 'https://instagram.fmdw2-1.fna.fbcdn.net/v/t51.29350-15/placeholder3.jpg',
-      link: 'https://www.instagram.com/p/C_1N_lsvv6S/?img_index=1', // Replace with actual Instagram post URL
-      postId: 'C_1N_lsvv6S' // Replace with actual Instagram post ID
+      image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop&crop=focalpoint',
+      link: 'https://www.instagram.com/otcr_consulting/?hl=en',
+      caption: 'Strategic planning and client success',
+      postId: 'otcr-post-3'
     }
   ];
 
