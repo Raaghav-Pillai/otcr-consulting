@@ -6,7 +6,7 @@ import chicagoSkyline from '/src/assets/chicago_skyline.png';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center items-center bg-background text-center overflow-hidden">
       {/* UIUC Background Image */}
       <div className="absolute inset-0 z-0">
         <img
