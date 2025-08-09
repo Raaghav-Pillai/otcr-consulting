@@ -84,6 +84,12 @@ const RecruitmentResources = () => {
 
           {/* Round 2 Interview */}
           <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
+            <div className="md:w-1/2 animate-fade-in-up">
+              <h3 className="text-2xl font-bold mb-4 text-cyan-accent">Round 2 Interview</h3>
+              <p className="text-lg text-white/85 leading-relaxed">
+                Second round interviews are more focused on the traditional case interview, which will be interviewee led. We look for the ability to break down a problem into manageable and understandable pieces, draw concise conclusions from available data, and engage in a focused conversation with the interviewer. Candidates will develop a strategy to solve a business question, such as determining the cause and proposing a recommendation for declining profits.
+              </p>
+            </div>
             <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="w-full h-80 rounded-xl overflow-hidden">
                 <img
@@ -92,12 +98,6 @@ const RecruitmentResources = () => {
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-            </div>
-            <div className="md:w-1/2 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-              <h3 className="text-2xl font-bold mb-4 text-blue-accent">Round 2 Interview</h3>
-              <p className="text-lg text-white/85 leading-relaxed">
-                Second round interviews are more focused on the traditional case interview, which will be interviewee led. We look for the ability to break down a problem into manageable and understandable pieces, draw concise conclusions from available data, and engage in a focused conversation with the interviewer. Candidates will develop a strategy to solve a business question, such as determining the cause and proposing a recommendation for declining profits.
-              </p>
             </div>
           </div>
         </div>
