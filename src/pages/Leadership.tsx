@@ -14,6 +14,7 @@ import avaImg from '/src/assets/ava.png';
 import lakshImg from '/src/assets/laksh.png';
 import jonImg from '/src/assets/jon.png';
 import samImg from '/src/assets/sam.png';
+import chicagoSkyline from '/src/assets/chicago_skyline.png';
 
 const partners = [
   {
@@ -88,6 +89,14 @@ const Leadership = () => {
       
       {/* Leadership Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+                <img
+                  src={chicagoSkyline}
+                  alt="University of Illinois campus"
+                  className="w-full h-full object-cover opacity-70"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
+              </div>
         <div className="w-full flex flex-col items-center relative z-10">
           <SplitText
             text="Lead by Mission-Driven People"

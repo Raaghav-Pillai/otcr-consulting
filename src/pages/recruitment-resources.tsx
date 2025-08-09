@@ -1,6 +1,9 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { ArrowDown } from 'lucide-react';
+import chicagoSkyline from '/src/assets/chicago_skyline.png';
+import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
+import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
 import React from 'react';
 
 const RecruitmentResources = () => {
@@ -9,11 +12,25 @@ const RecruitmentResources = () => {
       <Navigation />
       {/* Intro Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center">
-        <div className="w-full flex flex-col items-center">
-          <h1 className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 animate-fade-in-up">Recruitment Resources</h1>
-          <p className="text-xl text-muted-foreground text-center max-w-3xl mx-auto animate-fade-in-up">
-            Prepare for your OTCR recruitment journey with our curated interview tips, practice cases, and essential resources. Everything you need to succeed in the recruitment process is right here.
-          </p>
+        <div className="absolute inset-0 z-0">
+                        <img
+                          src={chicagoSkyline}
+                          alt="University of Illinois campus"
+                          className="w-full h-full object-cover opacity-70"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
+                      </div>
+        <div className="w-full flex flex-col items-center relative z-10">
+          <SplitText
+            text="Recruitment Resources"
+            className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
+            splitType="words"
+          />
+          <FadeContent delay={1}>
+            <p className="text-xl text-white/90 text-center max-w-3xl mx-auto">
+              Prepare for your OTCR recruitment journey with our curated interview tips, practice cases, and essential resources. Everything you need to succeed in the recruitment process is right here.
+            </p>
+          </FadeContent>
         </div>
         {/* Scroll arrow */}
         <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow">

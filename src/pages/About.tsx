@@ -9,6 +9,7 @@ import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedCont
 import SplitText from '@/reactbits/textanimations/SplitText/SplitText';
 import teamEventsImg from '/src/assets/team_events.JPG';
 import awardsImg from '/src/assets/awards.png';
+import chicagoSkyline from '/src/assets/chicago_skyline.png';
 
 const stats = [
   { number: '25+', label: 'Years of Experience', desc: 'Established at the University of Illinois' },
@@ -84,6 +85,14 @@ const About = () => {
       
       {/* About Hero Section */}
       <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+        <div className="absolute inset-0 z-0">
+        <img
+          src={chicagoSkyline}
+          alt="University of Illinois campus"
+          className="w-full h-full object-cover opacity-70"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
+      </div>
         <div className="w-full flex flex-col items-center relative z-10">
           <SplitText
             text="About OTCR"

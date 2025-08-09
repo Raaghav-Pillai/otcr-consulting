@@ -21,13 +21,8 @@ const HeroSection = () => {
       <div className="flex-1 flex flex-col justify-center items-center w-full relative z-10">
         <div className="w-full flex flex-col items-center">
           <SplitText
-            text="OTCR"
-            className="text-7xl md:text-9xl font-extrabold text-white leading-tight mb-4"
-            splitType="chars"
-          />
-          <SplitText
-            text="Consulting"
-            className="text-7xl md:text-8xl font-extrabold text-teal-primary mb-6"
+            text="OTCR Consulting"
+            className="text-6xl lg:text-8xl font-extrabold text-white text-center mb-6"
             splitType="chars"
           />
           <FadeContent delay={1.2}>
