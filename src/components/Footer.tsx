@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-card border-t border-border">
-      <div className="section-container">
+      <div className="section-container px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
