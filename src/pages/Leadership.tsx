@@ -109,7 +109,7 @@ const Leadership = () => {
 
           <SplitText
             text="Lead by Mission-Driven People"
-            className="text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-primary to-blue-accent text-center mb-6 drop-shadow-2xl"
+            className="text-5xl lg:text-7xl font-extrabold bg-clip-text bg-gradient-to-r from-white via-teal-primary to-blue-accent text-center mb-6 drop-shadow-2xl"
             splitType="words"
           />
           <FadeContent delay={1}>

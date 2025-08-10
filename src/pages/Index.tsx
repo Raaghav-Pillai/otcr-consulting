@@ -104,7 +104,7 @@ const Index = () => {
             </FadeContent>
             <FadeContent delay={0.2}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-5xl mx-auto">
-                We create <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">well-informed</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-accent to-cyan-accent">scalable</span> business solutions
+                We create <span className="bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">well-informed</span> and <span className=" bg-clip-text bg-gradient-to-r from-blue-accent to-cyan-accent">scalable</span> business solutions
               </h2>
             </FadeContent>
             <FadeContent delay={0.3}>
@@ -195,7 +195,7 @@ const Index = () => {
             </FadeContent>
             <FadeContent delay={0.2}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-                Why Join <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">OTCR</span>?
+                Why Join <span className="bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">OTCR</span>?
               </h2>
             </FadeContent>
             <FadeContent delay={0.3}>

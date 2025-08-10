@@ -99,7 +99,7 @@ const Footer = () => {
                   ))}
                 </ul>
 
-                {/* Newsletter signup */}
+                {/*
                 <div className="mt-8 p-4 bg-gradient-to-br from-blue-accent/10 to-teal-primary/10 rounded-lg border border-blue-accent/20">
                   <h4 className="text-sm font-semibold text-white mb-2">Stay Updated</h4>
                   <p className="text-xs text-white/70 mb-3">Get the latest news and opportunities</p>
@@ -114,6 +114,7 @@ const Footer = () => {
                     </button>
                   </div>
                 </div>
+                */}
               </div>
             </FadeContent>
           </div>

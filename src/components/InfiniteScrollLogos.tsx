@@ -92,8 +92,7 @@ const InfiniteScrollLogos: React.FC<InfiniteScrollLogosProps> = ({
             </FadeContent>
             <FadeContent delay={0.2}>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-center mb-6">
-                <span className="text-white">{title.split(' ')[0]} </span>
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">{title.split(' ').slice(1).join(' ')}</span>
+                <span className="text-white">{title} </span>
               </h2>
             </FadeContent>
             <FadeContent delay={0.3}>

@@ -128,7 +128,7 @@ const About = () => {
               className="text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-primary to-blue-accent text-center mb-6 drop-shadow-2xl"
               splitType="words"
             />
-            <div className="absolute inset-0 text-5xl lg:text-7xl font-extrabold text-teal-primary/10 blur-xl">
+            <div className="absolute inset-0 text-5xl lg:text-7xl font-extrabold text-teal-primary/10">
               About OTCR
             </div>
           </div>

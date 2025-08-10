@@ -54,7 +54,7 @@ const HeroSection = () => {
               splitType="chars"
             />
             {/* Glow effect */}
-            <div className="absolute inset-0 text-6xl lg:text-8xl font-extrabold text-teal-primary/20 blur-xl animate-pulse">
+            <div className="absolute inset-0 text-6xl lg:text-8xl font-extrabold text-teal-primary/20  animate-pulse">
               OTCR Consulting
             </div>
           </div>
