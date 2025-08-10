@@ -45,59 +45,32 @@ const RecruitmentResources = () => {
           <h2 className="text-4xl font-extrabold mb-12 animate-fade-in-up">Interviews</h2>
           
           {/* Round 1 Interview */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-teal-primary">Round 1 Interview</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 First round interviews will be split into two portions, a behavioral section and a case interview. The case interview will be interviewer led, and candidates will be evaluated on their problem solving and critical thinking skills. Candidates can expect a market sizing question, such as "How many t-shirts are sold in New York City?", within the business strategy problem they will be looking into.
               </p>
             </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Interview session with professionals"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
           </div>
 
           {/* Coffee Chat */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-cyan-accent">Coffee Chat</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 After the first round, selected candidates will be invited for an informal coffee chat with current OTCR members. This is an opportunity for mutual evaluation - we get to know you better personally and professionally, while you can ask questions about OTCR culture, projects, and what it's really like to be part of our organization. This relaxed setting allows for genuine conversation about your interests, career goals, and how you might contribute to our team.
               </p>
             </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Coffee chat meeting with team members"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
           </div>
 
           {/* Round 2 Interview */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-cyan-accent">Round 2 Interview</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 Second round interviews are more focused on the traditional case interview, which will be interviewee led. We look for the ability to break down a problem into manageable and understandable pieces, draw concise conclusions from available data, and engage in a focused conversation with the interviewer. Candidates will develop a strategy to solve a business question, such as determining the cause and proposing a recommendation for declining profits.
               </p>
-            </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Professional interview setting"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
             </div>
           </div>
         </div>
