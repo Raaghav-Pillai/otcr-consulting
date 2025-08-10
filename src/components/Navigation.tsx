@@ -40,26 +40,28 @@ const Navigation = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
                 onClick={() => window.scrollTo(0, 0)}
               >
-                {item.label}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+                <span className="relative z-10">{item.label}</span>
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
+                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
               </Link>
             ) : (
               <a
                 key={item.label}
                 href={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
               >
-                {item.label}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+                <span className="relative z-10">{item.label}</span>
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
+                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
               </a>
             )
           ))}
