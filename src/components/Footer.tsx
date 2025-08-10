@@ -32,24 +32,30 @@ const Footer = () => {
                 <div className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">
                   OTCR Consulting
                 </div>
-                <p className="text-white/80 mb-6 leading-relaxed">
+                <p className="text-white/80 mb-8 leading-relaxed text-lg">
                   Premier student-run consulting firm at the University of Illinois,
                   developing the next generation of business leaders since 2000.
                 </p>
-                
+
                 {/* Contact Info */}
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
-                    <Mail className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white/75 group-hover:text-accent transition-colors duration-300">recruitment@otcrconsulting.com</span>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="w-10 h-10 bg-gradient-to-br from-teal-primary to-blue-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Mail className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="text-white/75 group-hover:text-white transition-colors duration-300">recruitment@otcrconsulting.com</span>
                   </div>
-                  <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
-                    <Phone className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white/75 group-hover:text-accent transition-colors duration-300">(###) ###-####</span>
+                  <div className="flex items-center space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-accent to-cyan-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Phone className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="text-white/75 group-hover:text-white transition-colors duration-300">(###) ###-####</span>
                   </div>
-                  <div className="flex items-center space-x-3 group hover:text-accent transition-colors duration-300">
-                    <MapPin className="w-4 h-4 text-accent group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white/75 group-hover:text-accent transition-colors duration-300">University of Illinois, Urbana-Champaign</span>
+                  <div className="flex items-center space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
+                    <div className="w-10 h-10 bg-gradient-to-br from-cyan-accent to-teal-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <MapPin className="w-5 h-5 text-white" />
+                    </div>
+                    <span className="text-white/75 group-hover:text-white transition-colors duration-300">University of Illinois, Urbana-Champaign</span>
                   </div>
                 </div>
               </div>
