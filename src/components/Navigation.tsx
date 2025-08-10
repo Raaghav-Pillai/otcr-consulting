@@ -21,12 +21,15 @@ const Navigation = () => {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Fa46e089f3caf43dab4a95e9cb35165cb?format=webp&width=800"
-              alt="OTCR Consulting Logo"
-              className="h-10 w-auto"
-            />
+          <Link to="/" className="flex items-center group transition-all duration-300">
+            <div className="relative">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Fa46e089f3caf43dab4a95e9cb35165cb?format=webp&width=800"
+                alt="OTCR Consulting Logo"
+                className="h-10 w-auto transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-teal-primary/20 to-blue-accent/20 rounded-lg scale-0 group-hover:scale-110 transition-transform duration-300 blur-md"></div>
+            </div>
           </Link>
         </div>
 
