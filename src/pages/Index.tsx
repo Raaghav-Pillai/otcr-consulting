@@ -84,41 +84,87 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       {/* Business & Tech Strategy Section */}
-      <section className="py-24 bg-navy-deep">
-        <div className="section-container">
+      <section className="py-24 bg-gradient-to-br from-navy-deep via-navy-medium to-navy-light relative overflow-hidden">
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
+            backgroundSize: '20px 20px'
+          }}></div>
+        </div>
+
+        <div className="section-container relative z-10">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-5xl mx-auto">
-              We create well-informed and scalable business solutions
-            </h2>
-            <p className="text-xl text-white/85 max-w-3xl mx-auto">
-              Delivering strategic insights that drive measurable results for our clients
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-            <FadeContent delay={0.2}>
-              <div className="professional-card p-8 group text-center">
-                <div className="w-16 h-16 bg-teal-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-teal-primary mb-6 group-hover:text-white transition-colors duration-300">Business Strategy</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
-                  We strive to effectively tackle our clients' short and long term business challenges across areas such as market entry, competitor analysis, acquisitions, product development, and more.
-                </p>
+            <FadeContent delay={0.1}>
+              <div className="inline-flex items-center gap-2 bg-teal-primary/10 border border-teal-primary/20 rounded-full px-4 py-2 mb-6">
+                <div className="w-2 h-2 bg-teal-primary rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-teal-primary">Our Expertise</span>
               </div>
             </FadeContent>
+            <FadeContent delay={0.2}>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 max-w-5xl mx-auto">
+                We create <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">well-informed</span> and <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-accent to-cyan-accent">scalable</span> business solutions
+              </h2>
+            </FadeContent>
+            <FadeContent delay={0.3}>
+              <p className="text-xl text-white/85 max-w-3xl mx-auto">
+                Delivering strategic insights that drive measurable results for our clients across industries
+              </p>
+            </FadeContent>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <FadeContent delay={0.4}>
-              <div className="professional-card p-8 group text-center">
-                <div className="w-16 h-16 bg-blue-accent rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                  </svg>
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-primary/20 to-blue-accent/20 rounded-2xl blur-xl transition-all duration-500 group-hover:blur-2xl"></div>
+                <div className="relative bg-card/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-teal-primary/30 transition-all duration-500 hover:transform hover:scale-105 shadow-2xl">
+                  <div className="relative mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-teal-primary to-teal-light rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-500 shadow-lg">
+                      <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-teal-primary/20 rounded-2xl animate-ping group-hover:animate-pulse"></div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-teal-primary mb-6 group-hover:text-white transition-colors duration-500">Business Strategy</h3>
+                  <p className="text-lg text-white/90 leading-relaxed mb-6">
+                    We strive to effectively tackle our clients' short and long term business challenges across areas such as market entry, competitor analysis, acquisitions, and product development.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['Market Entry', 'Competitor Analysis', 'Growth Strategy'].map((tag) => (
+                      <span key={tag} className="px-3 py-1 bg-teal-primary/10 text-teal-primary text-sm rounded-full border border-teal-primary/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-blue-accent mb-6 group-hover:text-white transition-colors duration-300">Tech Strategy</h3>
-                <p className="text-lg text-white/90 leading-relaxed">
-                  We specialize in assisting our client companies in their technical endeavors through analysis of emerging technologies, research of potential applications, writing whitepapers, and more.
-                </p>
+              </div>
+            </FadeContent>
+
+            <FadeContent delay={0.6}>
+              <div className="group relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-accent/20 to-cyan-accent/20 rounded-2xl blur-xl transition-all duration-500 group-hover:blur-2xl"></div>
+                <div className="relative bg-card/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 text-center hover:border-blue-accent/30 transition-all duration-500 hover:transform hover:scale-105 shadow-2xl">
+                  <div className="relative mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-blue-accent to-cyan-accent rounded-2xl flex items-center justify-center mx-auto group-hover:scale-110 transition-all duration-500 shadow-lg">
+                      <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                      </svg>
+                    </div>
+                    <div className="absolute inset-0 bg-blue-accent/20 rounded-2xl animate-ping group-hover:animate-pulse"></div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-accent mb-6 group-hover:text-white transition-colors duration-500">Tech Strategy</h3>
+                  <p className="text-lg text-white/90 leading-relaxed mb-6">
+                    We specialize in assisting our client companies in their technical endeavors through analysis of emerging technologies, research of potential applications, and strategic implementation.
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    {['Tech Analysis', 'Innovation Strategy', 'Digital Transform'].map((tag) => (
+                      <span key={tag} className="px-3 py-1 bg-blue-accent/10 text-blue-accent text-sm rounded-full border border-blue-accent/20">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </FadeContent>
           </div>
