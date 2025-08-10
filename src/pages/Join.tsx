@@ -182,7 +182,7 @@ const Join = () => {
             </div>
           </div>
 
-          {/* Recruitment Events Gallery */}
+          {/*
           <section className="mt-32 mb-24">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-extrabold text-white mb-6">Join Us at Our Events</h2>
@@ -210,6 +210,7 @@ const Join = () => {
               ))}
             </div>
           </section>
+          */}
 
           {/* --- INTEREST FORM & APPLICATION CTA --- */}
           <section className="mt-32 mb-24">
