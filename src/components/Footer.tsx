@@ -121,10 +121,24 @@ const Footer = () => {
         
         {/* Copyright */}
         <FadeContent delay={0.4}>
-          <div className="border-t border-border py-6 text-center">
-            <p className="text-white/75">
-              © 2025 OTCR Consulting. All rights reserved.
-            </p>
+          <div className="border-t border-white/10 py-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p className="text-white/75">
+                © 2025 OTCR Consulting. All rights reserved.
+              </p>
+              <div className="flex items-center space-x-6">
+                <a href="/privacy" className="text-white/60 hover:text-teal-primary transition-colors duration-300 text-sm">
+                  Privacy Policy
+                </a>
+                <a href="/terms" className="text-white/60 hover:text-teal-primary transition-colors duration-300 text-sm">
+                  Terms of Service
+                </a>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-white/60 text-sm">Website Status: Active</span>
+                </div>
+              </div>
+            </div>
           </div>
         </FadeContent>
       </div>
