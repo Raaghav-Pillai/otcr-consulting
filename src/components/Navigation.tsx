@@ -69,23 +69,25 @@ const Navigation = () => {
         
         {/* Social Icons */}
         <div className="hidden md:flex items-center space-x-2">
-          <a 
-            href="https://www.linkedin.com/company/otcr-consulting/about/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          <a
+            href="https://www.linkedin.com/company/otcr-consulting/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative rounded-full p-3 transition-all duration-300 group overflow-hidden"
           >
-            <Linkedin className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
-            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <Linkedin className="w-5 h-5 text-foreground group-hover:text-white transition-all duration-300 group-hover:scale-110 transform relative z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-accent to-teal-primary scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute inset-0 rounded-full bg-accent/10 group-hover:bg-transparent transition-colors duration-300"></div>
           </a>
-          <a 
-            href="https://www.instagram.com/otcr_consulting/?hl=en" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          <a
+            href="https://www.instagram.com/otcr_consulting/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative rounded-full p-3 transition-all duration-300 group overflow-hidden"
           >
-            <Instagram className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
-            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <Instagram className="w-5 h-5 text-foreground group-hover:text-white transition-all duration-300 group-hover:scale-110 transform relative z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute inset-0 rounded-full bg-accent/10 group-hover:bg-transparent transition-colors duration-300"></div>
           </a>
         </div>
         
