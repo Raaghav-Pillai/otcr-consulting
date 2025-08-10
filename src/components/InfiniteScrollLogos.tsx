@@ -27,7 +27,7 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
             <img
               src={client.logo}
               alt={`${client.name} logo`}
-              className="max-w-36 max-h-16 object-contain opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 filter grayscale group-hover:grayscale-0 relative z-10"
+              className="max-w-36 max-h-16 object-contain opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 group-hover:grayscale-0 relative z-10"
             />
           </div>
         ))}
@@ -107,7 +107,6 @@ const InfiniteScrollLogos: React.FC<InfiniteScrollLogosProps> = ({
             <div className="space-y-8 mask-gradient">
               <LogoRow logos={row1} direction="left" speed={40} delay={0} />
               <LogoRow logos={row2} direction="right" speed={35} delay={0} />
-              <LogoRow logos={row3} direction="left" speed={45} delay={0} />
             </div>
           </FadeContent>
         </div>
