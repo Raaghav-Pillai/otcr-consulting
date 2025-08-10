@@ -45,59 +45,32 @@ const RecruitmentResources = () => {
           <h2 className="text-4xl font-extrabold mb-12 animate-fade-in-up">Interviews</h2>
           
           {/* Round 1 Interview */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-teal-primary">Round 1 Interview</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 First round interviews will be split into two portions, a behavioral section and a case interview. The case interview will be interviewer led, and candidates will be evaluated on their problem solving and critical thinking skills. Candidates can expect a market sizing question, such as "How many t-shirts are sold in New York City?", within the business strategy problem they will be looking into.
               </p>
             </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Interview session with professionals"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
           </div>
 
           {/* Coffee Chat */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-cyan-accent">Coffee Chat</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 After the first round, selected candidates will be invited for an informal coffee chat with current OTCR members. This is an opportunity for mutual evaluation - we get to know you better personally and professionally, while you can ask questions about OTCR culture, projects, and what it's really like to be part of our organization. This relaxed setting allows for genuine conversation about your interests, career goals, and how you might contribute to our team.
               </p>
             </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Coffee chat meeting with team members"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
-            </div>
           </div>
 
           {/* Round 2 Interview */}
-          <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16">
-            <div className="md:w-1/2 animate-fade-in-up">
+          <div className="mb-16">
+            <div className="animate-fade-in-up">
               <h3 className="text-2xl font-bold mb-4 text-cyan-accent">Round 2 Interview</h3>
               <p className="text-lg text-white/85 leading-relaxed">
                 Second round interviews are more focused on the traditional case interview, which will be interviewee led. We look for the ability to break down a problem into manageable and understandable pieces, draw concise conclusions from available data, and engage in a focused conversation with the interviewer. Candidates will develop a strategy to solve a business question, such as determining the cause and proposing a recommendation for declining profits.
               </p>
-            </div>
-            <div className="md:w-1/2 flex items-center justify-center animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-              <div className="w-full h-80 rounded-xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=320&fit=crop&crop=focalpoint"
-                  alt="Professional interview setting"
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -151,14 +124,27 @@ const RecruitmentResources = () => {
                     <path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.25l1.5-1.5V6.75l-1.5-1.5H5.5L4 6.75v11.5l1.5 1.5h14z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-accent mb-4">Profitability Case</h3>
+                <h3 className="text-xl font-bold text-accent mb-4">Bell & Harris Case</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-center">A retail chain has seen declining profits over the past two years. Identify the root causes and recommend solutions.</p>
-              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+              <p className="text-muted-foreground mb-4 text-center">A comprehensive case study examining strategic challenges and opportunities in the consulting industry.</p>
+              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1 mb-6">
                 <li>Focus on revenue and cost analysis</li>
                 <li>Consider market dynamics</li>
                 <li>Propose actionable recommendations</li>
               </ul>
+              <div className="text-center">
+                <a
+                  href="/src/assets/bell_n_harris.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-accent px-4 py-2 rounded-lg transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Download PDF
+                </a>
+              </div>
             </div>
             <div className="professional-card p-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-center mb-6">
@@ -167,14 +153,27 @@ const RecruitmentResources = () => {
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-accent mb-4">Market Entry Case</h3>
+                <h3 className="text-xl font-bold text-accent mb-4">Soloman Energy Case</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-center">A technology company wants to enter the European market. Should they proceed and how?</p>
-              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+              <p className="text-muted-foreground mb-4 text-center">An energy sector case study focusing on market entry strategies and operational optimization challenges.</p>
+              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1 mb-6">
                 <li>Assess market attractiveness</li>
                 <li>Evaluate competitive landscape</li>
                 <li>Develop entry strategy</li>
               </ul>
+              <div className="text-center">
+                <a
+                  href="/src/assets/soloman_energy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-accent px-4 py-2 rounded-lg transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Download PDF
+                </a>
+              </div>
             </div>
           </div>
         </div>

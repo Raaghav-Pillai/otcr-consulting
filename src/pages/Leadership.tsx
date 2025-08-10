@@ -88,33 +88,50 @@ const Leadership = () => {
       <Navigation />
       
       {/* Leadership Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center bg-background text-center relative overflow-hidden">
+      <section className="min-h-screen flex flex-col justify-center items-center text-center relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-                <img
-                  src={chicagoSkyline}
-                  alt="University of Illinois campus"
-                  className="w-full h-full object-cover opacity-70"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background/80"></div>
-              </div>
-        <div className="w-full flex flex-col items-center relative z-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-navy-deep via-navy-medium to-navy-light"></div>
+          <img
+            src={chicagoSkyline}
+            alt="University of Illinois campus"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/90 via-navy-medium/70 to-navy-deep/90"></div>
+        </div>
+
+        <div className="w-full flex flex-col items-center relative z-10 px-6">
+          <FadeContent delay={0.3}>
+            <div className="inline-flex items-center gap-2 bg-teal-primary/10 border border-teal-primary/20 rounded-full px-6 py-3 mb-8 backdrop-blur-sm">
+              <div className="w-2 h-2 bg-teal-primary rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-teal-primary">Our Leadership Team</span>
+            </div>
+          </FadeContent>
+
           <SplitText
             text="Lead by Mission-Driven People"
-            className="text-5xl lg:text-6xl font-extrabold text-white text-center mb-6"
+            className="text-5xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white via-teal-primary to-blue-accent text-center mb-6 drop-shadow-2xl"
             splitType="words"
           />
           <FadeContent delay={1}>
-            <p className="text-xl text-white/90 text-center max-w-3xl mx-auto">
-              Whose expertise can be yours during our collaboration.
+            <p className="text-xl lg:text-2xl text-white/90 text-center max-w-4xl mx-auto mb-6 leading-relaxed font-light">
+              Whose expertise can be yours during our collaboration
+            </p>
+            <p className="text-lg text-teal-primary/90 text-center max-w-3xl mx-auto leading-relaxed">
+              Meet the experienced leaders guiding OTCR's strategic vision and operational excellence
             </p>
           </FadeContent>
         </div>
 
-        {/* Scroll arrow */}
+        {/* Enhanced scroll arrow */}
         <FadeContent delay={1.5}>
-          <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center animate-bounce-slow group cursor-pointer">
-            <ArrowDown className="w-8 h-8 text-accent group-hover:text-orange-warm transition-colors duration-300" />
-            <span className="text-sm text-muted-foreground mt-2 group-hover:text-accent transition-colors duration-300">Scroll to know more</span>
+          <div className="absolute left-1/2 bottom-8 -translate-x-1/2 flex flex-col items-center group cursor-pointer">
+            <div className="relative">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-teal-primary/20 to-blue-accent/20 border border-teal-primary/30 flex items-center justify-center group-hover:border-teal-primary transition-all duration-300 backdrop-blur-sm group-hover:bg-teal-primary/30 group-hover:scale-110 animate-bounce-slow">
+                <ArrowDown className="w-5 h-5 text-teal-primary group-hover:text-white transition-colors duration-300" />
+              </div>
+              <div className="absolute inset-0 rounded-full bg-teal-primary/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            </div>
+            <span className="text-sm text-white/75 mt-3 group-hover:text-teal-primary transition-colors duration-300 font-medium">Meet The Team</span>
           </div>
         </FadeContent>
       </section>

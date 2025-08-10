@@ -17,16 +17,19 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background/90 backdrop-blur-md border-b border-border px-6 py-4 transition-all duration-300">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-border/50 px-6 py-4 transition-all duration-300 shadow-lg shadow-navy-deep/20">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center hover:opacity-80 transition-opacity duration-300">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Fa46e089f3caf43dab4a95e9cb35165cb?format=webp&width=800"
-              alt="OTCR Consulting Logo"
-              className="h-10 w-auto"
-            />
+          <Link to="/" className="flex items-center group transition-all duration-300">
+            <div className="relative">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2F98c6b4d260e54d44896320277f23f7f2%2Fa46e089f3caf43dab4a95e9cb35165cb?format=webp&width=800"
+                alt="OTCR Consulting Logo"
+                className="h-10 w-auto transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-teal-primary/20 to-blue-accent/20 rounded-lg scale-0 group-hover:scale-110 transition-transform duration-300 blur-md"></div>
+            </div>
           </Link>
         </div>
 
@@ -37,26 +40,28 @@ const Navigation = () => {
               <Link
                 key={item.label}
                 to={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
                 onClick={() => window.scrollTo(0, 0)}
               >
-                {item.label}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+                <span className="relative z-10">{item.label}</span>
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
+                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
               </Link>
             ) : (
               <a
                 key={item.label}
                 href={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-colors duration-300 group py-2"
+                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
                 onMouseEnter={() => setActiveItem(item.label)}
                 onMouseLeave={() => setActiveItem('')}
               >
-                {item.label}
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
+                <span className="relative z-10">{item.label}</span>
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
+                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
               </a>
             )
           ))}
@@ -64,23 +69,25 @@ const Navigation = () => {
         
         {/* Social Icons */}
         <div className="hidden md:flex items-center space-x-2">
-          <a 
-            href="https://www.linkedin.com/company/otcr-consulting/about/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          <a
+            href="https://www.linkedin.com/company/otcr-consulting/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative rounded-full p-3 transition-all duration-300 group overflow-hidden"
           >
-            <Linkedin className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
-            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <Linkedin className="w-5 h-5 text-foreground group-hover:text-white transition-all duration-300 group-hover:scale-110 transform relative z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-accent to-teal-primary scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute inset-0 rounded-full bg-accent/10 group-hover:bg-transparent transition-colors duration-300"></div>
           </a>
-          <a 
-            href="https://www.instagram.com/otcr_consulting/?hl=en" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="relative rounded-full p-3 hover:bg-accent/10 transition-all duration-300 group"
+          <a
+            href="https://www.instagram.com/otcr_consulting/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative rounded-full p-3 transition-all duration-300 group overflow-hidden"
           >
-            <Instagram className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300 group-hover:scale-110 transform" />
-            <div className="absolute inset-0 rounded-full bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <Instagram className="w-5 h-5 text-foreground group-hover:text-white transition-all duration-300 group-hover:scale-110 transform relative z-10" />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-pink-500 to-purple-600 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+            <div className="absolute inset-0 rounded-full bg-accent/10 group-hover:bg-transparent transition-colors duration-300"></div>
           </a>
         </div>
         
