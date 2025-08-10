@@ -151,14 +151,27 @@ const RecruitmentResources = () => {
                     <path d="M9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4zm2.5 2.25l1.5-1.5V6.75l-1.5-1.5H5.5L4 6.75v11.5l1.5 1.5h14z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-accent mb-4">Profitability Case</h3>
+                <h3 className="text-xl font-bold text-accent mb-4">Bell & Harris Case</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-center">A retail chain has seen declining profits over the past two years. Identify the root causes and recommend solutions.</p>
-              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+              <p className="text-muted-foreground mb-4 text-center">A comprehensive case study examining strategic challenges and opportunities in the consulting industry.</p>
+              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1 mb-6">
                 <li>Focus on revenue and cost analysis</li>
                 <li>Consider market dynamics</li>
                 <li>Propose actionable recommendations</li>
               </ul>
+              <div className="text-center">
+                <a
+                  href="/src/assets/bell_n_harris.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-accent px-4 py-2 rounded-lg transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Download PDF
+                </a>
+              </div>
             </div>
             <div className="professional-card p-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="text-center mb-6">
@@ -167,14 +180,27 @@ const RecruitmentResources = () => {
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-accent mb-4">Market Entry Case</h3>
+                <h3 className="text-xl font-bold text-accent mb-4">Soloman Energy Case</h3>
               </div>
-              <p className="text-muted-foreground mb-4 text-center">A technology company wants to enter the European market. Should they proceed and how?</p>
-              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+              <p className="text-muted-foreground mb-4 text-center">An energy sector case study focusing on market entry strategies and operational optimization challenges.</p>
+              <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1 mb-6">
                 <li>Assess market attractiveness</li>
                 <li>Evaluate competitive landscape</li>
                 <li>Develop entry strategy</li>
               </ul>
+              <div className="text-center">
+                <a
+                  href="/src/assets/soloman_energy.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-accent/20 hover:bg-accent/30 text-accent px-4 py-2 rounded-lg transition-colors font-medium"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Download PDF
+                </a>
+              </div>
             </div>
           </div>
         </div>
