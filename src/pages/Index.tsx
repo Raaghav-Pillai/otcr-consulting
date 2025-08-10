@@ -179,28 +179,92 @@ const Index = () => {
       />
 
       {/* Why Join OTCR Section */}
-      <section className="py-20 bg-navy-deep">
-        <div className="section-container">
-          <h2 className="text-4xl md:text-5xl font-bold text-white-accent mb-16">Why Join OTCR?</h2>
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+      <section className="py-24 bg-gradient-to-br from-background via-navy-medium to-navy-deep relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-teal-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl"></div>
+
+        <div className="section-container relative z-10">
+          <div className="text-center mb-20">
+            <FadeContent delay={0.1}>
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-primary/10 to-blue-accent/10 border border-teal-primary/20 rounded-full px-6 py-3 mb-6 backdrop-blur-sm">
+                <div className="w-2 h-2 bg-gradient-to-r from-teal-primary to-blue-accent rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">Join Our Team</span>
+              </div>
+            </FadeContent>
+            <FadeContent delay={0.2}>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                Why Join <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">OTCR</span>?
+              </h2>
+            </FadeContent>
+            <FadeContent delay={0.3}>
+              <p className="text-xl text-white/85 max-w-3xl mx-auto">
+                Unlock your potential with real-world consulting experience
+              </p>
+            </FadeContent>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
-              "Work directly with Fortune 500 companies and innovative startups",
-              "Develop critical business analysis and strategic thinking skills",
-              "Build your professional portfolio with meaningful accomplishments",
-              "Connect with industry professionals and like-minded peers"
+              {
+                text: "Work directly with Fortune 500 companies and innovative startups",
+                icon: "🏢",
+                gradient: "from-teal-primary to-teal-light"
+              },
+              {
+                text: "Develop critical business analysis and strategic thinking skills",
+                icon: "🧠",
+                gradient: "from-blue-accent to-cyan-accent"
+              },
+              {
+                text: "Build your professional portfolio with meaningful accomplishments",
+                icon: "📈",
+                gradient: "from-cyan-accent to-teal-primary"
+              },
+              {
+                text: "Connect with industry professionals and like-minded peers",
+                icon: "🤝",
+                gradient: "from-teal-light to-blue-accent"
+              }
             ].map((benefit, index) => (
-              <FadeContent key={index} delay={index * 0.1}>
-                <div className="flex items-start space-x-3 bg-card rounded-xl p-6 border border-border/30 hover:border-teal-primary/50 transition-all duration-300 hover:transform hover:scale-105 group shadow-sm hover:shadow-lg">
-                  <div className="w-6 h-6 bg-teal-primary rounded-full flex items-center justify-center mt-1 flex-shrink-0 group-hover:bg-white-accent transition-colors duration-300">
-                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+              <FadeContent key={index} delay={0.4 + index * 0.1}>
+                <div className="group relative">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient} opacity-20 rounded-2xl blur-xl transition-all duration-500 group-hover:opacity-30 group-hover:blur-2xl`}></div>
+                  <div className="relative bg-card/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-white/20 transition-all duration-500 hover:transform hover:scale-105 shadow-2xl">
+                    <div className="flex items-start space-x-4">
+                      <div className={`w-14 h-14 bg-gradient-to-br ${benefit.gradient} rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-500 shadow-lg text-2xl`}>
+                        {benefit.icon}
+                      </div>
+                      <div className="flex-1">
+                        <span className="text-lg text-white/90 leading-relaxed group-hover:text-white transition-colors duration-300">
+                          {benefit.text}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-6 flex items-center text-sm text-white/60 group-hover:text-teal-primary transition-colors duration-300">
+                      <span className="mr-2">Learn more</span>
+                      <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                    </div>
                   </div>
-                  <span className="text-lg text-foreground group-hover:text-white-accent transition-colors duration-300">{benefit}</span>
                 </div>
               </FadeContent>
             ))}
           </div>
+
+          {/* Call to action */}
+          <FadeContent delay={0.8}>
+            <div className="text-center mt-16">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-teal-primary to-blue-accent hover:from-teal-light hover:to-blue-light text-white px-10 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-teal-primary/25"
+                onClick={() => window.location.href = '/join'}
+              >
+                Start Your Journey
+              </Button>
+            </div>
+          </FadeContent>
         </div>
       </section>
       <Footer />
