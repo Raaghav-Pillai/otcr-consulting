@@ -300,6 +300,10 @@ All colors MUST be HSL.
     background: linear-gradient(135deg, hsl(var(--navy-deep)), hsl(var(--navy-medium)));
   }
 
+  .bg-gradient-radial {
+    background: radial-gradient(circle at 50% 50%, var(--tw-gradient-stops));
+  }
+
   .gradient-subtle-bg {
     background: var(--gradient-subtle);
   }
