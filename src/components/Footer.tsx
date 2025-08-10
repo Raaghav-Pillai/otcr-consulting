@@ -15,15 +15,21 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="section-container">
+    <footer className="bg-gradient-to-br from-navy-deep via-navy-medium to-background border-t border-border/50 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-teal-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-accent/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="section-container relative z-10">
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Company Info */}
             <FadeContent delay={0.1}>
               <div className="group">
-                <div className="text-2xl font-bold mb-4 text-accent group-hover:text-orange-warm transition-colors duration-300">
+                <div className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-primary to-blue-accent">
                   OTCR Consulting
                 </div>
                 <p className="text-white/80 mb-6 leading-relaxed">
