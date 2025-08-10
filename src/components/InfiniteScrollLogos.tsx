@@ -21,12 +21,13 @@ const LogoRow = ({ logos, direction = 'left', speed = 30, delay = 0 }) => {
         {extendedLogos.map((client, idx) => (
           <div
             key={`${client.name}-${idx}`}
-            className="flex-shrink-0 w-40 h-20 flex items-center justify-center group"
+            className="flex-shrink-0 w-44 h-24 flex items-center justify-center group relative"
           >
+            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/2 rounded-xl backdrop-blur-sm border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-90 group-hover:scale-100"></div>
             <img
               src={client.logo}
               alt={`${client.name} logo`}
-              className="max-w-32 max-h-14 object-contain opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300"
+              className="max-w-36 max-h-16 object-contain opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 filter grayscale group-hover:grayscale-0 relative z-10"
             />
           </div>
         ))}
