@@ -46,12 +46,6 @@ const Footer = () => {
                     <span className="text-white/75 group-hover:text-white transition-colors duration-300">recruitment@otcrconsulting.com</span>
                   </div>
                   <div className="flex items-center space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
-                    <div className="w-10 h-10 bg-gradient-to-br from-blue-accent to-cyan-accent rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Phone className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="text-white/75 group-hover:text-white transition-colors duration-300">(###) ###-####</span>
-                  </div>
-                  <div className="flex items-center space-x-4 group hover:bg-white/5 p-3 rounded-lg transition-all duration-300">
                     <div className="w-10 h-10 bg-gradient-to-br from-cyan-accent to-teal-primary rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <MapPin className="w-5 h-5 text-white" />
                     </div>
