@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
 
+# Avoid overlapping deployments
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 permissions:
   contents: read
   pages: write
@@ -14,12 +19,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
-        with: { node-version: '20' }
+        with:
+          node-version: 20
+          cache: npm
+
+      # install deps
       - run: npm ci
+
+      # build (Vite will pick base from vite.config.ts)
       - run: npm run build
+
+      # REQUIRED: configure Pages
+      - uses: actions/configure-pages@v5
+
+      # upload the build output
       - uses: actions/upload-pages-artifact@v3
-        with: { path: 'dist' }
+        with:
+          path: dist
 
   deploy:
     needs: build
