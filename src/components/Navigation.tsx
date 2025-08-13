@@ -1,20 +1,113 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { Menu, X, Linkedin, Instagram } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
-const Navigation = () => {
+type Item = {
+  label: string;
+  to: string;
+  external?: boolean;
+  cta?: boolean;
+};
+
+const navItems: Item[] = [
+  { label: 'Home', to: '/' },
+  { label: 'About OTCR', to: '/about' },
+  { label: 'Leadership', to: '/leadership' },
+  { label: 'Recruitment Process', to: '/join' },
+  { label: 'Resources', to: '/recruitment-resources' },
+  { label: 'Apply Now', to: '/apply', cta: true },
+  {
+    label: 'Clients',
+    to: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about',
+    external: true,
+  },
+];
+
+const linkBase =
+  'relative font-medium transition-all duration-300 py-2 px-3 rounded-lg';
+const linkInactive =
+  'text-foreground hover:text-accent hover:bg-accent/5';
+const linkActive =
+  'text-white bg-white/10'; // tweak to your theme
+
+export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState('');
-  const navItems = [
-    { label: 'Home', href: '/', isLink: true },
-    { label: 'About OTCR', href: '/about', isLink: true },
-    { label: 'Leadership', href: '/leadership', isLink: true },
-    { label: 'Recruitment Process', href: '/join', isLink: true },
-    { label: 'Resources', href: '/recruitment-resources', isLink: true },
-    { label: 'Apply Now', href: '/apply', isLink: true },
-    { label: 'Clients', href: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about', isLink: false },
-  ];
+
+  const renderDesktopItem = (item: Item, idx: number) => {
+    if (item.external) {
+      return (
+        <a
+          key={idx}
+          href={item.to}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${linkBase} ${linkInactive}`}
+        >
+          <span className="relative z-10">{item.label}</span>
+        </a>
+      );
+    }
+    return (
+      <NavLink
+        key={idx}
+        to={item.to}
+        end={item.to === '/'} // exact match for Home
+        className={({ isActive }) =>
+          [
+            linkBase,
+            isActive ? linkActive : linkInactive,
+            item.cta ? 'ring-1 ring-white/20' : '',
+          ]
+            .filter(Boolean)
+            .join(' ')
+        }
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        <span className="relative z-10">{item.label}</span>
+      </NavLink>
+    );
+  };
+
+  const renderMobileItem = (item: Item, idx: number) => {
+    if (item.external) {
+      return (
+        <a
+          key={idx}
+          href={item.to}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
+          onClick={() => setIsMenuOpen(false)}
+          style={{ animationDelay: `${idx * 0.05}s` }}
+        >
+          {item.label}
+        </a>
+      );
+    }
+    return (
+      <NavLink
+        key={idx}
+        to={item.to}
+        end={item.to === '/'}
+        className={({ isActive }) =>
+          [
+            'transition-all duration-300 font-medium py-3 px-2 rounded-lg transform hover:scale-105',
+            isActive
+              ? 'text-white bg-white/10'
+              : 'text-foreground hover:text-accent hover:bg-accent/5',
+          ].join(' ')
+        }
+        onClick={() => {
+          setIsMenuOpen(false);
+          window.scrollTo(0, 0);
+        }}
+        style={{ animationDelay: `${idx * 0.05}s` }}
+      >
+        {item.label}
+      </NavLink>
+    );
+  };
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background/95 backdrop-blur-xl border-b border-border/50 px-6 py-4 transition-all duration-300 shadow-lg shadow-navy-deep/20">
@@ -33,41 +126,12 @@ const Navigation = () => {
           </Link>
         </div>
 
-        {/* Nav Links */}
+        {/* Desktop links */}
         <div className="hidden md:flex items-center gap-x-8">
-          {navItems.map((item) => (
-            item.isLink ? (
-              <Link
-                key={item.label}
-                to={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
-                onMouseEnter={() => setActiveItem(item.label)}
-                onMouseLeave={() => setActiveItem('')}
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                <span className="relative z-10">{item.label}</span>
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
-                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
-              </Link>
-            ) : (
-              <a
-                key={item.label}
-                href={item.href}
-                className="relative text-foreground font-medium hover:text-accent transition-all duration-300 group py-2 px-3 rounded-lg"
-                onMouseEnter={() => setActiveItem(item.label)}
-                onMouseLeave={() => setActiveItem('')}
-              >
-                <span className="relative z-10">{item.label}</span>
-                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-teal-primary to-blue-accent transform transition-transform duration-300 origin-left ${activeItem === item.label ? 'scale-x-100' : 'scale-x-0'}`}></span>
-                <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-accent/5 to-blue-accent/5 scale-0 group-hover:scale-100 transition-transform duration-300 backdrop-blur-sm"></span>
-                <span className="absolute inset-0 rounded-lg border border-transparent group-hover:border-accent/20 transition-colors duration-300"></span>
-              </a>
-            )
-          ))}
+          {navItems.map(renderDesktopItem)}
         </div>
-        
-        {/* Social Icons */}
+
+        {/* Socials */}
         <div className="hidden md:flex items-center space-x-2">
           <a
             href="https://www.linkedin.com/company/otcr-consulting/about/"
@@ -90,69 +154,48 @@ const Navigation = () => {
             <div className="absolute inset-0 rounded-full bg-accent/10 group-hover:bg-transparent transition-colors duration-300"></div>
           </a>
         </div>
-        
-        {/* Mobile menu button */}
+
+        {/* Mobile toggle */}
         <div className="md:hidden">
           <Button
             variant="ghost"
             size="icon"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => setIsMenuOpen((v) => !v)}
             className="relative group"
           >
             <div className="relative z-10">
-              {isMenuOpen ? 
-                <X className="transition-transform duration-300 rotate-90" /> : 
+              {isMenuOpen ? (
+                <X className="transition-transform duration-300 rotate-90" />
+              ) : (
                 <Menu className="transition-transform duration-300 hover:rotate-12" />
-              }
+              )}
             </div>
             <div className="absolute inset-0 rounded-md bg-accent/20 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
           </Button>
         </div>
       </div>
-      
-      {/* Enhanced Mobile Navigation */}
-      <div className={`md:hidden absolute left-0 top-full w-full bg-background/95 backdrop-blur-md border-b border-border shadow-lg transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden absolute left-0 top-full w-full bg-background/95 backdrop-blur-md border-b border-border shadow-lg transition-all duration-300 ${
+          isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+        }`}
+      >
         <div className="flex flex-col space-y-2 p-4">
-          {navItems.map((item, index) => (
-            item.isLink ? (
-              <Link
-                key={item.label}
-                to={item.href}
-                className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  window.scrollTo(0, 0);
-                }}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <a
-                key={item.label}
-                href={item.href}
-                className="text-foreground hover:text-accent transition-all duration-300 font-medium py-3 px-2 rounded-lg hover:bg-accent/5 transform hover:scale-105"
-                onClick={() => setIsMenuOpen(false)}
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {item.label}
-              </a>
-            )
-          ))}
-          {/* Social Icons in mobile menu */}
+          {navItems.map(renderMobileItem)}
           <div className="flex items-center space-x-2 mt-4 px-2">
-            <a 
-              href="https://www.linkedin.com/company/otcr-consulting/about/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.linkedin.com/company/otcr-consulting/about/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full p-2 hover:bg-accent/10 transition-all duration-300 group"
             >
               <Linkedin className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300" />
             </a>
-            <a 
-              href="https://www.instagram.com/otcr_consulting/?hl=en" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.instagram.com/otcr_consulting/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full p-2 hover:bg-accent/10 transition-all duration-300 group"
             >
               <Instagram className="w-5 h-5 text-foreground group-hover:text-accent transition-colors duration-300" />
@@ -162,6 +205,4 @@ const Navigation = () => {
       </div>
     </nav>
   );
-};
-
-export default Navigation;
+}

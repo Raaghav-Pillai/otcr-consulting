@@ -6,6 +6,10 @@ import ScrollReveal from '@/reactbits/textanimations/ScrollReveal/ScrollReveal';
 import FadeContent from '@/reactbits/animations/FadeContent/FadeContent';
 import AnimatedContent from '@/reactbits/animations/AnimatedContent/AnimatedContent';
 import { Button } from '@/components/ui/button';
+import { useNavigate, Link } from "react-router-dom"; // add this
+
+const Index = () => {
+  const navigate = useNavigate(); // add this
 
 const services = [
   {
@@ -265,7 +269,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-teal-primary to-blue-accent hover:from-teal-light hover:to-blue-light text-white px-10 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-2xl hover:shadow-teal-primary/25"
-                onClick={() => window.location.href = '/join'}
+                onClick={() => navigate("/join")}
               >
                 Start Your Journey
               </Button>
