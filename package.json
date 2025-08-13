@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Raaghav-Pillai/raaghav-pillai.github.io/otcr-consulting/",
+  "homepage": "https://raaghav-pillai.github.io/otcr-consulting/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
