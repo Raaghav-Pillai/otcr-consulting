@@ -130,11 +130,11 @@ const Join = () => {
                   ),
                 },
                 {
-                  title: 'Case Training + Meet and Greet',
+                  title: 'Case Training + Meet and Greet / Dev ops Training',
                   date: 'Sept 4',
                   description: (
                     <>
-                      Learn about our case interviews and get to know members of the firm afterwards.<br />
+                      Learn about our case and coding interviews and get to know members of the firm afterwards.<br />
                       Dress Code: Business Casual
                     </>
                   ),
