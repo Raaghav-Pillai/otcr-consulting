@@ -19,7 +19,7 @@ const navItems: Item[] = [
   { label: 'Apply Now', to: '/apply', cta: true },
   {
     label: 'Clients',
-    to: 'https://swarnikabhardwaj2.github.io/otcr-consulting-nexus-web/about',
+    to: 'https://otcr-consulting.com',
     external: true,
   },
 ];
