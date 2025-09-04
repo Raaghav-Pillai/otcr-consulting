@@ -61,14 +61,14 @@ const Apply = () => {
               <Button
                 size="lg"
                 className="bg-slate-accent hover:bg-teal-muted text-white px-8 py-4 text-lg font-semibold hover-scale opacity-50 cursor-not-allowed"
-                ref= {"https://docs.google.com/forms/d/e/1FAIpQLSdd6r0nfcWQS1zS8uXL38o50GjKUo9neDBbMp6mXHZVpzUJog/viewform?fbclid=PAZXh0bgNhZW0CMTEAAad5ADV_JpuhcSLsNt541c8q0N0cai8KMcu6oFY5R-7yxndlfCT-oAH20nQ4jA_aem_PWk1OnK2ZXI2xopjyAItrw"}
+                //ref= {"https://docs.google.com/forms/d/e/1FAIpQLSdd6r0nfcWQS1zS8uXL38o50GjKUo9neDBbMp6mXHZVpzUJog/viewform?fbclid=PAZXh0bgNhZW0CMTEAAad5ADV_JpuhcSLsNt541c8q0N0cai8KMcu6oFY5R-7yxndlfCT-oAH20nQ4jA_aem_PWk1OnK2ZXI2xopjyAItrw"}
               >
                 Consultant Application
               </Button>
               <Button
                 size="lg"
                 className="bg-slate-accent hover:bg-teal-muted text-white px-8 py-4 text-lg font-semibold hover-scale opacity-50 cursor-not-allowed"
-                ref = {"https://docs.google.com/forms/d/e/1FAIpQLSdmeg0V3l1TpC-31scGrMSy_FWi-tsHv3B0FTh4ZONvR96c1w/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacT-OtzRNl0wYgLrrRFR1oRkLu8dj8c5jReaI4q0gbqGi99O6X0q8VV3q9tnQ_aem_rISf3CFIa1Te8_8ZBC2I4A"}
+                //ref = {"https://docs.google.com/forms/d/e/1FAIpQLSdmeg0V3l1TpC-31scGrMSy_FWi-tsHv3B0FTh4ZONvR96c1w/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacT-OtzRNl0wYgLrrRFR1oRkLu8dj8c5jReaI4q0gbqGi99O6X0q8VV3q9tnQ_aem_rISf3CFIa1Te8_8ZBC2I4A"}
               >
                 Tech Application
               </Button>
